@@ -1,24 +1,43 @@
 # RamblerMcFlurry
 
-## Usage
+## Описание
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+**RamblerMcFlurry** - это коллекция часто используемых в проектах Rambler&Co компонентов. Исторически сложилось, что файлы такого рода переносились из проекта в проект путем *Cmd+C => Cmd+V*. Этот под - отчаянная попытка исправить положение дел.
 
-## Requirements
+Для удобства использования под разбит на отдельные спеки - *Testing*, *Interface*, *Core* и прочие в том же духе.
 
-## Installation
+В настоящий момент в **RamblerMcFlurry** есть следующие хелперы:
 
-RamblerMcFlurry is available through [CocoaPods](https://gitlab.rambler.ru/groups/cocoapods). To install
-it, simply add the following line to your Podfile:
+- *Interface*
+    - *RamblerTableViewAnimator* - Базовый аниматор для *UITableView*
+- *Testing*
+    - *RamblerTyphoonAssemblyTests* - Базовый класс тестов для *TyphoonAssembly*
+
+## Установка
+
+**RamblerMcFlurry** находится в наших [CocoaPods](https://gitlab.rambler.ru/groups/cocoapods).
+
+Для того, чтобы установить себе все волшебные хелперы, добавьте в Podfile:
 
 ```ruby
 pod "RamblerMcFlurry"
 ```
 
-## Author
+Если же требуется только определенная группа хелперов, к примеру, для тестирования, то:
 
-Egor Tolstoy, e.tolstoy@rambler-co.ru
+```ruby
+pod "RamblerMcFlurry/Testing"
+```
 
-## License
+## Развитие компонента
 
-RamblerMcFlurry is available under the MIT license. See the LICENSE file for more info.
+Хотите добавить для общего пользования хелпер из своего проекта? Чудесно! Не забывайте только следовать нескольким простым правилам:
+
+1. Используйте префикс *Rambler* для всех файлов, классов, enum'ов и прочего добра.
+2. Полностью комментируйте интерфейсный файл, не забывая описать, зачем вообще нужен это хелпер.
+3. Добавляйте примеры использования хелпера в *Example Project*. А еще лучше - покрывайте тестами.
+4. Для каждого добавленного хелпера создаватье ревью в Fisheye.
+
+## Авторы
+
+Доблестная команда Rambler&Co.
