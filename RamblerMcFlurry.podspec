@@ -10,19 +10,12 @@
 Pod::Spec.new do |s|
   s.name             = "RamblerMcFlurry"
   s.version          = "0.1.0"
-  s.summary          = "A short description of RamblerMcFlurry."
-  s.description      = <<-DESC
-                       An optional longer description of RamblerMcFlurry
-
-                       * Markdown format.
-                       * Don't worry about the indent, we strip it!
-                       DESC
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/RamblerMcFlurry"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.summary          = "Набор полезных хелперов, используемых в различных проектах Rambler&Co"
+  s.homepage         = "https://gitlab.rambler.ru/cocoapods/RamblerMcFlurry"
   s.license          = 'MIT'
   s.author           = { "Egor Tolstoy" => "e.tolstoy@rambler-co.ru" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/RamblerMcFlurry.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.source           = { :git => "https://gitlab.rambler.ru/cocoapods/RamblerMcFlurry.git", :tag => s.version.to_s }
+  # s.social_media_url = 'https://twitter.com/igrekde'
 
   s.platform     = :ios, '7.0'
   s.requires_arc = true
