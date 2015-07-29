@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "RamblerMcFlurry"
-  s.version          = "0.1.0"
+  s.version          = "0.0.1"
   s.summary          = "Набор полезных хелперов, используемых в различных проектах Rambler&Co"
   s.homepage         = "https://gitlab.rambler.ru/cocoapods/RamblerMcFlurry"
   s.license          = 'MIT'
