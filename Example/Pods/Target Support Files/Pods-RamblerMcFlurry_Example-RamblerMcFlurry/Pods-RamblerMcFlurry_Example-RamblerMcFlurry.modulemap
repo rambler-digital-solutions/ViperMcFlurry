@@ -1,6 +1,0 @@
-framework module RamblerMcFlurry {
-  umbrella header "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-umbrella.h"
-
-  export *
-  module * { export * }
-}

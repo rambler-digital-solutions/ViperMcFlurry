@@ -1,5 +1,16 @@
 PODS:
-  - RamblerMcFlurry (0.1.0)
+  - RamblerMcFlurry (0.1.0):
+    - RamblerMcFlurry/Core (= 0.1.0)
+    - RamblerMcFlurry/Interface (= 0.1.0)
+    - RamblerMcFlurry/Testing (= 0.1.0)
+  - RamblerMcFlurry/Core (0.1.0)
+  - RamblerMcFlurry/Interface (0.1.0):
+    - RamblerMcFlurry/Core
+  - RamblerMcFlurry/Testing (0.1.0):
+    - RamblerMcFlurry/Core
+    - RamblerMcFlurry/Testing/TyphoonAssemblyTests (= 0.1.0)
+  - RamblerMcFlurry/Testing/TyphoonAssemblyTests (0.1.0):
+    - RamblerMcFlurry/Core
 
 DEPENDENCIES:
   - RamblerMcFlurry (from `../`)
@@ -9,6 +20,6 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  RamblerMcFlurry: 596a7ac5750a4fb306949ca2190aba0621097a83
+  RamblerMcFlurry: 285369439863456ee243d159ac02caa8fd0230bc
 
 COCOAPODS: 0.37.2

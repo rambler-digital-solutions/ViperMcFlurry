@@ -16,7 +16,6 @@ Pod::Spec.new do |s|
   s.author           = { "Egor Tolstoy" => "e.tolstoy@rambler-co.ru" }
   s.source           = { :git => "https://gitlab.rambler.ru/cocoapods/RamblerMcFlurry.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/igrekde'
-
   s.platform     = :ios, '7.0'
   s.requires_arc = true
 
@@ -24,6 +23,25 @@ Pod::Spec.new do |s|
   s.resource_bundles = {
     'RamblerMcFlurry' => ['Pod/Assets/*.png']
   }
+
+  s.subspec 'Core' do |cs|
+    cs.source_files = "Classes/Core"
+  end
+
+  s.subspec 'Interface' do |ui|
+    ui.source_files = "Classes/Interface"
+    ui.dependency 'RamblerMcFlurry/Core'
+  end
+
+  s.subspec 'Testing' do |ts|
+    ts.source_files = "Classes/Testing"
+    ts.dependency 'RamblerMcFlurry/Core'
+    ts.framework = 'XCTest'
+
+    ts.subspec 'TyphoonAssemblyTests' do |tat|
+        tat.source_files = "Classes/Testing/TyphoonAssemblyTests"
+    end
+  end
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

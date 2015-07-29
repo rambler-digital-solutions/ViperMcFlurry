@@ -7,378 +7,327 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1391B56A573820EDAFF320DB /* Pods-RamblerMcFlurry_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 71E002F9CFFE02FD103BC2B3 /* Pods-RamblerMcFlurry_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1EAEFE104EADB4E329BF2899 /* Pods-RamblerMcFlurry_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A536B3C30FBC5BD51C957C9 /* Pods-RamblerMcFlurry_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2011BAC8D1466F8E82AEF3EA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2BA630CCBFD865B1355E55 /* Foundation.framework */; };
-		302DABAFDCA74F86EE6BD726 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 766C7BADC579D95E50AD06CB /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-dummy.m */; };
-		3067F362EA0DFA3910AF5D32 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F7BD90DF3D7C6284A5399C58 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		393D5C41CCB39F1473783F9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2BA630CCBFD865B1355E55 /* Foundation.framework */; };
-		459AEAC5AE9916BAAEE8580B /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = A69A5623C377CC27048FA791 /* ReplaceMe.m */; };
-		4EE104B8CEF7EB00F56F7264 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E066DC0757C8AC2D2507034B /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m */; };
-		68C294B77ABE6AD2DA6D4D76 /* ReplaceMe.m in Sources */ = {isa = PBXBuildFile; fileRef = A69A5623C377CC27048FA791 /* ReplaceMe.m */; };
-		798D82264B964BD27294C50D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2BA630CCBFD865B1355E55 /* Foundation.framework */; };
-		A8ABF62D1A6D1F6843E0C58B /* Pods-RamblerMcFlurry_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5A233606F9E9E6BFE0EAD5CC /* Pods-RamblerMcFlurry_Example-dummy.m */; };
-		CBBA2468E84385456EC39077 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CDCF2D6A0150616E8180656 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		E44EE929E59B70932960E55A /* Pods-RamblerMcFlurry_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DE8C10A04FA4D7DB08ABD196 /* Pods-RamblerMcFlurry_Tests-dummy.m */; };
-		EFFB34C13E9795741EA5066E /* RamblerMcFlurry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 60064C18D2DF5ED25C415EE2 /* RamblerMcFlurry.bundle */; };
-		F8C618A20B8CDD6853E89462 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF2BA630CCBFD865B1355E55 /* Foundation.framework */; };
-		FA35B5D125EFBE149594BD6A /* RamblerMcFlurry.bundle in Resources */ = {isa = PBXBuildFile; fileRef = ADB32D86B14C48FC0DF7642C /* RamblerMcFlurry.bundle */; };
+		0597903E2233B10B9062D66B /* Pods-RamblerMcFlurry_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CA4BA47F2FB242E8C64DEF72 /* Pods-RamblerMcFlurry_Example-dummy.m */; };
+		1251E3923B66C2A6CE72F350 /* RamblerTyphoonAssemblyTests.h in Headers */ = {isa = PBXBuildFile; fileRef = C78AE9E59B6A1EEC1A6374BF /* RamblerTyphoonAssemblyTests.h */; };
+		29E9269FF752A45A4AA044D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716BA3D8FCE82881E87734EC /* Foundation.framework */; };
+		2EFF3A2DA229E54084ABAD46 /* RamblerTyphoonAssemblyTestUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FB1006F933F38668BEDAAC /* RamblerTyphoonAssemblyTestUtilities.m */; };
+		4C0CFA277E17A72FD480F17C /* RamblerTyphoonAssemblyTests.h in Headers */ = {isa = PBXBuildFile; fileRef = C78AE9E59B6A1EEC1A6374BF /* RamblerTyphoonAssemblyTests.h */; };
+		62517D124C10CAF27BF7D592 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716BA3D8FCE82881E87734EC /* Foundation.framework */; };
+		62ABF296B85E91CA9ADC1475 /* RamblerTyphoonAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D83A46D8EE6FB769634A137 /* RamblerTyphoonAssemblyTests.m */; };
+		7C93186685DEAD9C909C9C6E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76C6BF92677FD325218580A /* XCTest.framework */; };
+		8247AC5E5DF98C98F83BA3EB /* Pods-RamblerMcFlurry_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 29ECBB745A6703042E44589E /* Pods-RamblerMcFlurry_Tests-dummy.m */; };
+		89BE667245240EA42A635699 /* RamblerTyphoonAssemblyTestUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E30A717D681F7D2745321DF /* RamblerTyphoonAssemblyTestUtilities.h */; };
+		9F6E2EC1C018E4161C1ADAA3 /* RamblerTyphoonAssemblyTestUtilities.h in Headers */ = {isa = PBXBuildFile; fileRef = 3E30A717D681F7D2745321DF /* RamblerTyphoonAssemblyTestUtilities.h */; };
+		A092EB49595DFF1A4D2C4F39 /* RamblerTyphoonAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D83A46D8EE6FB769634A137 /* RamblerTyphoonAssemblyTests.m */; };
+		AF9E2A0535CC869B033480F7 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 577CF5AAA5BB8295FEB486A7 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m */; };
+		D17E0FE7EEB0131111A14FB3 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E76C6BF92677FD325218580A /* XCTest.framework */; };
+		D390F9F0AFD844F04C5E0663 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716BA3D8FCE82881E87734EC /* Foundation.framework */; };
+		D65158A14AEB5F5131F45306 /* RamblerTyphoonAssemblyTestUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 22FB1006F933F38668BEDAAC /* RamblerTyphoonAssemblyTestUtilities.m */; };
+		FE68A597F5AAAC979D1F65BF /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CE388E02E97E5AE26CDC96D3 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-dummy.m */; };
+		FE7ACFCE26B3B4F2A131FAAA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 716BA3D8FCE82881E87734EC /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		24699D96CE30DE645ABFFFC7 /* PBXContainerItemProxy */ = {
+		379842F69BAFBA20B7C80EC3 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AB2310AB3F28D71647C2D1B0 /* Project object */;
+			containerPortal = 87C31749EFD1B426B2E38269 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 5FF9C5070788E3C189C5C937;
-			remoteInfo = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry";
-		};
-		49E0E46A5EDA4FBDA98D8716 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB2310AB3F28D71647C2D1B0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 805FF6F3DFC05C94FC11A725;
-			remoteInfo = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry";
-		};
-		C59058EEF60EF2DC86DE24C6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = AB2310AB3F28D71647C2D1B0 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = B5479934A5F902E798C0649B;
+			remoteGlobalIDString = F5CFF523D47F916E9A0EF1CB;
 			remoteInfo = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry";
 		};
-		EBFD8F67C6EE2375817340C8 /* PBXContainerItemProxy */ = {
+		75E5EBD1E8B6C112116268D5 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = AB2310AB3F28D71647C2D1B0 /* Project object */;
+			containerPortal = 87C31749EFD1B426B2E38269 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = B7AD7897CD64B31666EE2C70;
+			remoteGlobalIDString = 079C8067FC9CFD70AE73933C;
+			remoteInfo = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry";
+		};
+		8AC14F1788AB8627BB0C39B6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87C31749EFD1B426B2E38269 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DDBC3EDBE098596156432D34;
 			remoteInfo = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-RamblerMcFlurry";
+		};
+		EB684C89780E0F30AE405F8F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 87C31749EFD1B426B2E38269 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 962F3FC9FAE6A42CA20AC84A;
+			remoteInfo = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0CDCF2D6A0150616E8180656 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-umbrella.h"; sourceTree = "<group>"; };
-		16BF8278230F3E7C92C12360 /* Pods-RamblerMcFlurry_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RamblerMcFlurry_Tests.modulemap"; sourceTree = "<group>"; };
-		19CCE0F4220012F650BFEA1F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; name = Info.plist; path = "../Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Info.plist"; sourceTree = "<group>"; };
-		1A536B3C30FBC5BD51C957C9 /* Pods-RamblerMcFlurry_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RamblerMcFlurry_Tests-umbrella.h"; sourceTree = "<group>"; };
-		1C84A913ADB82F6F63021338 /* Pods-RamblerMcFlurry_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RamblerMcFlurry_Tests-resources.sh"; sourceTree = "<group>"; };
-		29834468BC11197BD3661453 /* Pods-RamblerMcFlurry_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RamblerMcFlurry_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		29ED077EFAB023B10B1E0C7D /* Pods-RamblerMcFlurry_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RamblerMcFlurry_Example-resources.sh"; sourceTree = "<group>"; };
-		2F5C34730EF973817E98338D /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry.modulemap"; sourceTree = "<group>"; };
-		32D3A4E45C933D4AB5AF8EDE /* Pods-RamblerMcFlurry_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RamblerMcFlurry_Example-frameworks.sh"; sourceTree = "<group>"; };
-		43E77391CFC5D430339322B6 /* Pods-RamblerMcFlurry_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RamblerMcFlurry_Example.release.xcconfig"; sourceTree = "<group>"; };
-		4724BA5A528C530FA83B380C /* Pods-RamblerMcFlurry_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RamblerMcFlurry_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		55D48CAE76C6B078F2010F5F /* Pods-RamblerMcFlurry_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RamblerMcFlurry_Example.modulemap"; sourceTree = "<group>"; };
-		55E58B734805F799CFC214C6 /* Pods-RamblerMcFlurry_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RamblerMcFlurry_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		598D1C5622DDF6E7B988574A /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5A233606F9E9E6BFE0EAD5CC /* Pods-RamblerMcFlurry_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RamblerMcFlurry_Example-dummy.m"; sourceTree = "<group>"; };
-		60064C18D2DF5ED25C415EE2 /* RamblerMcFlurry.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RamblerMcFlurry.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		610A1B63F2276B41B7872688 /* Pods-RamblerMcFlurry_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RamblerMcFlurry_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		684CE16AA417520D53F41F42 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-prefix.pch"; sourceTree = "<group>"; };
-		71E002F9CFFE02FD103BC2B3 /* Pods-RamblerMcFlurry_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RamblerMcFlurry_Example-umbrella.h"; sourceTree = "<group>"; };
-		766C7BADC579D95E50AD06CB /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-dummy.m"; sourceTree = "<group>"; };
-		78FCE6F09FB0D23C7E5C48EA /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry.modulemap"; path = "../Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry.modulemap"; sourceTree = "<group>"; };
-		7D0DDFC99F297D0AADE38C04 /* Pods-RamblerMcFlurry_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RamblerMcFlurry_Tests-environment.h"; sourceTree = "<group>"; };
-		7DB937EAE5F2941875C6B55E /* RamblerMcFlurry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RamblerMcFlurry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9070C19BFED7EFA7B4F2DD8F /* Pods-RamblerMcFlurry_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RamblerMcFlurry_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A3758FAED1DBB476F6AE961E /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A69A5623C377CC27048FA791 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
-		A918C87ED31FEF116AEE642E /* Pods-RamblerMcFlurry_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RamblerMcFlurry_Example-environment.h"; sourceTree = "<group>"; };
-		ADB32D86B14C48FC0DF7642C /* RamblerMcFlurry.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RamblerMcFlurry.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
-		B058C78AB4B53DEBAF24A06F /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry.xcconfig"; sourceTree = "<group>"; };
-		BC36571FB4728696DC83DACB /* Pods-RamblerMcFlurry_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RamblerMcFlurry_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		C4B5415E6625499F56AF623B /* RamblerMcFlurry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RamblerMcFlurry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		C994B2ADA318ABA56EED71E6 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry.xcconfig"; path = "../Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry.xcconfig"; sourceTree = "<group>"; };
-		CEFAF32003805DE5D7DD333D /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-prefix.pch"; path = "../Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-prefix.pch"; sourceTree = "<group>"; };
-		CF7EE6BF90DABA75D17A5CB5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D48E23A0EBBA7034DF75DAC0 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		D5E4D42E754D63469B5DAFA7 /* Pods-RamblerMcFlurry_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RamblerMcFlurry_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		DE8C10A04FA4D7DB08ABD196 /* Pods-RamblerMcFlurry_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RamblerMcFlurry_Tests-dummy.m"; sourceTree = "<group>"; };
-		DF2BA630CCBFD865B1355E55 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E066DC0757C8AC2D2507034B /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m"; path = "../Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m"; sourceTree = "<group>"; };
-		E114AD3149FE0465CAB8DA80 /* Pods-RamblerMcFlurry_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RamblerMcFlurry_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		EDB6E6779A03BB74767C5B17 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig"; path = "../Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig"; sourceTree = "<group>"; };
-		F26690E98DC2803116DF0500 /* Pods_RamblerMcFlurry_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RamblerMcFlurry_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7BD90DF3D7C6284A5399C58 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-umbrella.h"; path = "../Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-umbrella.h"; sourceTree = "<group>"; };
-		FA8CA3FADA1002B3B21D0452 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-Private.xcconfig"; sourceTree = "<group>"; };
-		FC4B633E8E7EBDE8BAB303DB /* Pods_RamblerMcFlurry_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RamblerMcFlurry_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0AA6A0F715DC9CA4E85384A1 /* Pods-RamblerMcFlurry_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RamblerMcFlurry_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		0BEB16AFDAA9BCFFD4687191 /* Pods-RamblerMcFlurry_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RamblerMcFlurry_Tests-resources.sh"; sourceTree = "<group>"; };
+		1DCBB6C27EBDD58F4D4ABBD3 /* RamblerMcFlurry.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RamblerMcFlurry.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		22FB1006F933F38668BEDAAC /* RamblerTyphoonAssemblyTestUtilities.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RamblerTyphoonAssemblyTestUtilities.m; sourceTree = "<group>"; };
+		2736BC2751A1DFA84D5B7BF9 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry.xcconfig"; sourceTree = "<group>"; };
+		27CA3377D2567AF2A663BD51 /* Pods-RamblerMcFlurry_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RamblerMcFlurry_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		29ECBB745A6703042E44589E /* Pods-RamblerMcFlurry_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RamblerMcFlurry_Tests-dummy.m"; sourceTree = "<group>"; };
+		2C97172B9DE13C1F4AFE03C7 /* libPods-RamblerMcFlurry_Tests-RamblerMcFlurry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RamblerMcFlurry_Tests-RamblerMcFlurry.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E30A717D681F7D2745321DF /* RamblerTyphoonAssemblyTestUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RamblerTyphoonAssemblyTestUtilities.h; sourceTree = "<group>"; };
+		3F308BCC0C08DBD6E991702B /* Pods-RamblerMcFlurry_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RamblerMcFlurry_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		40DB3F8B0BA9534F5A72182B /* libPods-RamblerMcFlurry_Example-RamblerMcFlurry.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RamblerMcFlurry_Example-RamblerMcFlurry.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		54789B766ACFCEBAE53653B3 /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		577CF5AAA5BB8295FEB486A7 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m"; path = "../Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m"; sourceTree = "<group>"; };
+		58B79F77D3CB66818E5F607E /* libPods-RamblerMcFlurry_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RamblerMcFlurry_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		62F04BF7C356F9B3BFA8B567 /* Pods-RamblerMcFlurry_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RamblerMcFlurry_Example-resources.sh"; sourceTree = "<group>"; };
+		716BA3D8FCE82881E87734EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		768CC29D1109C7394250F5FE /* Pods-RamblerMcFlurry_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RamblerMcFlurry_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		7D83A46D8EE6FB769634A137 /* RamblerTyphoonAssemblyTests.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = RamblerTyphoonAssemblyTests.m; sourceTree = "<group>"; };
+		93F846C7E554BC5C8CE5E5D5 /* Pods-RamblerMcFlurry_Tests-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RamblerMcFlurry_Tests-environment.h"; sourceTree = "<group>"; };
+		9827B03AAE6D6D696AAB9036 /* Pods-RamblerMcFlurry_Example-environment.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RamblerMcFlurry_Example-environment.h"; sourceTree = "<group>"; };
+		A10E3AF2A2F6399651655416 /* libPods-RamblerMcFlurry_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RamblerMcFlurry_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AAFC5EB30F245C297AE29C28 /* Pods-RamblerMcFlurry_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RamblerMcFlurry_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C74E052972842F77B4031F5A /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig"; path = "../Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig"; sourceTree = "<group>"; };
+		C78AE9E59B6A1EEC1A6374BF /* RamblerTyphoonAssemblyTests.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RamblerTyphoonAssemblyTests.h; sourceTree = "<group>"; };
+		CA4BA47F2FB242E8C64DEF72 /* Pods-RamblerMcFlurry_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RamblerMcFlurry_Example-dummy.m"; sourceTree = "<group>"; };
+		CE388E02E97E5AE26CDC96D3 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-dummy.m"; sourceTree = "<group>"; };
+		D21B54442FCC60D5175DED2D /* Pods-RamblerMcFlurry_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RamblerMcFlurry_Example.release.xcconfig"; sourceTree = "<group>"; };
+		D61574DBEC529988B20FEF6C /* Pods-RamblerMcFlurry_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RamblerMcFlurry_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		DC612FE9D72116A512B6455F /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-prefix.pch"; sourceTree = "<group>"; };
+		DF8D5B2C21CD8B79A8E2BC65 /* Pods-RamblerMcFlurry_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RamblerMcFlurry_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		E1EC1C81CC05A27DA1EDA09D /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-Private.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-Private.xcconfig"; sourceTree = "<group>"; };
+		E2BD6979ABC225417DEB23E5 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry.xcconfig"; path = "../Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry.xcconfig"; sourceTree = "<group>"; };
+		E76C6BF92677FD325218580A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS8.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		E97A84EE124E436A9A8369EC /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-prefix.pch"; path = "../Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-prefix.pch"; sourceTree = "<group>"; };
+		F30D6F72EC93DB2EE13EA730 /* RamblerMcFlurry.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RamblerMcFlurry.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		15558D4BA262169A397DAF27 /* Frameworks */ = {
+		126AF7FC155603F410835ACC /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				393D5C41CCB39F1473783F9F /* Foundation.framework in Frameworks */,
+				D390F9F0AFD844F04C5E0663 /* Foundation.framework in Frameworks */,
+				7C93186685DEAD9C909C9C6E /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8628A8475A91906B72F5E154 /* Frameworks */ = {
+		45B406C87F2FA800DFF64067 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F8C618A20B8CDD6853E89462 /* Foundation.framework in Frameworks */,
+				29E9269FF752A45A4AA044D9 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		BE56678DABDE34EFA363576E /* Frameworks */ = {
+		61F48D50477BFBA77659D268 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				798D82264B964BD27294C50D /* Foundation.framework in Frameworks */,
+				FE7ACFCE26B3B4F2A131FAAA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D3986803652F8141BB9EC6B2 /* Frameworks */ = {
+		6E0E713D16F0DE570365C7F1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E384DF1FF55A350114B58D38 /* Frameworks */ = {
+		7AD8CCD2E4C013A42CBA4DE9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2011BAC8D1466F8E82AEF3EA /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		EC7E009051253B4309D8BAD5 /* Frameworks */ = {
+		A941019A9B6FEF6AB6280652 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				62517D124C10CAF27BF7D592 /* Foundation.framework in Frameworks */,
+				D17E0FE7EEB0131111A14FB3 /* XCTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0B8209567C206335C4BEF273 /* Support Files */ = {
+		04D39568397677D66762296E /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				CF7EE6BF90DABA75D17A5CB5 /* Info.plist */,
-				19CCE0F4220012F650BFEA1F /* Info.plist */,
-				2F5C34730EF973817E98338D /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry.modulemap */,
-				B058C78AB4B53DEBAF24A06F /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry.xcconfig */,
-				FA8CA3FADA1002B3B21D0452 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-Private.xcconfig */,
-				766C7BADC579D95E50AD06CB /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-dummy.m */,
-				684CE16AA417520D53F41F42 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-prefix.pch */,
-				0CDCF2D6A0150616E8180656 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-umbrella.h */,
-				78FCE6F09FB0D23C7E5C48EA /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry.modulemap */,
-				C994B2ADA318ABA56EED71E6 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry.xcconfig */,
-				EDB6E6779A03BB74767C5B17 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig */,
-				E066DC0757C8AC2D2507034B /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m */,
-				CEFAF32003805DE5D7DD333D /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-prefix.pch */,
-				F7BD90DF3D7C6284A5399C58 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-umbrella.h */,
+				D07462658690B8543453E90B /* Testing */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		0B220BAF4C9F1190DF7B6307 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D6720BBF7DA9C44908B05140 /* RamblerMcFlurry */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		36EE3ECB5162B90D7E668C58 /* TyphoonAssemblyTests */ = {
+			isa = PBXGroup;
+			children = (
+				3E30A717D681F7D2745321DF /* RamblerTyphoonAssemblyTestUtilities.h */,
+				22FB1006F933F38668BEDAAC /* RamblerTyphoonAssemblyTestUtilities.m */,
+				C78AE9E59B6A1EEC1A6374BF /* RamblerTyphoonAssemblyTests.h */,
+				7D83A46D8EE6FB769634A137 /* RamblerTyphoonAssemblyTests.m */,
+			);
+			path = TyphoonAssemblyTests;
+			sourceTree = "<group>";
+		};
+		4222CB9A85BBB29E4F60E2D1 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2736BC2751A1DFA84D5B7BF9 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry.xcconfig */,
+				E1EC1C81CC05A27DA1EDA09D /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-Private.xcconfig */,
+				CE388E02E97E5AE26CDC96D3 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-dummy.m */,
+				DC612FE9D72116A512B6455F /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-prefix.pch */,
+				E2BD6979ABC225417DEB23E5 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry.xcconfig */,
+				C74E052972842F77B4031F5A /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig */,
+				577CF5AAA5BB8295FEB486A7 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m */,
+				E97A84EE124E436A9A8369EC /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-prefix.pch */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/Pods-RamblerMcFlurry_Example-RamblerMcFlurry";
 			sourceTree = "<group>";
 		};
-		25576FB2ABAAD493DC5B70FB /* Pods-RamblerMcFlurry_Tests */ = {
+		601CAD98C8ACDA3545976F71 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				A3758FAED1DBB476F6AE961E /* Info.plist */,
-				16BF8278230F3E7C92C12360 /* Pods-RamblerMcFlurry_Tests.modulemap */,
-				610A1B63F2276B41B7872688 /* Pods-RamblerMcFlurry_Tests-acknowledgements.markdown */,
-				BC36571FB4728696DC83DACB /* Pods-RamblerMcFlurry_Tests-acknowledgements.plist */,
-				DE8C10A04FA4D7DB08ABD196 /* Pods-RamblerMcFlurry_Tests-dummy.m */,
-				7D0DDFC99F297D0AADE38C04 /* Pods-RamblerMcFlurry_Tests-environment.h */,
-				D5E4D42E754D63469B5DAFA7 /* Pods-RamblerMcFlurry_Tests-frameworks.sh */,
-				1C84A913ADB82F6F63021338 /* Pods-RamblerMcFlurry_Tests-resources.sh */,
-				1A536B3C30FBC5BD51C957C9 /* Pods-RamblerMcFlurry_Tests-umbrella.h */,
-				29834468BC11197BD3661453 /* Pods-RamblerMcFlurry_Tests.debug.xcconfig */,
-				4724BA5A528C530FA83B380C /* Pods-RamblerMcFlurry_Tests.release.xcconfig */,
-			);
-			name = "Pods-RamblerMcFlurry_Tests";
-			path = "Target Support Files/Pods-RamblerMcFlurry_Tests";
-			sourceTree = "<group>";
-		};
-		3E1CF4907DEEE1ED4BDBCD46 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F26690E98DC2803116DF0500 /* Pods_RamblerMcFlurry_Example.framework */,
-				FC4B633E8E7EBDE8BAB303DB /* Pods_RamblerMcFlurry_Tests.framework */,
-				60064C18D2DF5ED25C415EE2 /* RamblerMcFlurry.bundle */,
-				ADB32D86B14C48FC0DF7642C /* RamblerMcFlurry.bundle */,
-				7DB937EAE5F2941875C6B55E /* RamblerMcFlurry.framework */,
-				C4B5415E6625499F56AF623B /* RamblerMcFlurry.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		45B55F790D3CB438CB62011F /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				65FC8A83129AF6CD83CCCD93 /* Pods-RamblerMcFlurry_Example */,
-				25576FB2ABAAD493DC5B70FB /* Pods-RamblerMcFlurry_Tests */,
+				E9BBEEEEFEFE4364BEDB480E /* Pods-RamblerMcFlurry_Example */,
+				FBD298B21801C772C7F83741 /* Pods-RamblerMcFlurry_Tests */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		4DC9ED345FADD004A6D4E787 /* iOS */ = {
+		73FA27A100DB087FDD2F4A2C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				DF2BA630CCBFD865B1355E55 /* Foundation.framework */,
+				716BA3D8FCE82881E87734EC /* Foundation.framework */,
+				E76C6BF92677FD325218580A /* XCTest.framework */,
 			);
 			name = iOS;
 			sourceTree = "<group>";
 		};
-		544FE16BCCAF2D2DC3CFB585 /* Classes */ = {
+		7708DF71947CC1044506640A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A69A5623C377CC27048FA791 /* ReplaceMe.m */,
+				F30D6F72EC93DB2EE13EA730 /* RamblerMcFlurry.bundle */,
+				1DCBB6C27EBDD58F4D4ABBD3 /* RamblerMcFlurry.bundle */,
+				A10E3AF2A2F6399651655416 /* libPods-RamblerMcFlurry_Example.a */,
+				40DB3F8B0BA9534F5A72182B /* libPods-RamblerMcFlurry_Example-RamblerMcFlurry.a */,
+				58B79F77D3CB66818E5F607E /* libPods-RamblerMcFlurry_Tests.a */,
+				2C97172B9DE13C1F4AFE03C7 /* libPods-RamblerMcFlurry_Tests-RamblerMcFlurry.a */,
 			);
-			path = Classes;
+			name = Products;
 			sourceTree = "<group>";
 		};
-		65FC8A83129AF6CD83CCCD93 /* Pods-RamblerMcFlurry_Example */ = {
+		80464DB65AFDD78C11035785 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				598D1C5622DDF6E7B988574A /* Info.plist */,
-				55D48CAE76C6B078F2010F5F /* Pods-RamblerMcFlurry_Example.modulemap */,
-				55E58B734805F799CFC214C6 /* Pods-RamblerMcFlurry_Example-acknowledgements.markdown */,
-				E114AD3149FE0465CAB8DA80 /* Pods-RamblerMcFlurry_Example-acknowledgements.plist */,
-				5A233606F9E9E6BFE0EAD5CC /* Pods-RamblerMcFlurry_Example-dummy.m */,
-				A918C87ED31FEF116AEE642E /* Pods-RamblerMcFlurry_Example-environment.h */,
-				32D3A4E45C933D4AB5AF8EDE /* Pods-RamblerMcFlurry_Example-frameworks.sh */,
-				29ED077EFAB023B10B1E0C7D /* Pods-RamblerMcFlurry_Example-resources.sh */,
-				71E002F9CFFE02FD103BC2B3 /* Pods-RamblerMcFlurry_Example-umbrella.h */,
-				9070C19BFED7EFA7B4F2DD8F /* Pods-RamblerMcFlurry_Example.debug.xcconfig */,
-				43E77391CFC5D430339322B6 /* Pods-RamblerMcFlurry_Example.release.xcconfig */,
+				73FA27A100DB087FDD2F4A2C /* iOS */,
 			);
-			name = "Pods-RamblerMcFlurry_Example";
-			path = "Target Support Files/Pods-RamblerMcFlurry_Example";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A2AA1AF31159B3F3CC7EC442 /* Development Pods */ = {
+		A2BEBB690271715D091BF647 = {
 			isa = PBXGroup;
 			children = (
-				B9235FD5C581973702069892 /* RamblerMcFlurry */,
+				54789B766ACFCEBAE53653B3 /* Podfile */,
+				0B220BAF4C9F1190DF7B6307 /* Development Pods */,
+				80464DB65AFDD78C11035785 /* Frameworks */,
+				7708DF71947CC1044506640A /* Products */,
+				601CAD98C8ACDA3545976F71 /* Targets Support Files */,
 			);
-			name = "Development Pods";
 			sourceTree = "<group>";
 		};
-		B9235FD5C581973702069892 /* RamblerMcFlurry */ = {
+		D07462658690B8543453E90B /* Testing */ = {
 			isa = PBXGroup;
 			children = (
-				BBDED9E90C51F0021B03CB81 /* Pod */,
-				0B8209567C206335C4BEF273 /* Support Files */,
+				36EE3ECB5162B90D7E668C58 /* TyphoonAssemblyTests */,
+			);
+			path = Testing;
+			sourceTree = "<group>";
+		};
+		D6720BBF7DA9C44908B05140 /* RamblerMcFlurry */ = {
+			isa = PBXGroup;
+			children = (
+				FB8C85C7415EE2C7A1251270 /* Pod */,
+				4222CB9A85BBB29E4F60E2D1 /* Support Files */,
 			);
 			name = RamblerMcFlurry;
 			path = ../..;
 			sourceTree = "<group>";
 		};
-		BBDED9E90C51F0021B03CB81 /* Pod */ = {
+		E9BBEEEEFEFE4364BEDB480E /* Pods-RamblerMcFlurry_Example */ = {
 			isa = PBXGroup;
 			children = (
-				544FE16BCCAF2D2DC3CFB585 /* Classes */,
+				768CC29D1109C7394250F5FE /* Pods-RamblerMcFlurry_Example-acknowledgements.markdown */,
+				0AA6A0F715DC9CA4E85384A1 /* Pods-RamblerMcFlurry_Example-acknowledgements.plist */,
+				CA4BA47F2FB242E8C64DEF72 /* Pods-RamblerMcFlurry_Example-dummy.m */,
+				9827B03AAE6D6D696AAB9036 /* Pods-RamblerMcFlurry_Example-environment.h */,
+				62F04BF7C356F9B3BFA8B567 /* Pods-RamblerMcFlurry_Example-resources.sh */,
+				AAFC5EB30F245C297AE29C28 /* Pods-RamblerMcFlurry_Example.debug.xcconfig */,
+				D21B54442FCC60D5175DED2D /* Pods-RamblerMcFlurry_Example.release.xcconfig */,
+			);
+			name = "Pods-RamblerMcFlurry_Example";
+			path = "Target Support Files/Pods-RamblerMcFlurry_Example";
+			sourceTree = "<group>";
+		};
+		FB8C85C7415EE2C7A1251270 /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				04D39568397677D66762296E /* Classes */,
 			);
 			path = Pod;
 			sourceTree = "<group>";
 		};
-		D6B757BD7165422ED92395BC = {
+		FBD298B21801C772C7F83741 /* Pods-RamblerMcFlurry_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				D48E23A0EBBA7034DF75DAC0 /* Podfile */,
-				A2AA1AF31159B3F3CC7EC442 /* Development Pods */,
-				EE19793C467D0337F3D667D4 /* Frameworks */,
-				3E1CF4907DEEE1ED4BDBCD46 /* Products */,
-				45B55F790D3CB438CB62011F /* Targets Support Files */,
+				DF8D5B2C21CD8B79A8E2BC65 /* Pods-RamblerMcFlurry_Tests-acknowledgements.markdown */,
+				27CA3377D2567AF2A663BD51 /* Pods-RamblerMcFlurry_Tests-acknowledgements.plist */,
+				29ECBB745A6703042E44589E /* Pods-RamblerMcFlurry_Tests-dummy.m */,
+				93F846C7E554BC5C8CE5E5D5 /* Pods-RamblerMcFlurry_Tests-environment.h */,
+				0BEB16AFDAA9BCFFD4687191 /* Pods-RamblerMcFlurry_Tests-resources.sh */,
+				D61574DBEC529988B20FEF6C /* Pods-RamblerMcFlurry_Tests.debug.xcconfig */,
+				3F308BCC0C08DBD6E991702B /* Pods-RamblerMcFlurry_Tests.release.xcconfig */,
 			);
-			sourceTree = "<group>";
-		};
-		EE19793C467D0337F3D667D4 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				4DC9ED345FADD004A6D4E787 /* iOS */,
-			);
-			name = Frameworks;
+			name = "Pods-RamblerMcFlurry_Tests";
+			path = "Target Support Files/Pods-RamblerMcFlurry_Tests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		24BAC640A411A6E1072A4018 /* Headers */ = {
+		4612209AE35A3B303FCC1B77 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1391B56A573820EDAFF320DB /* Pods-RamblerMcFlurry_Example-umbrella.h in Headers */,
+				89BE667245240EA42A635699 /* RamblerTyphoonAssemblyTestUtilities.h in Headers */,
+				4C0CFA277E17A72FD480F17C /* RamblerTyphoonAssemblyTests.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8EB92F51CCD43341588CDF85 /* Headers */ = {
+		9A8A3B725C061BBD2E7AC456 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CBBA2468E84385456EC39077 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BCCE924D84EFDE86235E359E /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1EAEFE104EADB4E329BF2899 /* Pods-RamblerMcFlurry_Tests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		BCD488D0B5DF610260BF8E84 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				3067F362EA0DFA3910AF5D32 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-umbrella.h in Headers */,
+				9F6E2EC1C018E4161C1ADAA3 /* RamblerTyphoonAssemblyTestUtilities.h in Headers */,
+				1251E3923B66C2A6CE72F350 /* RamblerTyphoonAssemblyTests.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		55283177950903447985E8FC /* Pods-RamblerMcFlurry_Example */ = {
+		079C8067FC9CFD70AE73933C /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EDC906FD6009E3DDA16F6CE5 /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Example" */;
+			buildConfigurationList = 3B27B95911256F36732936A1 /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry" */;
 			buildPhases = (
-				5C0FF3096B694E4CC913DD11 /* Sources */,
-				BE56678DABDE34EFA363576E /* Frameworks */,
-				24BAC640A411A6E1072A4018 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				1A43EC7709CD482AFBF22F3D /* PBXTargetDependency */,
-			);
-			name = "Pods-RamblerMcFlurry_Example";
-			productName = "Pods-RamblerMcFlurry_Example";
-			productReference = F26690E98DC2803116DF0500 /* Pods_RamblerMcFlurry_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		5FF9C5070788E3C189C5C937 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F9B009DBC8A24B6ACA7B379D /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry" */;
-			buildPhases = (
-				6C011A27015991E49811B818 /* Sources */,
-				8628A8475A91906B72F5E154 /* Frameworks */,
-				097C5E92291783F101039A12 /* Resources */,
-				BCD488D0B5DF610260BF8E84 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				FA63CCD675C7DDBCA2A356CA /* PBXTargetDependency */,
-			);
-			name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry";
-			productName = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry";
-			productReference = 7DB937EAE5F2941875C6B55E /* RamblerMcFlurry.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		805FF6F3DFC05C94FC11A725 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 29ED1D449432F53D305722AD /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry" */;
-			buildPhases = (
-				1FD055ABA68065E594DB4E23 /* Sources */,
-				D3986803652F8141BB9EC6B2 /* Frameworks */,
-				806DF47DC21E45E0763C7630 /* Resources */,
+				4768035B1FC6F22519FCC70D /* Sources */,
+				6E0E713D16F0DE570365C7F1 /* Frameworks */,
+				82474980F8659520449E7EFC /* Resources */,
 			);
 			buildRules = (
 			);
@@ -386,35 +335,51 @@
 			);
 			name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry";
 			productName = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry";
-			productReference = ADB32D86B14C48FC0DF7642C /* RamblerMcFlurry.bundle */;
+			productReference = F30D6F72EC93DB2EE13EA730 /* RamblerMcFlurry.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		B5479934A5F902E798C0649B /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry */ = {
+		70E802DC72BA66447BF7AE8F /* Pods-RamblerMcFlurry_Tests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 19C107264671711D3FF761E6 /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Example-RamblerMcFlurry" */;
+			buildConfigurationList = 1DE7C45FD72F7997FA225397 /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Tests" */;
 			buildPhases = (
-				23C22BCFEFA4DBEA7F6065EA /* Sources */,
-				E384DF1FF55A350114B58D38 /* Frameworks */,
-				F7687AED47AFA35F92B194BF /* Resources */,
-				8EB92F51CCD43341588CDF85 /* Headers */,
+				6CE5B21E7696CECFB2D3A296 /* Sources */,
+				45B406C87F2FA800DFF64067 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				0B8E2143223B519DFD5F0221 /* PBXTargetDependency */,
+				50CA6CF81AAA185DE9C37B39 /* PBXTargetDependency */,
 			);
-			name = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry";
-			productName = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry";
-			productReference = C4B5415E6625499F56AF623B /* RamblerMcFlurry.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "Pods-RamblerMcFlurry_Tests";
+			productName = "Pods-RamblerMcFlurry_Tests";
+			productReference = 58B79F77D3CB66818E5F607E /* libPods-RamblerMcFlurry_Tests.a */;
+			productType = "com.apple.product-type.library.static";
 		};
-		B7AD7897CD64B31666EE2C70 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-RamblerMcFlurry */ = {
+		962F3FC9FAE6A42CA20AC84A /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 89008F1B3F28179D8FA7F594 /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-RamblerMcFlurry" */;
+			buildConfigurationList = FA7B2693F867A3B4F46C0AEE /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry" */;
 			buildPhases = (
-				8096F232BED9544C1E9D665A /* Sources */,
-				EC7E009051253B4309D8BAD5 /* Frameworks */,
-				AEB35174BEF8981E53713137 /* Resources */,
+				F166598B1B10EB0FE8E4626E /* Sources */,
+				126AF7FC155603F410835ACC /* Frameworks */,
+				4612209AE35A3B303FCC1B77 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				190385EA06EC03BC090DC388 /* PBXTargetDependency */,
+			);
+			name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry";
+			productName = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry";
+			productReference = 2C97172B9DE13C1F4AFE03C7 /* libPods-RamblerMcFlurry_Tests-RamblerMcFlurry.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		DDBC3EDBE098596156432D34 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-RamblerMcFlurry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C4A7CD4A439CE7C1BF9D8CC /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-RamblerMcFlurry" */;
+			buildPhases = (
+				9A4144C04C19F57FD4B915C6 /* Sources */,
+				7AD8CCD2E4C013A42CBA4DE9 /* Frameworks */,
+				C88FE968E7F4D96575D44E49 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -422,174 +387,176 @@
 			);
 			name = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-RamblerMcFlurry";
 			productName = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-RamblerMcFlurry";
-			productReference = 60064C18D2DF5ED25C415EE2 /* RamblerMcFlurry.bundle */;
+			productReference = 1DCBB6C27EBDD58F4D4ABBD3 /* RamblerMcFlurry.bundle */;
 			productType = "com.apple.product-type.bundle";
 		};
-		C5DC2E9723E89E95DCAD1342 /* Pods-RamblerMcFlurry_Tests */ = {
+		F11A8B9508F568771A6C07F0 /* Pods-RamblerMcFlurry_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0B3B5FF97409D05D2C02136D /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Tests" */;
+			buildConfigurationList = 2F14DAC1A5254A09ADC27A98 /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Example" */;
 			buildPhases = (
-				3A838A32BC8878D5733C7149 /* Sources */,
-				15558D4BA262169A397DAF27 /* Frameworks */,
-				BCCE924D84EFDE86235E359E /* Headers */,
+				26A1FA71F09CF44892309806 /* Sources */,
+				61F48D50477BFBA77659D268 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8C1A54962B7E7BE78C812F7D /* PBXTargetDependency */,
+				44962DCE71D56B2FDC5B9599 /* PBXTargetDependency */,
 			);
-			name = "Pods-RamblerMcFlurry_Tests";
-			productName = "Pods-RamblerMcFlurry_Tests";
-			productReference = FC4B633E8E7EBDE8BAB303DB /* Pods_RamblerMcFlurry_Tests.framework */;
-			productType = "com.apple.product-type.framework";
+			name = "Pods-RamblerMcFlurry_Example";
+			productName = "Pods-RamblerMcFlurry_Example";
+			productReference = A10E3AF2A2F6399651655416 /* libPods-RamblerMcFlurry_Example.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		F5CFF523D47F916E9A0EF1CB /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 46D927306624BBA337F86535 /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Example-RamblerMcFlurry" */;
+			buildPhases = (
+				6133EA2D06D5AF84DA4D676D /* Sources */,
+				A941019A9B6FEF6AB6280652 /* Frameworks */,
+				9A8A3B725C061BBD2E7AC456 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				38BF89DA11CB3E633BCFF826 /* PBXTargetDependency */,
+			);
+			name = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry";
+			productName = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry";
+			productReference = 40DB3F8B0BA9534F5A72182B /* libPods-RamblerMcFlurry_Example-RamblerMcFlurry.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		AB2310AB3F28D71647C2D1B0 /* Project object */ = {
+		87C31749EFD1B426B2E38269 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
 			};
-			buildConfigurationList = 945FE7BE9FBACE1B8D1CF86D /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 2C55B98A893AF08FCC07C85F /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 			);
-			mainGroup = D6B757BD7165422ED92395BC;
-			productRefGroup = 3E1CF4907DEEE1ED4BDBCD46 /* Products */;
+			mainGroup = A2BEBB690271715D091BF647;
+			productRefGroup = 7708DF71947CC1044506640A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				55283177950903447985E8FC /* Pods-RamblerMcFlurry_Example */,
-				B5479934A5F902E798C0649B /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry */,
-				B7AD7897CD64B31666EE2C70 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-RamblerMcFlurry */,
-				C5DC2E9723E89E95DCAD1342 /* Pods-RamblerMcFlurry_Tests */,
-				5FF9C5070788E3C189C5C937 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry */,
-				805FF6F3DFC05C94FC11A725 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry */,
+				F11A8B9508F568771A6C07F0 /* Pods-RamblerMcFlurry_Example */,
+				F5CFF523D47F916E9A0EF1CB /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry */,
+				DDBC3EDBE098596156432D34 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-RamblerMcFlurry */,
+				70E802DC72BA66447BF7AE8F /* Pods-RamblerMcFlurry_Tests */,
+				962F3FC9FAE6A42CA20AC84A /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry */,
+				079C8067FC9CFD70AE73933C /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		097C5E92291783F101039A12 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				FA35B5D125EFBE149594BD6A /* RamblerMcFlurry.bundle in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		806DF47DC21E45E0763C7630 /* Resources */ = {
+		82474980F8659520449E7EFC /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AEB35174BEF8981E53713137 /* Resources */ = {
+		C88FE968E7F4D96575D44E49 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		F7687AED47AFA35F92B194BF /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				EFFB34C13E9795741EA5066E /* RamblerMcFlurry.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1FD055ABA68065E594DB4E23 /* Sources */ = {
+		26A1FA71F09CF44892309806 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0597903E2233B10B9062D66B /* Pods-RamblerMcFlurry_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4768035B1FC6F22519FCC70D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		23C22BCFEFA4DBEA7F6065EA /* Sources */ = {
+		6133EA2D06D5AF84DA4D676D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				302DABAFDCA74F86EE6BD726 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-dummy.m in Sources */,
-				459AEAC5AE9916BAAEE8580B /* ReplaceMe.m in Sources */,
+				FE68A597F5AAAC979D1F65BF /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-dummy.m in Sources */,
+				D65158A14AEB5F5131F45306 /* RamblerTyphoonAssemblyTestUtilities.m in Sources */,
+				A092EB49595DFF1A4D2C4F39 /* RamblerTyphoonAssemblyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		3A838A32BC8878D5733C7149 /* Sources */ = {
+		6CE5B21E7696CECFB2D3A296 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E44EE929E59B70932960E55A /* Pods-RamblerMcFlurry_Tests-dummy.m in Sources */,
+				8247AC5E5DF98C98F83BA3EB /* Pods-RamblerMcFlurry_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C0FF3096B694E4CC913DD11 /* Sources */ = {
+		9A4144C04C19F57FD4B915C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A8ABF62D1A6D1F6843E0C58B /* Pods-RamblerMcFlurry_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6C011A27015991E49811B818 /* Sources */ = {
+		F166598B1B10EB0FE8E4626E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EE104B8CEF7EB00F56F7264 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m in Sources */,
-				68C294B77ABE6AD2DA6D4D76 /* ReplaceMe.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8096F232BED9544C1E9D665A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				AF9E2A0535CC869B033480F7 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m in Sources */,
+				2EFF3A2DA229E54084ABAD46 /* RamblerTyphoonAssemblyTestUtilities.m in Sources */,
+				62ABF296B85E91CA9ADC1475 /* RamblerTyphoonAssemblyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		0B8E2143223B519DFD5F0221 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-RamblerMcFlurry";
-			target = B7AD7897CD64B31666EE2C70 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-RamblerMcFlurry */;
-			targetProxy = EBFD8F67C6EE2375817340C8 /* PBXContainerItemProxy */;
-		};
-		1A43EC7709CD482AFBF22F3D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry";
-			target = B5479934A5F902E798C0649B /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry */;
-			targetProxy = C59058EEF60EF2DC86DE24C6 /* PBXContainerItemProxy */;
-		};
-		8C1A54962B7E7BE78C812F7D /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry";
-			target = 5FF9C5070788E3C189C5C937 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry */;
-			targetProxy = 24699D96CE30DE645ABFFFC7 /* PBXContainerItemProxy */;
-		};
-		FA63CCD675C7DDBCA2A356CA /* PBXTargetDependency */ = {
+		190385EA06EC03BC090DC388 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry";
-			target = 805FF6F3DFC05C94FC11A725 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry */;
-			targetProxy = 49E0E46A5EDA4FBDA98D8716 /* PBXContainerItemProxy */;
+			target = 079C8067FC9CFD70AE73933C /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry */;
+			targetProxy = 75E5EBD1E8B6C112116268D5 /* PBXContainerItemProxy */;
+		};
+		38BF89DA11CB3E633BCFF826 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-RamblerMcFlurry";
+			target = DDBC3EDBE098596156432D34 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-RamblerMcFlurry */;
+			targetProxy = 8AC14F1788AB8627BB0C39B6 /* PBXContainerItemProxy */;
+		};
+		44962DCE71D56B2FDC5B9599 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry";
+			target = F5CFF523D47F916E9A0EF1CB /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry */;
+			targetProxy = 379842F69BAFBA20B7C80EC3 /* PBXContainerItemProxy */;
+		};
+		50CA6CF81AAA185DE9C37B39 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry";
+			target = 962F3FC9FAE6A42CA20AC84A /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry */;
+			targetProxy = EB684C89780E0F30AE405F8F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		2AA0D3B6C6BBB743BD142852 /* Release */ = {
+		099C3C63BA76C2976585E16B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDB6E6779A03BB74767C5B17 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig */;
+			baseConfigurationReference = E1EC1C81CC05A27DA1EDA09D /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-Private.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-RamblerMcFlurry_Tests";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = RamblerMcFlurry;
 				SDKROOT = iphoneos;
@@ -598,33 +565,39 @@
 			};
 			name = Release;
 		};
-		506B3C5B4C86EB76C418ECE0 /* Debug */ = {
+		120505B9401CCCD00C716232 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDB6E6779A03BB74767C5B17 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig */;
+			baseConfigurationReference = 3F308BCC0C08DBD6E991702B /* Pods-RamblerMcFlurry_Tests.release.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-RamblerMcFlurry_Tests";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = RamblerMcFlurry;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		1CB27CE803A1EE75A682FA4D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D61574DBEC529988B20FEF6C /* Pods-RamblerMcFlurry_Tests.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
 			};
 			name = Debug;
 		};
-		5D195967D23E0960DF98D1F1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA8CA3FADA1002B3B21D0452 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-Private.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-RamblerMcFlurry_Example";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				PRODUCT_NAME = RamblerMcFlurry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		5D8EC107A3F24ACF13274D8E /* Debug */ = {
+		37CB0F2FE798FF39F2D93450 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -663,63 +636,111 @@
 			};
 			name = Debug;
 		};
-		A333ABCC072B96327E32776D /* Debug */ = {
+		47000DE1343B6FA370E9D424 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA8CA3FADA1002B3B21D0452 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-Private.xcconfig */;
+			baseConfigurationReference = AAFC5EB30F245C297AE29C28 /* Pods-RamblerMcFlurry_Example.debug.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-RamblerMcFlurry_Example-RamblerMcFlurry/Pods-RamblerMcFlurry_Example-RamblerMcFlurry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-RamblerMcFlurry_Example-RamblerMcFlurry/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-RamblerMcFlurry_Example-RamblerMcFlurry/Pods-RamblerMcFlurry_Example-RamblerMcFlurry.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = RamblerMcFlurry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		A635CED993FC4430C109A684 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 43E77391CFC5D430339322B6 /* Pods-RamblerMcFlurry_Example.release.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RamblerMcFlurry_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-RamblerMcFlurry_Example/Pods-RamblerMcFlurry_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_RamblerMcFlurry_Example;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		515E8D70556AFA0DF0D26104 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C74E052972842F77B4031F5A /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RamblerMcFlurry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
 			};
 			name = Release;
 		};
-		AFE22EC0CB1C0E3B16DBAF40 /* Release */ = {
+		5D7AA8725621B3C08D50F563 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1EC1C81CC05A27DA1EDA09D /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RamblerMcFlurry_Example-RamblerMcFlurry/Pods-RamblerMcFlurry_Example-RamblerMcFlurry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		75A6EE18F8E0B27A02F02AAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1EC1C81CC05A27DA1EDA09D /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RamblerMcFlurry_Example-RamblerMcFlurry/Pods-RamblerMcFlurry_Example-RamblerMcFlurry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		83EB92C7DEBA5BF90A074EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C74E052972842F77B4031F5A /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		9393266BBA040FCEF2FA483E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C74E052972842F77B4031F5A /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		BC8A183C0A6E9F0C34054DD8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1EC1C81CC05A27DA1EDA09D /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-Private.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = RamblerMcFlurry;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		DF41D819B6F9414CD52C07D7 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -753,254 +774,101 @@
 			};
 			name = Release;
 		};
-		B3238DBF9796167183CC53A1 /* Release */ = {
+		ED0817B06D80F26C6F6D961B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 4724BA5A528C530FA83B380C /* Pods-RamblerMcFlurry_Tests.release.xcconfig */;
+			baseConfigurationReference = D21B54442FCC60D5175DED2D /* Pods-RamblerMcFlurry_Example.release.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RamblerMcFlurry_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-RamblerMcFlurry_Tests/Pods-RamblerMcFlurry_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_RamblerMcFlurry_Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
-		BB15F559487DDFA7A3BCF96B /* Release */ = {
+		FB6FDB22DADE54C21383DFD6 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA8CA3FADA1002B3B21D0452 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-Private.xcconfig */;
+			baseConfigurationReference = C74E052972842F77B4031F5A /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig */;
 			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/Pods-RamblerMcFlurry_Example";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				PRODUCT_NAME = RamblerMcFlurry;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				WRAPPER_EXTENSION = bundle;
 			};
-			name = Release;
-		};
-		D56CF1BCB6FAAE742291F750 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDB6E6779A03BB74767C5B17 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = RamblerMcFlurry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		D9B58E89DB600252C2957802 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = EDB6E6779A03BB74767C5B17 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry/Pods-RamblerMcFlurry_Tests-RamblerMcFlurry.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = RamblerMcFlurry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		E2BB1384537853E38D70FCD7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = FA8CA3FADA1002B3B21D0452 /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry-Private.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Pods-RamblerMcFlurry_Example-RamblerMcFlurry/Pods-RamblerMcFlurry_Example-RamblerMcFlurry-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/Pods-RamblerMcFlurry_Example-RamblerMcFlurry/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-RamblerMcFlurry_Example-RamblerMcFlurry/Pods-RamblerMcFlurry_Example-RamblerMcFlurry.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = RamblerMcFlurry;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		EC12F7DDC0251D04CEC33328 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29834468BC11197BD3661453 /* Pods-RamblerMcFlurry_Tests.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RamblerMcFlurry_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-RamblerMcFlurry_Tests/Pods-RamblerMcFlurry_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_RamblerMcFlurry_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		EED61338CC05E7D382B5EB88 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9070C19BFED7EFA7B4F2DD8F /* Pods-RamblerMcFlurry_Example.debug.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-RamblerMcFlurry_Example/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/Pods-RamblerMcFlurry_Example/Pods-RamblerMcFlurry_Example.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_NAME = Pods_RamblerMcFlurry_Example;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
 			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0B3B5FF97409D05D2C02136D /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Tests" */ = {
+		1DE7C45FD72F7997FA225397 /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Tests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EC12F7DDC0251D04CEC33328 /* Debug */,
-				B3238DBF9796167183CC53A1 /* Release */,
+				1CB27CE803A1EE75A682FA4D /* Debug */,
+				120505B9401CCCD00C716232 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		19C107264671711D3FF761E6 /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Example-RamblerMcFlurry" */ = {
+		2C55B98A893AF08FCC07C85F /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A333ABCC072B96327E32776D /* Debug */,
-				E2BB1384537853E38D70FCD7 /* Release */,
+				37CB0F2FE798FF39F2D93450 /* Debug */,
+				DF41D819B6F9414CD52C07D7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		29ED1D449432F53D305722AD /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry" */ = {
+		2F14DAC1A5254A09ADC27A98 /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				506B3C5B4C86EB76C418ECE0 /* Debug */,
-				2AA0D3B6C6BBB743BD142852 /* Release */,
+				47000DE1343B6FA370E9D424 /* Debug */,
+				ED0817B06D80F26C6F6D961B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		89008F1B3F28179D8FA7F594 /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-RamblerMcFlurry" */ = {
+		3B27B95911256F36732936A1 /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D195967D23E0960DF98D1F1 /* Debug */,
-				BB15F559487DDFA7A3BCF96B /* Release */,
+				FB6FDB22DADE54C21383DFD6 /* Debug */,
+				515E8D70556AFA0DF0D26104 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		945FE7BE9FBACE1B8D1CF86D /* Build configuration list for PBXProject "Pods" */ = {
+		46D927306624BBA337F86535 /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Example-RamblerMcFlurry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D8EC107A3F24ACF13274D8E /* Debug */,
-				AFE22EC0CB1C0E3B16DBAF40 /* Release */,
+				5D7AA8725621B3C08D50F563 /* Debug */,
+				75A6EE18F8E0B27A02F02AAF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EDC906FD6009E3DDA16F6CE5 /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Example" */ = {
+		9C4A7CD4A439CE7C1BF9D8CC /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Example-RamblerMcFlurry-RamblerMcFlurry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EED61338CC05E7D382B5EB88 /* Debug */,
-				A635CED993FC4430C109A684 /* Release */,
+				BC8A183C0A6E9F0C34054DD8 /* Debug */,
+				099C3C63BA76C2976585E16B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F9B009DBC8A24B6ACA7B379D /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry" */ = {
+		FA7B2693F867A3B4F46C0AEE /* Build configuration list for PBXNativeTarget "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				D9B58E89DB600252C2957802 /* Debug */,
-				D56CF1BCB6FAAE742291F750 /* Release */,
+				83EB92C7DEBA5BF90A074EFA /* Debug */,
+				9393266BBA040FCEF2FA483E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = AB2310AB3F28D71647C2D1B0 /* Project object */;
+	rootObject = 87C31749EFD1B426B2E38269 /* Project object */;
 }
