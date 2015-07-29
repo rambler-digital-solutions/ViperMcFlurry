@@ -8,6 +8,8 @@
 
 #import <XCTest/XCTest.h>
 
+#define RamblerSelector(x) NSStringFromSelector(@selector(x))
+
 /**
  @author Andrey Rezanov
  

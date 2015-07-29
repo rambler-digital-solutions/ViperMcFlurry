@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		12117A9A3AF93C484E5108BB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD36FC03A45A87A4597C0C7 /* libPods.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -19,10 +20,13 @@
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6003F5BC195388D20070C39A /* Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5BB195388D20070C39A /* Tests.m */; };
 		6462401C59D915477A58338F /* libPods-RamblerMcFlurry_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A1A78426D01B0E564183E /* libPods-RamblerMcFlurry_Example.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9E273F1976C734A3C33D8517 /* libPods-RamblerMcFlurry_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E158751BA67C78C5D23E1E12 /* libPods-RamblerMcFlurry_Tests.a */; };
+		9FFF3D521B68C4B800BDD3F2 /* RamblerDeveloperAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF3D511B68C4B800BDD3F2 /* RamblerDeveloperAssembly.m */; };
+		9FFF3D571B68C4F200BDD3F2 /* RamblerDeveloper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF3D561B68C4F200BDD3F2 /* RamblerDeveloper.m */; };
+		9FFF3D5A1B68C53400BDD3F2 /* RamblerDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF3D591B68C53400BDD3F2 /* RamblerDevice.m */; };
+		9FFF3D5F1B68C63A00BDD3F2 /* RamblerDeveloperAssemblyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF3D5E1B68C63A00BDD3F2 /* RamblerDeveloperAssemblyTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,12 +60,19 @@
 		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		96F30E1F9FBD8F1AF02466B7 /* RamblerMcFlurry.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RamblerMcFlurry.podspec; path = ../RamblerMcFlurry.podspec; sourceTree = "<group>"; };
 		9DB79ED922F73E404786FD30 /* Pods-RamblerMcFlurry_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RamblerMcFlurry_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RamblerMcFlurry_Tests/Pods-RamblerMcFlurry_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		9FFF3D501B68C4B800BDD3F2 /* RamblerDeveloperAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerDeveloperAssembly.h; sourceTree = "<group>"; };
+		9FFF3D511B68C4B800BDD3F2 /* RamblerDeveloperAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RamblerDeveloperAssembly.m; sourceTree = "<group>"; };
+		9FFF3D551B68C4F200BDD3F2 /* RamblerDeveloper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerDeveloper.h; sourceTree = "<group>"; };
+		9FFF3D561B68C4F200BDD3F2 /* RamblerDeveloper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RamblerDeveloper.m; sourceTree = "<group>"; };
+		9FFF3D581B68C53400BDD3F2 /* RamblerDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerDevice.h; sourceTree = "<group>"; };
+		9FFF3D591B68C53400BDD3F2 /* RamblerDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RamblerDevice.m; sourceTree = "<group>"; };
+		9FFF3D5E1B68C63A00BDD3F2 /* RamblerDeveloperAssemblyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RamblerDeveloperAssemblyTests.m; sourceTree = "<group>"; };
 		B75A1A78426D01B0E564183E /* libPods-RamblerMcFlurry_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RamblerMcFlurry_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BCD36FC03A45A87A4597C0C7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFAB36AAE88EAE4784F1616E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		E158751BA67C78C5D23E1E12 /* libPods-RamblerMcFlurry_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-RamblerMcFlurry_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BF77682AD97D2B0DE14324 /* Pods-RamblerMcFlurry_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RamblerMcFlurry_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RamblerMcFlurry_Tests/Pods-RamblerMcFlurry_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +87,7 @@
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
 				6462401C59D915477A58338F /* libPods-RamblerMcFlurry_Example.a in Frameworks */,
+				12117A9A3AF93C484E5108BB /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,6 +146,7 @@
 				6003F5AF195388D20070C39A /* XCTest.framework */,
 				B75A1A78426D01B0E564183E /* libPods-RamblerMcFlurry_Example.a */,
 				E158751BA67C78C5D23E1E12 /* libPods-RamblerMcFlurry_Tests.a */,
+				BCD36FC03A45A87A4597C0C7 /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -141,6 +154,7 @@
 		6003F593195388D20070C39A /* Example for RamblerMcFlurry */ = {
 			isa = PBXGroup;
 			children = (
+				9FFF3D531B68C4D100BDD3F2 /* Testing */,
 				6003F59C195388D20070C39A /* RamblerAppDelegate.h */,
 				6003F59D195388D20070C39A /* RamblerAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -167,8 +181,8 @@
 		6003F5B5195388D20070C39A /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				6003F5BB195388D20070C39A /* Tests.m */,
 				6003F5B6195388D20070C39A /* Supporting Files */,
+				9FFF3D5E1B68C63A00BDD3F2 /* RamblerDeveloperAssemblyTests.m */,
 			);
 			path = Tests;
 			sourceTree = "<group>";
@@ -191,6 +205,27 @@
 				29585292F60D04C0C6BFE358 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		9FFF3D531B68C4D100BDD3F2 /* Testing */ = {
+			isa = PBXGroup;
+			children = (
+				9FFF3D541B68C4D700BDD3F2 /* TyphoonAssemblyTests */,
+			);
+			name = Testing;
+			sourceTree = "<group>";
+		};
+		9FFF3D541B68C4D700BDD3F2 /* TyphoonAssemblyTests */ = {
+			isa = PBXGroup;
+			children = (
+				9FFF3D501B68C4B800BDD3F2 /* RamblerDeveloperAssembly.h */,
+				9FFF3D511B68C4B800BDD3F2 /* RamblerDeveloperAssembly.m */,
+				9FFF3D551B68C4F200BDD3F2 /* RamblerDeveloper.h */,
+				9FFF3D561B68C4F200BDD3F2 /* RamblerDeveloper.m */,
+				9FFF3D581B68C53400BDD3F2 /* RamblerDevice.h */,
+				9FFF3D591B68C53400BDD3F2 /* RamblerDevice.m */,
+			);
+			name = TyphoonAssemblyTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,8 +393,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FFF3D521B68C4B800BDD3F2 /* RamblerDeveloperAssembly.m in Sources */,
 				6003F59E195388D20070C39A /* RamblerAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* RamblerViewController.m in Sources */,
+				9FFF3D5A1B68C53400BDD3F2 /* RamblerDevice.m in Sources */,
+				9FFF3D571B68C4F200BDD3F2 /* RamblerDeveloper.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -368,7 +406,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5BC195388D20070C39A /* Tests.m in Sources */,
+				9FFF3D5F1B68C63A00BDD3F2 /* RamblerDeveloperAssemblyTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -483,7 +521,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_FRAMEWORK_BUILD_PATH\"",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RamblerMcFlurry/RamblerMcFlurry-Prefix.pch";
@@ -503,7 +540,6 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_FRAMEWORK_BUILD_PATH\"",
-					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RamblerMcFlurry/RamblerMcFlurry-Prefix.pch";
