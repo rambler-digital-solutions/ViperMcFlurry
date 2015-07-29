@@ -1,6 +1,6 @@
 {
   "name": "RamblerMcFlurry",
-  "version": "0.1.0",
+  "version": "0.0.1",
   "summary": "Набор полезных хелперов, используемых в различных проектах Rambler&Co",
   "homepage": "https://gitlab.rambler.ru/cocoapods/RamblerMcFlurry",
   "license": "MIT",
@@ -9,13 +9,18 @@
   },
   "source": {
     "git": "https://gitlab.rambler.ru/cocoapods/RamblerMcFlurry.git",
-    "tag": "0.1.0"
+    "tag": "0.0.1"
   },
+  "social_media_url": "https://twitter.com/igrekde",
   "platforms": {
     "ios": "7.0"
   },
   "requires_arc": true,
-  "source_files": "Pod/Classes/**/*",
+  "default_subspecs": [
+    "Core",
+    "Interface",
+    "Testing"
+  ],
   "resource_bundles": {
     "RamblerMcFlurry": [
       "Pod/Assets/*.png"
@@ -24,11 +29,11 @@
   "subspecs": [
     {
       "name": "Core",
-      "source_files": "Classes/Core"
+      "source_files": "Pod/Classes/Core"
     },
     {
       "name": "Interface",
-      "source_files": "Classes/Interface",
+      "source_files": "Pod/Classes/Interface",
       "dependencies": {
         "RamblerMcFlurry/Core": [
 
@@ -37,19 +42,16 @@
     },
     {
       "name": "Testing",
-      "source_files": "Classes/Testing",
+      "source_files": [
+        "Pod/Classes/Testing.h",
+        "Pod/Classes/Testing"
+      ],
       "dependencies": {
         "RamblerMcFlurry/Core": [
 
         ]
       },
-      "frameworks": "XCTest",
-      "subspecs": [
-        {
-          "name": "TyphoonAssemblyTests",
-          "source_files": "Classes/Testing/TyphoonAssemblyTests"
-        }
-      ]
+      "frameworks": "XCTest"
     }
   ]
 }

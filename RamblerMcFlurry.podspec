@@ -13,37 +13,25 @@ Pod::Spec.new do |s|
   s.summary          = "Набор полезных хелперов, используемых в различных проектах Rambler&Co"
   s.homepage         = "https://gitlab.rambler.ru/cocoapods/RamblerMcFlurry"
   s.license          = 'MIT'
-  s.author           = { "Egor Tolstoy" => "e.tolstoy@rambler-co.ru" }
+  s.authors           = { "Egor Tolstoy" => "e.tolstoy@rambler-co.ru", "Irina Dyagileva" => "i.dyagileva@rambler-co.ru", "Andrey Rezanov" => "a.rezanov@rambler-co.ru" }
   s.source           = { :git => "https://gitlab.rambler.ru/cocoapods/RamblerMcFlurry.git", :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/igrekde'
+  s.social_media_url = 'https://twitter.com/igrekde'
   s.platform     = :ios, '7.0'
   s.requires_arc = true
-
-  s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'RamblerMcFlurry' => ['Pod/Assets/*.png']
-  }
+  s.default_subspecs = ['Core', 'Interface', 'Testing']
 
   s.subspec 'Core' do |cs|
-    cs.source_files = "Classes/Core"
+    cs.source_files = "Pod/Classes/Core"
   end
 
   s.subspec 'Interface' do |ui|
-    ui.source_files = "Classes/Interface"
+    ui.source_files = "Pod/Classes/Interface"
     ui.dependency 'RamblerMcFlurry/Core'
   end
 
   s.subspec 'Testing' do |ts|
-    ts.source_files = "Classes/Testing"
+    ts.source_files = "Pod/Classes/Testing.h", "Pod/Classes/Testing"
     ts.dependency 'RamblerMcFlurry/Core'
     ts.framework = 'XCTest'
-
-    ts.subspec 'TyphoonAssemblyTests' do |tat|
-        tat.source_files = "Classes/Testing/TyphoonAssemblyTests"
-    end
   end
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

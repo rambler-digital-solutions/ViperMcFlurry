@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B46E09D102B49DD92D94D1E6"
+               BlueprintIdentifier = "B0602929E5AB82599E5E4FA9"
                BuildableName = "RamblerMcFlurry.bundle"
                BlueprintName = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-RamblerMcFlurry"
                ReferencedContainer = "container:Pods.xcodeproj">

@@ -6,7 +6,7 @@
 //  Copyright © 2015 Egor Tolstoy. All rights reserved.
 //
 
-#import "RamblerTyphoonAssemblyTests.h"
+#import <RamblerMcFlurry/Testing.h>
 
 #import "RamblerDeveloperAssembly.h"
 #import "RamblerDeveloper.h"
