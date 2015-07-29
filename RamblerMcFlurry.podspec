@@ -9,19 +9,19 @@ Pod::Spec.new do |s|
   s.social_media_url = 'https://twitter.com/igrekde'
   s.platform     = :ios, '7.0'
   s.requires_arc = true
-  s.default_subspecs = ['Core', 'Interface', 'Testing']
+  s.header_mappings_dir = 'Code'
 
   s.subspec 'Core' do |cs|
-    cs.source_files = "Pod/Classes/Core"
+    cs.source_files = "Code/Core"
   end
 
   s.subspec 'Interface' do |ui|
-    ui.source_files = "Pod/Classes/Interface"
+    ui.source_files = "Code/Interface.h", "Code/Interface/**/*.{h,m}"
     ui.dependency 'RamblerMcFlurry/Core'
   end
 
   s.subspec 'Testing' do |ts|
-    ts.source_files = "Pod/Classes/Testing.h", "Pod/Classes/Testing"
+    ts.source_files = "Code/Testing.h", "Code/Testing/**/*.{h,m}"
     ts.dependency 'RamblerMcFlurry/Core'
     ts.framework = 'XCTest'
   end
