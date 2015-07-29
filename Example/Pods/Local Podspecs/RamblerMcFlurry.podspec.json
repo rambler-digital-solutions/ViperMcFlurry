@@ -1,15 +1,14 @@
 {
   "name": "RamblerMcFlurry",
   "version": "0.1.0",
-  "summary": "A short description of RamblerMcFlurry.",
-  "description": "                       An optional longer description of RamblerMcFlurry\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
-  "homepage": "https://github.com/<GITHUB_USERNAME>/RamblerMcFlurry",
+  "summary": "Набор полезных хелперов, используемых в различных проектах Rambler&Co",
+  "homepage": "https://gitlab.rambler.ru/cocoapods/RamblerMcFlurry",
   "license": "MIT",
   "authors": {
     "Egor Tolstoy": "e.tolstoy@rambler-co.ru"
   },
   "source": {
-    "git": "https://github.com/<GITHUB_USERNAME>/RamblerMcFlurry.git",
+    "git": "https://gitlab.rambler.ru/cocoapods/RamblerMcFlurry.git",
     "tag": "0.1.0"
   },
   "platforms": {
@@ -21,5 +20,36 @@
     "RamblerMcFlurry": [
       "Pod/Assets/*.png"
     ]
-  }
+  },
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "Classes/Core"
+    },
+    {
+      "name": "Interface",
+      "source_files": "Classes/Interface",
+      "dependencies": {
+        "RamblerMcFlurry/Core": [
+
+        ]
+      }
+    },
+    {
+      "name": "Testing",
+      "source_files": "Classes/Testing",
+      "dependencies": {
+        "RamblerMcFlurry/Core": [
+
+        ]
+      },
+      "frameworks": "XCTest",
+      "subspecs": [
+        {
+          "name": "TyphoonAssemblyTests",
+          "source_files": "Classes/Testing/TyphoonAssemblyTests"
+        }
+      ]
+    }
+  ]
 }

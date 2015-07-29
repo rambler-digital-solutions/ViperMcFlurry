@@ -14,8 +14,8 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B5479934A5F902E798C0649B"
-               BuildableName = "RamblerMcFlurry.framework"
+               BlueprintIdentifier = "86FCAB1D16E624A8C55D71B5"
+               BuildableName = "libPods-RamblerMcFlurry_Example-RamblerMcFlurry.a"
                BlueprintName = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>

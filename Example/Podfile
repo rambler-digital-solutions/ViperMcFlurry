@@ -1,12 +1,11 @@
 source 'https://github.com/CocoaPods/Specs.git'
-use_frameworks!
 
 target 'RamblerMcFlurry_Example', :exclusive => true do
   pod "RamblerMcFlurry", :path => "../"
+  pod "Typhoon", '~> 3.2.x'
 end
 
 target 'RamblerMcFlurry_Tests', :exclusive => true do
   pod "RamblerMcFlurry", :path => "../"
-
-  
+  pod "Typhoon", '~> 3.2.x'
 end
