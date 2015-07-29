@@ -1,0 +1,25 @@
+{
+  "name": "RamblerMcFlurry",
+  "version": "0.1.0",
+  "summary": "A short description of RamblerMcFlurry.",
+  "description": "                       An optional longer description of RamblerMcFlurry\n\n                       * Markdown format.\n                       * Don't worry about the indent, we strip it!\n",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/RamblerMcFlurry",
+  "license": "MIT",
+  "authors": {
+    "Egor Tolstoy": "e.tolstoy@rambler-co.ru"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/RamblerMcFlurry.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "7.0"
+  },
+  "requires_arc": true,
+  "source_files": "Pod/Classes/**/*",
+  "resource_bundles": {
+    "RamblerMcFlurry": [
+      "Pod/Assets/*.png"
+    ]
+  }
+}
