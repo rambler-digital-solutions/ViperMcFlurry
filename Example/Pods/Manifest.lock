@@ -1,12 +1,15 @@
 PODS:
-  - RamblerMcFlurry (0.0.1):
-    - RamblerMcFlurry/Core (= 0.0.1)
-    - RamblerMcFlurry/Interface (= 0.0.1)
-    - RamblerMcFlurry/Testing (= 0.0.1)
-  - RamblerMcFlurry/Core (0.0.1)
-  - RamblerMcFlurry/Interface (0.0.1):
+  - RamblerMcFlurry (0.0.3):
+    - RamblerMcFlurry/Core (= 0.0.3)
+    - RamblerMcFlurry/Interface (= 0.0.3)
+    - RamblerMcFlurry/Testing (= 0.0.3)
+    - RamblerMcFlurry/Viper (= 0.0.3)
+  - RamblerMcFlurry/Core (0.0.3)
+  - RamblerMcFlurry/Interface (0.0.3):
     - RamblerMcFlurry/Core
-  - RamblerMcFlurry/Testing (0.0.1):
+  - RamblerMcFlurry/Testing (0.0.3):
+    - RamblerMcFlurry/Core
+  - RamblerMcFlurry/Viper (0.0.3):
     - RamblerMcFlurry/Core
   - Typhoon (3.2.4):
     - Typhoon/no-arc (= 3.2.4)
@@ -19,10 +22,10 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   RamblerMcFlurry:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
-  RamblerMcFlurry: b94a310f9f39635a8e7205d908b9d564e4513c2c
+  RamblerMcFlurry: 935279b454d46385de2050ea733abd8a933e6c9b
   Typhoon: 2726774a801efa98211012156c88207a238c92aa
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.2

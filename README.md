@@ -18,6 +18,7 @@ pod "RamblerMcFlurry"
 ## Author
 
 Egor Tolstoy, e.tolstoy@rambler-co.ru
+Andrey Zarembo-Godzyatsky, a.zarembo-godzyatsky@rambler-co.ru
 
 ## License
 

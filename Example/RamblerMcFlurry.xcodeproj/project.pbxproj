@@ -7,7 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		12117A9A3AF93C484E5108BB /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BCD36FC03A45A87A4597C0C7 /* libPods.a */; };
+		162C73251B789D6700226B47 /* RamblerModuleAlphaInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C73171B789D6700226B47 /* RamblerModuleAlphaInteractor.m */; };
+		162C73261B789D6700226B47 /* RamblerModuleAlphaModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C731B1B789D6700226B47 /* RamblerModuleAlphaModuleAssembly.m */; };
+		162C73271B789D6700226B47 /* RamblerModuleAlphaPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C731D1B789D6700226B47 /* RamblerModuleAlphaPresenter.m */; };
+		162C73281B789D6700226B47 /* RamblerModuleAlphaRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C731F1B789D6700226B47 /* RamblerModuleAlphaRouter.m */; };
+		162C73291B789D6700226B47 /* RamblerModuleAlphaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C73221B789D6700226B47 /* RamblerModuleAlphaViewController.m */; };
+		162C73401B78A45F00226B47 /* RamblerModuleBetaInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C73321B78A45F00226B47 /* RamblerModuleBetaInteractor.m */; };
+		162C73411B78A45F00226B47 /* RamblerModuleBetaModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C73361B78A45F00226B47 /* RamblerModuleBetaModuleAssembly.m */; };
+		162C73421B78A45F00226B47 /* RamblerModuleBetaPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C73381B78A45F00226B47 /* RamblerModuleBetaPresenter.m */; };
+		162C73431B78A45F00226B47 /* RamblerModuleBetaRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C733A1B78A45F00226B47 /* RamblerModuleBetaRouter.m */; };
+		162C73441B78A45F00226B47 /* RamblerModuleBetaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C733D1B78A45F00226B47 /* RamblerModuleBetaViewController.m */; };
+		26FE5D87E34D8CD460B5C22E /* libPods-RamblerMcFlurry_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A1A78426D01B0E564183E /* libPods-RamblerMcFlurry_Example.a */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -16,11 +26,9 @@
 		6003F59E195388D20070C39A /* RamblerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* RamblerAppDelegate.m */; };
 		6003F5A7195388D20070C39A /* RamblerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F5A6195388D20070C39A /* RamblerViewController.m */; };
 		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
-		6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F5AF195388D20070C39A /* XCTest.framework */; };
 		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		6462401C59D915477A58338F /* libPods-RamblerMcFlurry_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A1A78426D01B0E564183E /* libPods-RamblerMcFlurry_Example.a */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9E273F1976C734A3C33D8517 /* libPods-RamblerMcFlurry_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E158751BA67C78C5D23E1E12 /* libPods-RamblerMcFlurry_Tests.a */; };
 		9FFF3D521B68C4B800BDD3F2 /* RamblerDeveloperAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = 9FFF3D511B68C4B800BDD3F2 /* RamblerDeveloperAssembly.m */; };
@@ -40,6 +48,38 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		162C73161B789D6700226B47 /* RamblerModuleAlphaInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaInteractor.h; path = Viper/ModuleAlpha/RamblerModuleAlphaInteractor.h; sourceTree = "<group>"; };
+		162C73171B789D6700226B47 /* RamblerModuleAlphaInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleAlphaInteractor.m; path = Viper/ModuleAlpha/RamblerModuleAlphaInteractor.m; sourceTree = "<group>"; };
+		162C73181B789D6700226B47 /* RamblerModuleAlphaInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaInteractorInput.h; path = Viper/ModuleAlpha/RamblerModuleAlphaInteractorInput.h; sourceTree = "<group>"; };
+		162C73191B789D6700226B47 /* RamblerModuleAlphaInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaInteractorOutput.h; path = Viper/ModuleAlpha/RamblerModuleAlphaInteractorOutput.h; sourceTree = "<group>"; };
+		162C731A1B789D6700226B47 /* RamblerModuleAlphaModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaModuleAssembly.h; path = Viper/ModuleAlpha/RamblerModuleAlphaModuleAssembly.h; sourceTree = "<group>"; };
+		162C731B1B789D6700226B47 /* RamblerModuleAlphaModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleAlphaModuleAssembly.m; path = Viper/ModuleAlpha/RamblerModuleAlphaModuleAssembly.m; sourceTree = "<group>"; };
+		162C731C1B789D6700226B47 /* RamblerModuleAlphaPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaPresenter.h; path = Viper/ModuleAlpha/RamblerModuleAlphaPresenter.h; sourceTree = "<group>"; };
+		162C731D1B789D6700226B47 /* RamblerModuleAlphaPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleAlphaPresenter.m; path = Viper/ModuleAlpha/RamblerModuleAlphaPresenter.m; sourceTree = "<group>"; };
+		162C731E1B789D6700226B47 /* RamblerModuleAlphaRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaRouter.h; path = Viper/ModuleAlpha/RamblerModuleAlphaRouter.h; sourceTree = "<group>"; };
+		162C731F1B789D6700226B47 /* RamblerModuleAlphaRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleAlphaRouter.m; path = Viper/ModuleAlpha/RamblerModuleAlphaRouter.m; sourceTree = "<group>"; };
+		162C73201B789D6700226B47 /* RamblerModuleAlphaRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaRouterInput.h; path = Viper/ModuleAlpha/RamblerModuleAlphaRouterInput.h; sourceTree = "<group>"; };
+		162C73211B789D6700226B47 /* RamblerModuleAlphaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaViewController.h; path = Viper/ModuleAlpha/RamblerModuleAlphaViewController.h; sourceTree = "<group>"; };
+		162C73221B789D6700226B47 /* RamblerModuleAlphaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleAlphaViewController.m; path = Viper/ModuleAlpha/RamblerModuleAlphaViewController.m; sourceTree = "<group>"; };
+		162C73231B789D6700226B47 /* RamblerModuleAlphaViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaViewInput.h; path = Viper/ModuleAlpha/RamblerModuleAlphaViewInput.h; sourceTree = "<group>"; };
+		162C73241B789D6700226B47 /* RamblerModuleAlphaViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaViewOutput.h; path = Viper/ModuleAlpha/RamblerModuleAlphaViewOutput.h; sourceTree = "<group>"; };
+		162C732F1B789EA100226B47 /* libPods-RamblerMcFlurry_Example.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-RamblerMcFlurry_Example.a"; path = "Pods/../build/Debug-iphoneos/libPods-RamblerMcFlurry_Example.a"; sourceTree = "<group>"; };
+		162C73311B78A45F00226B47 /* RamblerModuleBetaInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaInteractor.h; path = Viper/ModuleBeta/RamblerModuleBetaInteractor.h; sourceTree = "<group>"; };
+		162C73321B78A45F00226B47 /* RamblerModuleBetaInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleBetaInteractor.m; path = Viper/ModuleBeta/RamblerModuleBetaInteractor.m; sourceTree = "<group>"; };
+		162C73331B78A45F00226B47 /* RamblerModuleBetaInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaInteractorInput.h; path = Viper/ModuleBeta/RamblerModuleBetaInteractorInput.h; sourceTree = "<group>"; };
+		162C73341B78A45F00226B47 /* RamblerModuleBetaInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaInteractorOutput.h; path = Viper/ModuleBeta/RamblerModuleBetaInteractorOutput.h; sourceTree = "<group>"; };
+		162C73351B78A45F00226B47 /* RamblerModuleBetaModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaModuleAssembly.h; path = Viper/ModuleBeta/RamblerModuleBetaModuleAssembly.h; sourceTree = "<group>"; };
+		162C73361B78A45F00226B47 /* RamblerModuleBetaModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleBetaModuleAssembly.m; path = Viper/ModuleBeta/RamblerModuleBetaModuleAssembly.m; sourceTree = "<group>"; };
+		162C73371B78A45F00226B47 /* RamblerModuleBetaPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaPresenter.h; path = Viper/ModuleBeta/RamblerModuleBetaPresenter.h; sourceTree = "<group>"; };
+		162C73381B78A45F00226B47 /* RamblerModuleBetaPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleBetaPresenter.m; path = Viper/ModuleBeta/RamblerModuleBetaPresenter.m; sourceTree = "<group>"; };
+		162C73391B78A45F00226B47 /* RamblerModuleBetaRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaRouter.h; path = Viper/ModuleBeta/RamblerModuleBetaRouter.h; sourceTree = "<group>"; };
+		162C733A1B78A45F00226B47 /* RamblerModuleBetaRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleBetaRouter.m; path = Viper/ModuleBeta/RamblerModuleBetaRouter.m; sourceTree = "<group>"; };
+		162C733B1B78A45F00226B47 /* RamblerModuleBetaRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaRouterInput.h; path = Viper/ModuleBeta/RamblerModuleBetaRouterInput.h; sourceTree = "<group>"; };
+		162C733C1B78A45F00226B47 /* RamblerModuleBetaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaViewController.h; path = Viper/ModuleBeta/RamblerModuleBetaViewController.h; sourceTree = "<group>"; };
+		162C733D1B78A45F00226B47 /* RamblerModuleBetaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleBetaViewController.m; path = Viper/ModuleBeta/RamblerModuleBetaViewController.m; sourceTree = "<group>"; };
+		162C733E1B78A45F00226B47 /* RamblerModuleBetaViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaViewInput.h; path = Viper/ModuleBeta/RamblerModuleBetaViewInput.h; sourceTree = "<group>"; };
+		162C733F1B78A45F00226B47 /* RamblerModuleBetaViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaViewOutput.h; path = Viper/ModuleBeta/RamblerModuleBetaViewOutput.h; sourceTree = "<group>"; };
+		162C73491B78A4A500226B47 /* RamblerModuleBetaConfigurator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaConfigurator.h; path = Viper/ModuleBeta/RamblerModuleBetaConfigurator.h; sourceTree = "<group>"; };
 		29585292F60D04C0C6BFE358 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		29CC82345586C4F662E7C65C /* Pods-RamblerMcFlurry_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RamblerMcFlurry_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RamblerMcFlurry_Example/Pods-RamblerMcFlurry_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3E218B7F42124CFBDB835247 /* Pods-RamblerMcFlurry_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RamblerMcFlurry_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RamblerMcFlurry_Example/Pods-RamblerMcFlurry_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -57,7 +97,6 @@
 		6003F5A6195388D20070C39A /* RamblerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RamblerViewController.m; sourceTree = "<group>"; };
 		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		6003F5AE195388D20070C39A /* RamblerMcFlurry_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RamblerMcFlurry_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F5AF195388D20070C39A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
@@ -86,8 +125,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				6462401C59D915477A58338F /* libPods-RamblerMcFlurry_Example.a in Frameworks */,
-				12117A9A3AF93C484E5108BB /* libPods.a in Frameworks */,
+				26FE5D87E34D8CD460B5C22E /* libPods-RamblerMcFlurry_Example.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +133,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6003F5B0195388D20070C39A /* XCTest.framework in Frameworks */,
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
 				9E273F1976C734A3C33D8517 /* libPods-RamblerMcFlurry_Tests.a in Frameworks */,
@@ -105,6 +142,124 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		162C73141B789B6800226B47 /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				162C732A1B789D6F00226B47 /* ModuleBeta */,
+				162C73151B789D3200226B47 /* ModuleAlpha */,
+			);
+			name = Viper;
+			sourceTree = "<group>";
+		};
+		162C73151B789D3200226B47 /* ModuleAlpha */ = {
+			isa = PBXGroup;
+			children = (
+				162C732B1B789D7900226B47 /* View */,
+				162C732E1B789D8B00226B47 /* Interactor */,
+				162C732D1B789D8400226B47 /* Presenter */,
+				162C732C1B789D7E00226B47 /* Router */,
+				162C731A1B789D6700226B47 /* RamblerModuleAlphaModuleAssembly.h */,
+				162C731B1B789D6700226B47 /* RamblerModuleAlphaModuleAssembly.m */,
+			);
+			name = ModuleAlpha;
+			sourceTree = "<group>";
+		};
+		162C732A1B789D6F00226B47 /* ModuleBeta */ = {
+			isa = PBXGroup;
+			children = (
+				162C73451B78A46400226B47 /* View */,
+				162C73471B78A47E00226B47 /* Interactor */,
+				162C73461B78A47800226B47 /* Presenter */,
+				162C73481B78A48400226B47 /* Router */,
+				162C73351B78A45F00226B47 /* RamblerModuleBetaModuleAssembly.h */,
+				162C73361B78A45F00226B47 /* RamblerModuleBetaModuleAssembly.m */,
+			);
+			name = ModuleBeta;
+			sourceTree = "<group>";
+		};
+		162C732B1B789D7900226B47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				162C73211B789D6700226B47 /* RamblerModuleAlphaViewController.h */,
+				162C73221B789D6700226B47 /* RamblerModuleAlphaViewController.m */,
+				162C73231B789D6700226B47 /* RamblerModuleAlphaViewInput.h */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		162C732C1B789D7E00226B47 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				162C731E1B789D6700226B47 /* RamblerModuleAlphaRouter.h */,
+				162C731F1B789D6700226B47 /* RamblerModuleAlphaRouter.m */,
+				162C73201B789D6700226B47 /* RamblerModuleAlphaRouterInput.h */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
+		162C732D1B789D8400226B47 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				162C73191B789D6700226B47 /* RamblerModuleAlphaInteractorOutput.h */,
+				162C73241B789D6700226B47 /* RamblerModuleAlphaViewOutput.h */,
+				162C731C1B789D6700226B47 /* RamblerModuleAlphaPresenter.h */,
+				162C731D1B789D6700226B47 /* RamblerModuleAlphaPresenter.m */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		162C732E1B789D8B00226B47 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				162C73161B789D6700226B47 /* RamblerModuleAlphaInteractor.h */,
+				162C73171B789D6700226B47 /* RamblerModuleAlphaInteractor.m */,
+				162C73181B789D6700226B47 /* RamblerModuleAlphaInteractorInput.h */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		162C73451B78A46400226B47 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				162C733E1B78A45F00226B47 /* RamblerModuleBetaViewInput.h */,
+				162C733C1B78A45F00226B47 /* RamblerModuleBetaViewController.h */,
+				162C733D1B78A45F00226B47 /* RamblerModuleBetaViewController.m */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		162C73461B78A47800226B47 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				162C73341B78A45F00226B47 /* RamblerModuleBetaInteractorOutput.h */,
+				162C73371B78A45F00226B47 /* RamblerModuleBetaPresenter.h */,
+				162C73381B78A45F00226B47 /* RamblerModuleBetaPresenter.m */,
+				162C733F1B78A45F00226B47 /* RamblerModuleBetaViewOutput.h */,
+				162C73491B78A4A500226B47 /* RamblerModuleBetaConfigurator.h */,
+			);
+			name = Presenter;
+			sourceTree = "<group>";
+		};
+		162C73471B78A47E00226B47 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				162C73311B78A45F00226B47 /* RamblerModuleBetaInteractor.h */,
+				162C73321B78A45F00226B47 /* RamblerModuleBetaInteractor.m */,
+				162C73331B78A45F00226B47 /* RamblerModuleBetaInteractorInput.h */,
+			);
+			name = Interactor;
+			sourceTree = "<group>";
+		};
+		162C73481B78A48400226B47 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				162C73391B78A45F00226B47 /* RamblerModuleBetaRouter.h */,
+				162C733A1B78A45F00226B47 /* RamblerModuleBetaRouter.m */,
+				162C733B1B78A45F00226B47 /* RamblerModuleBetaRouterInput.h */,
+			);
+			name = Router;
+			sourceTree = "<group>";
+		};
 		4D62E5BDBFF12E6425C93A40 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -140,10 +295,10 @@
 		6003F58C195388D20070C39A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				162C732F1B789EA100226B47 /* libPods-RamblerMcFlurry_Example.a */,
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
-				6003F5AF195388D20070C39A /* XCTest.framework */,
 				B75A1A78426D01B0E564183E /* libPods-RamblerMcFlurry_Example.a */,
 				E158751BA67C78C5D23E1E12 /* libPods-RamblerMcFlurry_Tests.a */,
 				BCD36FC03A45A87A4597C0C7 /* libPods.a */,
@@ -154,6 +309,7 @@
 		6003F593195388D20070C39A /* Example for RamblerMcFlurry */ = {
 			isa = PBXGroup;
 			children = (
+				162C73141B789B6800226B47 /* Viper */,
 				9FFF3D531B68C4D100BDD3F2 /* Testing */,
 				6003F59C195388D20070C39A /* RamblerAppDelegate.h */,
 				6003F59D195388D20070C39A /* RamblerAppDelegate.m */,
@@ -393,9 +549,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				162C73421B78A45F00226B47 /* RamblerModuleBetaPresenter.m in Sources */,
+				162C73291B789D6700226B47 /* RamblerModuleAlphaViewController.m in Sources */,
 				9FFF3D521B68C4B800BDD3F2 /* RamblerDeveloperAssembly.m in Sources */,
+				162C73251B789D6700226B47 /* RamblerModuleAlphaInteractor.m in Sources */,
+				162C73271B789D6700226B47 /* RamblerModuleAlphaPresenter.m in Sources */,
+				162C73431B78A45F00226B47 /* RamblerModuleBetaRouter.m in Sources */,
+				162C73441B78A45F00226B47 /* RamblerModuleBetaViewController.m in Sources */,
 				6003F59E195388D20070C39A /* RamblerAppDelegate.m in Sources */,
+				162C73411B78A45F00226B47 /* RamblerModuleBetaModuleAssembly.m in Sources */,
 				6003F5A7195388D20070C39A /* RamblerViewController.m in Sources */,
+				162C73401B78A45F00226B47 /* RamblerModuleBetaInteractor.m in Sources */,
+				162C73281B789D6700226B47 /* RamblerModuleAlphaRouter.m in Sources */,
+				162C73261B789D6700226B47 /* RamblerModuleAlphaModuleAssembly.m in Sources */,
 				9FFF3D5A1B68C53400BDD3F2 /* RamblerDevice.m in Sources */,
 				9FFF3D571B68C4F200BDD3F2 /* RamblerDeveloper.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
@@ -518,14 +684,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$PODS_FRAMEWORK_BUILD_PATH\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RamblerMcFlurry/RamblerMcFlurry-Prefix.pch";
 				INFOPLIST_FILE = "RamblerMcFlurry/RamblerMcFlurry-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-RamblerMcFlurry_Example-RamblerMcFlurry\"",
+					"-l\"Typhoon\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -537,14 +706,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$PODS_FRAMEWORK_BUILD_PATH\"",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RamblerMcFlurry/RamblerMcFlurry-Prefix.pch";
 				INFOPLIST_FILE = "RamblerMcFlurry/RamblerMcFlurry-Info.plist";
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MODULE_NAME = ExampleApp;
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-l\"Pods-RamblerMcFlurry_Example-RamblerMcFlurry\"",
+					"-l\"Typhoon\"",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

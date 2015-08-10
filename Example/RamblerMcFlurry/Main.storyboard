@@ -1,27 +1,152 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="whP-gf-Uak">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xfk-px-I3u">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="wQg-tq-qST">
+        <!--Examples-->
+        <scene sceneID="90d-3P-E1h">
             <objects>
-                <viewController id="whP-gf-Uak" customClass="RamblerViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="uEw-UM-LJ8"/>
-                        <viewControllerLayoutGuide type="bottom" id="Mvr-aV-6Um"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="TpU-gO-2f1">
+                <tableViewController id="sxU-ww-emk" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="baz-Q3-8nf">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="tc2-Qw-aMS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <sections>
+                            <tableViewSection id="bsC-3T-Ysj">
+                                <cells>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="ixK-Rb-9OI" style="IBUITableViewCellStyleDefault" id="DZL-pw-QT7">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="DZL-pw-QT7" id="1pH-LN-Sfw">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Viper Inermodule Data Transfer Example" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ixK-Rb-9OI">
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="iSd-mR-aP9" kind="show" id="CQ3-t3-f8f"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                        </sections>
+                        <connections>
+                            <outlet property="dataSource" destination="sxU-ww-emk" id="wle-iM-loR"/>
+                            <outlet property="delegate" destination="sxU-ww-emk" id="xHY-Zf-wfl"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Examples" id="G18-y7-fZ4"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1h0-5D-eY4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="433"/>
+            <point key="canvasLocation" x="1499" y="233"/>
+        </scene>
+        <!--ModuleAlpha-->
+        <scene sceneID="Pd4-gQ-Zuj">
+            <objects>
+                <viewController title="ModuleAlpha" id="iSd-mR-aP9" customClass="RamblerModuleAlphaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3eo-31-7cb"/>
+                        <viewControllerLayoutGuide type="bottom" id="Quc-n3-ghc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AD9-fP-BNz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vvs-pw-cO1">
+                                <rect key="frame" x="24" y="184" width="552" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="hBM-ki-otA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9g-Gu-nDv">
+                                <rect key="frame" x="208" y="222" width="184" height="30"/>
+                                <state key="normal" title="Send Data To Beta Module">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickSendDataButton:" destination="iSd-mR-aP9" eventType="touchUpInside" id="hZC-x9-OvQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Vvs-pw-cO1" secondAttribute="trailing" constant="24" id="0ya-qW-Foe"/>
+                            <constraint firstItem="G9g-Gu-nDv" firstAttribute="centerX" secondItem="Vvs-pw-cO1" secondAttribute="centerX" id="3tU-ex-mji"/>
+                            <constraint firstItem="Vvs-pw-cO1" firstAttribute="top" secondItem="3eo-31-7cb" secondAttribute="bottom" constant="120" id="8D7-eS-y3a"/>
+                            <constraint firstItem="G9g-Gu-nDv" firstAttribute="top" secondItem="Vvs-pw-cO1" secondAttribute="bottom" constant="8" id="WTM-cv-J4t"/>
+                            <constraint firstItem="Vvs-pw-cO1" firstAttribute="leading" secondItem="AD9-fP-BNz" secondAttribute="leading" constant="24" id="kwb-Tb-wxe"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="Vvs-pw-cO1" id="49X-eQ-puN"/>
+                        <segue destination="k9d-kH-ibe" kind="show" identifier="RamblerAlphaToBetaSegue" id="dXg-Gl-5JA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cUq-xq-5We" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2193" y="233"/>
+        </scene>
+        <!--Rambler Module Beta View Controller-->
+        <scene sceneID="F9c-Wk-LAB">
+            <objects>
+                <viewController id="k9d-kH-ibe" customClass="RamblerModuleBetaViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="7aJ-Dw-rBX"/>
+                        <viewControllerLayoutGuide type="bottom" id="BTK-ON-ndF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7qd-IH-pMz">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1J-do-Gh2">
+                                <rect key="frame" x="24" y="184" width="552" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="AAX-6r-kF3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="V1J-do-Gh2" firstAttribute="leading" secondItem="7qd-IH-pMz" secondAttribute="leading" constant="24" id="bOH-ew-mfU"/>
+                            <constraint firstAttribute="trailing" secondItem="V1J-do-Gh2" secondAttribute="trailing" constant="24" id="nEA-WS-XyQ"/>
+                            <constraint firstItem="V1J-do-Gh2" firstAttribute="top" secondItem="7aJ-Dw-rBX" secondAttribute="bottom" constant="120" id="nRA-Yl-bY2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exampleStringLabel" destination="V1J-do-Gh2" id="CMc-Ek-Nia"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1TH-zO-ceR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2193" y="974"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="rme-v3-l1z">
+            <objects>
+                <navigationController id="Xfk-px-I3u" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AMb-g8-K36">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="sxU-ww-emk" kind="relationship" relationship="rootViewController" id="Thu-z8-4ff"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TA8-8x-Ywd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="679" y="233"/>
         </scene>
     </scenes>
 </document>
