@@ -694,6 +694,7 @@
 					"-ObjC",
 					"-l\"Pods-RamblerMcFlurry_Example-RamblerMcFlurry\"",
 					"-l\"Typhoon\"",
+					"$(inherited)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -716,6 +717,7 @@
 					"-ObjC",
 					"-l\"Pods-RamblerMcFlurry_Example-RamblerMcFlurry\"",
 					"-l\"Typhoon\"",
+					"$(inherited)",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
