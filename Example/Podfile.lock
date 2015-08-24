@@ -18,10 +18,10 @@ DEPENDENCIES:
 
 EXTERNAL SOURCES:
   RamblerMcFlurry:
-    :path: "../"
+    :path: ../
 
 SPEC CHECKSUMS:
   RamblerMcFlurry: 935279b454d46385de2050ea733abd8a933e6c9b
   Typhoon: 6f39c3ede688d1ca9734087a938b101e193096a4
 
-COCOAPODS: 0.37.2
+COCOAPODS: 0.38.2

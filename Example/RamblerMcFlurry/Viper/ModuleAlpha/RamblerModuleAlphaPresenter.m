@@ -26,9 +26,14 @@
 
 }
 
-- (void)sendData:(NSString *)data {
-    // Intermodule Data Transfer Example. Вызов. Шаг 2. Презентер вызывает роутер для передачи данных в другой модуль.
-    [self.router openBetaModuleWithExampleString:data];
+- (void)sendDataButtonClicked {
+    
+    __weak typeof(self) wself = self;
+    [self.view getDataWithResultBlock:^(NSString *data) {
+        typeof (self) sself = wself;    
+        // Intermodule Data Transfer Example. Вызов. Шаг 2. Презентер вызывает роутер для передачи данных в другой модуль.
+        [sself.router openBetaModuleWithExampleString:data];
+    }];
 }
 
 #pragma mark - RamblerModuleAlphaInteractorOutput

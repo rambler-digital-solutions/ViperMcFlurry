@@ -1,6 +1,6 @@
 //
 //  RamblerViperModuleConfigurationPromise.m
-//  Championat
+//  Rambler McFlurry
 //
 //  Created by Andrey Zarembo-Godzyatsky on 27/07/15.
 //  Copyright (c) 2015 Rambler DS. All rights reserved.
@@ -10,14 +10,14 @@
 
 @interface RamblerViperModuleConfigurationPromise ()
 
-@property (nonatomic,strong) RCCModuleConfigurationBlock configuraionBlock;
+@property (nonatomic,strong) RCCModuleConfigurationBlock configurationBlock;
 
 @end
 
 @implementation RamblerViperModuleConfigurationPromise
 
 - (void)thenConfigureModuleWithBlock:(RCCModuleConfigurationBlock)configuraionBlock {
-    self.configuraionBlock = configuraionBlock;
+    self.configurationBlock = configuraionBlock;
     [self tryToExecute];
 }
 
@@ -27,8 +27,8 @@
 }
 
 -(void)tryToExecute {
-    if (self.moduleConfigurator != nil && self.configuraionBlock != nil) {
-        self.configuraionBlock(self.moduleConfigurator);
+    if (self.moduleConfigurator != nil && self.configurationBlock != nil) {
+        self.configurationBlock(self.moduleConfigurator);
     }
 }
 

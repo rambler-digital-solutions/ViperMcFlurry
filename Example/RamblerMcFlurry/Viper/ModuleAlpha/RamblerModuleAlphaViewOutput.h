@@ -14,7 +14,7 @@
 @protocol RamblerModuleAlphaViewOutput <NSObject>
 
 - (void)setupView;
-- (void)sendData:(NSString*)data;
+- (void)sendDataButtonClicked;
 
 @end
 

@@ -25,25 +25,30 @@
 
 - (void)didClickSendDataButton:(id)sender {
     // Intermodule Data Transfer Example. Вызов. Шаг 1. Отправка данных в презентер
-    [self.output sendData:self.textField.text];
+    [self.output sendDataButtonClicked];
 }
 
 #pragma mark - RamblerModuleAlphaViewInput
+
+- (void)getDataWithResultBlock:(AlphaModuleViewDataResulBlock)resultBlock {
+    
+    if (resultBlock) {
+        resultBlock(self.textField.text);
+    }
+}
 
 #pragma mark - RamblerViperModuleTransitionHandler
 
 - (id<RamblerViperModuleConfigurationPromiseProtocol>)performPromiseSegue:(NSString *)segueIdentifier withSender:(id)sender {
     // Intermodule Data Transfer Example. Вызов. Шаг 4. Создается Promise, он вместе с sender упаковывается в словать и отправляется в поле sender
     // при вызове performSegue. Promise возвращается как результат работы метода.
-    return [self default_performPromiseSegue:segueIdentifier
-                                  withSender:sender];
+    return [self rds_performPromiseSegue:segueIdentifier withSender:sender];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Intermodule Data Transfer Example. Вызов. Шаг 5. Promise распаковывается из словаря и ему задается свойство ModuleConfigurator. Конфигуратор
     // запрашивается у DestinationViewController по протоколу ModuleConfiguratorHolder.
-    [self default_prepareForSegue:segue
-                           sender:sender];
+    [self rds_prepareForSegue:segue sender:sender];
 }
 
 @end

@@ -11,10 +11,14 @@
 
 #import <Foundation/Foundation.h>
 
+typedef void (^AlphaModuleViewDataResulBlock)(NSString *data);
+
 /**
  
  */
 @protocol RamblerModuleAlphaViewInput <NSObject>
+
+- (void)getDataWithResultBlock:(AlphaModuleViewDataResulBlock)resultBlock;
 
 @end
 
