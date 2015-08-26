@@ -51,7 +51,7 @@ pod "RamblerMcFlurry/Testing"
 
 Ниже описана стандартная реализация передачи данных между модулями. Она доступна в категории UIViewController+DefaultViperModuleTransitionHandling. 
 
-1. Router при инициализации получает ссылку на ViewController, закрытый протоколом RamblerViperModuleTransitionHandler
+1. Router при инициализации получает ссылку на ViewController, закрытый протоколом RamblerViperModuleTransitionHandlerProtocol
 2. При необходимости перехода в другой модуль с передачей данных Presenter вызывает соответствующий метод у Router с данными для передачи
 3. Router вызывает метод **performPromiseSegue:withSender:** в котором создается объект RamblerViperModuleConfigurationPromise
 4. Этот promise возвращается в результате метода для вызова thenConfigureWithModuleWithBlock:, который сохраняет блок в Promise.

@@ -120,6 +120,10 @@
 		7F8CBC27AEA5907828F7C5022166F31A /* TyphoonAssemblyPropertyInjectionPostProcessor.m in Sources */ = {isa = PBXBuildFile; fileRef = B938622A9BA30F81FE5D503333C48E1C /* TyphoonAssemblyPropertyInjectionPostProcessor.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		7FCAD92EB3DE1E19BBBFD7AC77925EB2 /* TyphoonTypeDescriptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 9087A815F18BF72ADC676898AE78408E /* TyphoonTypeDescriptor.h */; };
 		82D83DC10E6404165AB9DDE33206E46F /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 52900A9FDC75ABE5313B4A13CD8DACDB /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry-dummy.m */; };
+		83A0F7269C6B7DF495D74B92 /* RamblerViperEmbedModuleTransitionSegueData.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A0FE8742659E7759371BB9 /* RamblerViperEmbedModuleTransitionSegueData.m */; };
+		83A0F853097B6BBB08D98A44 /* RamblerEmbedModuleSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A0FD38481FADE1D15DAE36 /* RamblerEmbedModuleSegue.m */; };
+		83A0F8806DFD3CA83FEFAA36 /* RamblerViperModuleFabric.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A0F8E8D8F313F8016B33CA /* RamblerViperModuleFabric.m */; };
+		83A0FD8B7E5353620B08DFF4 /* RamblerViperModuleFabricInstantiationPromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 83A0F586678D086F099F8A51 /* RamblerViperModuleFabricInstantiationPromise.m */; };
 		8556EABD568C7EEC64DC2564A09C0D53 /* TyphoonPrimitiveTypeConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 855A93E0C455914FFBCBBCBC6AAC34B1 /* TyphoonPrimitiveTypeConverter.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		85B97A11CF61D9CCEE4D2DC851BB41F5 /* TyphoonDefinitionRegisterer.m in Sources */ = {isa = PBXBuildFile; fileRef = E84F3226D345D9B7BFF116B0990D5F1A /* TyphoonDefinitionRegisterer.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		85FC97839CDA87C302F53D4C597199E3 /* TyphoonViewControllerNibResolver.h in Headers */ = {isa = PBXBuildFile; fileRef = 80395EA6086360A0F96B06B154D34B0C /* TyphoonViewControllerNibResolver.h */; };
@@ -186,7 +190,7 @@
 		D93F8962FE4073E6EB9306559261CD7A /* NSValue+TCFUnwrapValues.h in Headers */ = {isa = PBXBuildFile; fileRef = F669E1D803501E783EFC84202E009643 /* NSValue+TCFUnwrapValues.h */; };
 		DA9EB1369FF4CA277E336D1FC5BD2F81 /* TyphoonInjectedObject.m in Sources */ = {isa = PBXBuildFile; fileRef = EBAA64D692084D301D6DF13D44B73B68 /* TyphoonInjectedObject.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		DBC9FB2EA52310EF5B4DF943CE7F3893 /* TyphooniOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D3C4CE2152C87082B5E7FF35706B725 /* TyphooniOS.h */; };
-		DCEF6F0C385946CB3C58BC1EEE9F9CE8 /* RamblerViperModuleTransitionHandler.h in Headers */ = {isa = PBXBuildFile; fileRef = 840B93000F369466B2C87F65A3373E24 /* RamblerViperModuleTransitionHandler.h */; };
+		DCEF6F0C385946CB3C58BC1EEE9F9CE8 /* RamblerViperModuleTransitionHandlerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 840B93000F369466B2C87F65A3373E24 /* RamblerViperModuleTransitionHandlerProtocol.h */; };
 		DD70BD679422E50443D48901CCFFBA73 /* TyphoonDefinition+InstanceBuilder.h in Headers */ = {isa = PBXBuildFile; fileRef = B79F6A01B355B91789C9E5C741932610 /* TyphoonDefinition+InstanceBuilder.h */; };
 		DD993D7988846E7B5EDFE3FA69C4A2AC /* TyphoonInjectionByFactoryReference.h in Headers */ = {isa = PBXBuildFile; fileRef = 1EC05D3AB7DE2D6DE333DE1ED4B160FB /* TyphoonInjectionByFactoryReference.h */; };
 		DF653730179AE98F18C5E8AAB6E4796D /* TyphoonPropertyStyleConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = 69263C22EB30851B8042152F7C2B169B /* TyphoonPropertyStyleConfiguration.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
@@ -370,7 +374,17 @@
 		8283B4B7F74FAF16E7E4C2B453FB0A3B /* Pods-RamblerMcFlurry_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RamblerMcFlurry_Tests-resources.sh"; sourceTree = "<group>"; };
 		82EF5F05913E85BA643EC0622E2D1B42 /* TyphoonCollaboratingAssemblyPropertyEnumerator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = TyphoonCollaboratingAssemblyPropertyEnumerator.h; path = Source/Factory/Internal/TyphoonCollaboratingAssemblyPropertyEnumerator.h; sourceTree = "<group>"; };
 		83185F7254E507750E20C17AFCD66C74 /* NSDictionary+CustomInjection.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+CustomInjection.h"; path = "Source/Definition/Internal/NSDictionary+CustomInjection.h"; sourceTree = "<group>"; };
-		840B93000F369466B2C87F65A3373E24 /* RamblerViperModuleTransitionHandler.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RamblerViperModuleTransitionHandler.h; sourceTree = "<group>"; };
+		83A0F372E09DE97ED1D3AE73 /* RamblerViperModuleFabric.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerViperModuleFabric.h; sourceTree = "<group>"; };
+		83A0F39D36F0255E01CEADAA /* RamblerViperEmbedModuleTransitionSegueData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerViperEmbedModuleTransitionSegueData.h; sourceTree = "<group>"; };
+		83A0F586678D086F099F8A51 /* RamblerViperModuleFabricInstantiationPromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RamblerViperModuleFabricInstantiationPromise.m; sourceTree = "<group>"; };
+		83A0F5A120F1912855752C9D /* RamblerViperModuleFabricProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerViperModuleFabricProtocol.h; sourceTree = "<group>"; };
+		83A0F7878E9401C11C8AEDC0 /* RamblerEmbedModuleSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerEmbedModuleSegue.h; sourceTree = "<group>"; };
+		83A0F8D2F24563514B41F135 /* RamblerViperModuleFabricInstantiationPromise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerViperModuleFabricInstantiationPromise.h; sourceTree = "<group>"; };
+		83A0F8E8D8F313F8016B33CA /* RamblerViperModuleFabric.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RamblerViperModuleFabric.m; sourceTree = "<group>"; };
+		83A0FBBCAD2FD381C5878A19 /* RamblerViperModuleFabricInstantiationPromiseProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerViperModuleFabricInstantiationPromiseProtocol.h; sourceTree = "<group>"; };
+		83A0FD38481FADE1D15DAE36 /* RamblerEmbedModuleSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RamblerEmbedModuleSegue.m; sourceTree = "<group>"; };
+		83A0FE8742659E7759371BB9 /* RamblerViperEmbedModuleTransitionSegueData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RamblerViperEmbedModuleTransitionSegueData.m; sourceTree = "<group>"; };
+		840B93000F369466B2C87F65A3373E24 /* RamblerViperModuleTransitionHandlerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RamblerViperModuleTransitionHandlerProtocol.h; sourceTree = "<group>"; };
 		84FB5759767191AF99D53100DFD492D2 /* TyphoonDefinition+Infrastructure.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "TyphoonDefinition+Infrastructure.m"; path = "Source/Definition/Internal/TyphoonDefinition+Infrastructure.m"; sourceTree = "<group>"; };
 		855A93E0C455914FFBCBBCBC6AAC34B1 /* TyphoonPrimitiveTypeConverter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = TyphoonPrimitiveTypeConverter.m; path = Source/TypeConversion/Converters/TyphoonPrimitiveTypeConverter.m; sourceTree = "<group>"; };
 		859707BC72B9F645C37F0D76ECF90702 /* RamblerViperIntermoduleDataTransfer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = RamblerViperIntermoduleDataTransfer.h; sourceTree = "<group>"; };
@@ -560,6 +574,7 @@
 			children = (
 				859707BC72B9F645C37F0D76ECF90702 /* RamblerViperIntermoduleDataTransfer.h */,
 				5E15E526CF786C1C431612A439E8D787 /* IntermoduleDataTransfer */,
+				83A0F76BA16F4CAFFDECA035 /* EmbeddableModules */,
 			);
 			path = Viper;
 			sourceTree = "<group>";
@@ -612,7 +627,7 @@
 				50E542DDBCFAC8976F38698C2D9A47A0 /* RamblerViperModuleConfigurationPromiseProtocol.h */,
 				2E23EEBF441D835B57D2D3DAA634E6C1 /* RamblerViperModuleConfiguratorHolder.h */,
 				0D05860B32BF86EA17FF0019292B226E /* RamblerViperModuleConfiguratorProtocol.h */,
-				840B93000F369466B2C87F65A3373E24 /* RamblerViperModuleTransitionHandler.h */,
+				840B93000F369466B2C87F65A3373E24 /* RamblerViperModuleTransitionHandlerProtocol.h */,
 				58806324CB8584F8AF413E1CDE50924C /* RamblerViperModuleTransitionSegueData.h */,
 				37CD0B3DEEE1C58BCA4754C71B9724EA /* RamblerViperModuleTransitionSegueData.m */,
 				6379A184BC92317B6C94AC92749C3C58 /* UIViewController+DefaultViperModuleTransitionHandling.h */,
@@ -671,6 +686,31 @@
 			);
 			name = "Support Files";
 			path = "../Target Support Files/Typhoon";
+			sourceTree = "<group>";
+		};
+		83A0F76BA16F4CAFFDECA035 /* EmbeddableModules */ = {
+			isa = PBXGroup;
+			children = (
+				83A0FDA0813ADB7F95BBEF25 /* ModuleFabric */,
+				83A0F7878E9401C11C8AEDC0 /* RamblerEmbedModuleSegue.h */,
+				83A0FD38481FADE1D15DAE36 /* RamblerEmbedModuleSegue.m */,
+				83A0F39D36F0255E01CEADAA /* RamblerViperEmbedModuleTransitionSegueData.h */,
+				83A0FE8742659E7759371BB9 /* RamblerViperEmbedModuleTransitionSegueData.m */,
+			);
+			path = EmbeddableModules;
+			sourceTree = "<group>";
+		};
+		83A0FDA0813ADB7F95BBEF25 /* ModuleFabric */ = {
+			isa = PBXGroup;
+			children = (
+				83A0F5A120F1912855752C9D /* RamblerViperModuleFabricProtocol.h */,
+				83A0F372E09DE97ED1D3AE73 /* RamblerViperModuleFabric.h */,
+				83A0F8E8D8F313F8016B33CA /* RamblerViperModuleFabric.m */,
+				83A0FBBCAD2FD381C5878A19 /* RamblerViperModuleFabricInstantiationPromiseProtocol.h */,
+				83A0F8D2F24563514B41F135 /* RamblerViperModuleFabricInstantiationPromise.h */,
+				83A0F586678D086F099F8A51 /* RamblerViperModuleFabricInstantiationPromise.m */,
+			);
+			path = ModuleFabric;
 			sourceTree = "<group>";
 		};
 		8BD452436A6D72C1126082398044EF1B /* Code */ = {
@@ -1002,7 +1042,7 @@
 				439A55018B580C3625F652FD5BC19B03 /* RamblerViperModuleConfigurationPromiseProtocol.h in Headers */,
 				1197BEC910360BBA9EB4813727D2FAD3 /* RamblerViperModuleConfiguratorHolder.h in Headers */,
 				221A712C000A855F79B96A95ECC279C7 /* RamblerViperModuleConfiguratorProtocol.h in Headers */,
-				DCEF6F0C385946CB3C58BC1EEE9F9CE8 /* RamblerViperModuleTransitionHandler.h in Headers */,
+				DCEF6F0C385946CB3C58BC1EEE9F9CE8 /* RamblerViperModuleTransitionHandlerProtocol.h in Headers */,
 				04208CB6F1159A8563EA29D3F4E70969 /* RamblerViperModuleTransitionSegueData.h in Headers */,
 				FBE0B8C51C738841C572A420673DD700 /* UIViewController+DefaultViperModuleTransitionHandling.h in Headers */,
 				3ACFFFC8CD5985DF2EA943EB89EDE7A8 /* Viper.h in Headers */,
@@ -1284,6 +1324,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4959D9C24ABD861836D13EF2B4CA3A96 /* Pods-RamblerMcFlurry_Example-dummy.m in Sources */,
+				83A0F8806DFD3CA83FEFAA36 /* RamblerViperModuleFabric.m in Sources */,
+				83A0FD8B7E5353620B08DFF4 /* RamblerViperModuleFabricInstantiationPromise.m in Sources */,
+				83A0F853097B6BBB08D98A44 /* RamblerEmbedModuleSegue.m in Sources */,
+				83A0F7269C6B7DF495D74B92 /* RamblerViperEmbedModuleTransitionSegueData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

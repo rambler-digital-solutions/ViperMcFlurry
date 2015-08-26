@@ -16,4 +16,11 @@
 #import "RamblerViperModuleTransitionHandler.h"
 #import "UIViewController+DefaultViperModuleTransitionHandling.h"
 
+#import "RamblerViperModuleFabric.h"
+#import "RamblerViperModuleFabricProtocol.h"
+#import "RabmlerViperModuleFabricInstantiationPromise.h"
+#import "RamblerViperModuleFabricInstantiationPromiseProtocol.h"
+#import "RamblerViperEmbedModuleSegue.h"
+#import "RamblerViperEmbedModuleTransitionSegueData.h"
+
 #endif

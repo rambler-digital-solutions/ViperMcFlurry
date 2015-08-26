@@ -7,14 +7,20 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RamblerViperModuleTransitionHandler.h"
+#import "RamblerViperModuleTransitionHandlerProtocol.h"
 
 /**
  * Категория с базовыми реализациями методов ViewController для создания Promise и его вызова
  */
-@interface UIViewController (DefaultViperModuleTransitionHandling)<RamblerViperModuleTransitionHandler>
+@interface UIViewController (DefaultViperModuleTransitionHandling)<RamblerViperModuleTransitionHandlerProtocol>
 
 - (id<RamblerViperModuleConfigurationPromiseProtocol>)rds_performPromiseSegue:(NSString*)segueIdentifier withSender:(id)sender;
+- (id<RamblerViperModuleConfigurationPromiseProtocol>)rambler_embedModuleWithSegue:(NSString*)segueIdentifier
+                                                         intoContainerView:(UIView*)containerView
+                                                                withSender:(id)sender;
+- (UIView*)rambler_containerViewWithIdentifier:(NSString*)identifier;
+- (void)rambler_removeFromParentModule;
+
 - (void)rds_prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 
 @end

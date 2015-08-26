@@ -19,8 +19,8 @@
  
  */
 // Intermodule Data Transfer Example. Когфигурация. Шаг 5. Контроллер модуля, который будет отправлять данные
-// должен реализовать протокол RamblerViperModuleTransitionHandler.
-@interface RamblerModuleAlphaViewController : UIViewController <RamblerModuleAlphaViewInput,RamblerViperModuleTransitionHandler>
+// должен реализовать протокол RamblerViperModuleTransitionHandlerProtocol.
+@interface RamblerModuleAlphaViewController : UIViewController <RamblerModuleAlphaViewInput, RamblerViperModuleTransitionHandlerProtocol>
 
 @property (nonatomic, strong) id<RamblerModuleAlphaViewOutput> output;
 
