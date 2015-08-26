@@ -22,20 +22,17 @@
 }
 
 - (void)setModuleConfigurator:(id<RamblerViperModuleConfiguratorProtocol>)moduleConfigurator {
-    _moduleConfigurator = moduleConfigurator ?: [NSNull null];
+    _moduleConfigurator = moduleConfigurator;
     [self tryToExecute];
 }
 
 -(void)tryToExecute {
     if (self.moduleConfigurator != nil && self.configurationBlock != nil) {
-        id<RamblerViperModuleConfiguratorProtocol> configurator = nil;
-        if (![self.moduleConfigurator isKindOfClass:[NSNull class]]) {
-            configurator = self.moduleConfigurator;
-        }
-        self.configurationBlock(configurator);
+        self.configurationBlock(self.moduleConfigurator);
         if (self.moduleActivationBlock) {
             self.moduleActivationBlock();
         }
+        self.moduleActivationBlock = nil;
     }
 }
 

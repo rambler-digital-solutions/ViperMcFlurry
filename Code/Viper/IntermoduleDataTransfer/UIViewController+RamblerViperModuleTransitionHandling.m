@@ -18,12 +18,15 @@
 - (id<RamblerViperModuleConfigurationPromiseProtocol>)rds_performPromiseSegue:(NSString*)segueIdentifier withSender:(id)sender {
     RamblerViperModuleConfigurationPromise *promise = [[RamblerViperModuleConfigurationPromise alloc] init];
 
+    RamblerViperModuleTransitionSegueData* segueData = [RamblerViperModuleTransitionSegueData segueDataWithSender:sender
+                                                                                                       andPromise:promise];
     __weak typeof(self) wself = self;
+    
+    /// Здесь не возникает RetainCycle с promise->segueData->promise, т.к. moduleActivationBlock присваивается nil после вызова.
     promise.moduleActivationBlock = ^{
         typeof(self) sself = wself;
         [sself performSegueWithIdentifier:segueIdentifier
-                                  sender:[RamblerViperModuleTransitionSegueData segueDataWithSender:sender
-                                                                                         andPromise:promise]];
+                                   sender:segueData];
     };
     return promise;
 }
@@ -32,15 +35,17 @@
                                                          intoContainerView:(UIView*)containerView
                                                                 withSender:(id)sender {
     RamblerViperModuleConfigurationPromise *promise = [[RamblerViperModuleConfigurationPromise alloc] init];
-    RamblerViperEmbedModuleTransitionSegueData *segueInfo =
+    RamblerViperEmbedModuleTransitionSegueData *segueData =
             [[RamblerViperEmbedModuleTransitionSegueData alloc] initWithSender:sender
                                                                     andPromise:promise
                                                               andContainerView:containerView];
     __weak typeof(self) wself = self;
+    
+    /// Здесь не возникает RetainCycle с promise->segueData->promise, т.к. moduleActivationBlock присваивается nil после вызова.
     promise.moduleActivationBlock = ^{
         typeof(self) sself = wself;
         [sself performSegueWithIdentifier:segueIdentifier
-                                   sender:segueInfo];
+                                   sender:segueData];
     };
 
     return promise;
@@ -72,8 +77,8 @@
         RamblerViperModuleTransitionSegueData *segueInfo = (RamblerViperModuleTransitionSegueData*)sender;
         RamblerViperModuleConfigurationPromise * promise = segueInfo.promise;
         id<RamblerViperModuleConfiguratorProtocol> configurator = nil;
-        if ([segue.destinationViewController conformsToProtocol:@protocol(RamblerViperModuleTransitionHandlerProtocol)]) {
-            configurator = [(id<RamblerViperModuleTransitionHandlerProtocol>)segue.destinationViewController moduleConfigurator];
+        if ([segue.destinationViewController conformsToProtocol:@protocol(RamblerViperModuleConfiguratorHolder)]) {
+            configurator = [(id<RamblerViperModuleConfiguratorHolder>)segue.destinationViewController moduleConfigurator];
         }
         [promise setModuleConfigurator:configurator];
     }
