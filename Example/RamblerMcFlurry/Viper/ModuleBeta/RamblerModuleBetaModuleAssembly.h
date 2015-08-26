@@ -11,10 +11,14 @@
 
 #import <Typhoon/Typhoon.h>
 
+@protocol RamblerViperModuleFabricProtocol;
+
 /**
  
  */
 @interface RamblerModuleBetaModuleAssembly : TyphoonAssembly
+
+- (id<RamblerViperModuleFabricProtocol>)fabricBetaModule;
 
 @end
 

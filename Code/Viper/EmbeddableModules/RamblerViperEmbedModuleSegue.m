@@ -17,9 +17,11 @@
     UIViewController *embeddableModuleViewController = self.destinationViewController;
     
     [parentViewController addChildViewController:embeddableModuleViewController];
-    [self.containerView addSubview: embeddableModuleViewController.view];
-    
     UIView *moduleView = embeddableModuleViewController.view;
+    [self.containerView addSubview:moduleView];
+    
+    moduleView.translatesAutoresizingMaskIntoConstraints = NO;
+    
     // align moduleView from the left and right
     [self.containerView addConstraints:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[moduleView]-0-|"
                                                                                options:0

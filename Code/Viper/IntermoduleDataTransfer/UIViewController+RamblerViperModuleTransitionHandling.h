@@ -14,13 +14,13 @@
  */
 @interface UIViewController (RamblerViperModuleTransitionHandling)<RamblerViperModuleTransitionHandlerProtocol>
 
-- (id<RamblerViperModuleConfigurationPromiseProtocol>)rds_performPromiseSegue:(NSString*)segueIdentifier withSender:(id)sender;
+- (id<RamblerViperModuleConfigurationPromiseProtocol>)rambler_performPromiseSegue:(NSString*)segueIdentifier withSender:(id)sender;
 - (id<RamblerViperModuleConfigurationPromiseProtocol>)rambler_embedModuleWithSegue:(NSString*)segueIdentifier
                                                          intoContainerView:(UIView*)containerView
                                                                 withSender:(id)sender;
 - (UIView*)rambler_containerViewWithIdentifier:(NSString*)identifier;
 - (void)rambler_removeFromParentModule;
 
-- (void)rds_prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
+- (void)rambler_prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 
 @end

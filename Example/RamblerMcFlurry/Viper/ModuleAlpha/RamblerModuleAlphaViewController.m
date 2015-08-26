@@ -24,9 +24,25 @@
 }
 
 - (void)didClickSendDataButton:(id)sender {
+    [self.textField resignFirstResponder];
     // Intermodule Data Transfer Example. Вызов. Шаг 1. Отправка данных в презентер
     [self.output sendDataButtonClicked];
 }
+
+- (void)didClickEmbedBetaButton:(id)sender {
+    [self.textField resignFirstResponder];    
+    [self.output embedModuleButtonClicked];
+}
+
+- (IBAction)didClickInstantiateBetaButton:(id)sender {
+    [self.textField resignFirstResponder];
+    [self.output instantiateBetaButtonClicked];
+}
+- (IBAction)didClickInstantiateAndEmbedBetaButton:(id)sender {
+    [self.textField resignFirstResponder];
+    [self.output instantiateAndEmbedBetaButtonClicked];
+}
+
 
 #pragma mark - RamblerModuleAlphaViewInput
 
@@ -37,18 +53,28 @@
     }
 }
 
-#pragma mark - RamblerViperModuleTransitionHandler
+#pragma mark - RamblerViperModuleTransitionHandlerProtocol
 
 - (id<RamblerViperModuleConfigurationPromiseProtocol>)performPromiseSegue:(NSString *)segueIdentifier withSender:(id)sender {
     // Intermodule Data Transfer Example. Вызов. Шаг 4. Создается Promise, он вместе с sender упаковывается в словать и отправляется в поле sender
     // при вызове performSegue. Promise возвращается как результат работы метода.
-    return [self rds_performPromiseSegue:segueIdentifier withSender:sender];
+    return [self rambler_performPromiseSegue:segueIdentifier withSender:sender];
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Intermodule Data Transfer Example. Вызов. Шаг 5. Promise распаковывается из словаря и ему задается свойство ModuleConfigurator. Конфигуратор
     // запрашивается у DestinationViewController по протоколу ModuleConfiguratorHolder.
-    [self rds_prepareForSegue:segue sender:sender];
+    [self rambler_prepareForSegue:segue sender:sender];
+}
+
+- (id<RamblerViperModuleConfigurationPromiseProtocol>)embedModuleWithSegue:(NSString *)segueIdentifier intoContainerView:(UIView *)containerView withSender:(id)sender {
+    return [self rambler_embedModuleWithSegue:segueIdentifier
+                            intoContainerView:containerView
+                                   withSender:sender];
+}
+
+- (UIView *)containerViewWithIdentifier:(NSString *)identifier {
+    return [self rambler_containerViewWithIdentifier:identifier];
 }
 
 @end

@@ -233,33 +233,33 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		037127A874871F5999F6DE03FEB4D85B /* PBXContainerItemProxy */ = {
+		3B008729A6DC8B3419CD7D0BDBC7D7E7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 29BE61DF66E816565808F12D3371F21C;
-			remoteInfo = Typhoon;
+			remoteGlobalIDString = 339B7EAAEDEE13E0975AB7BF76CB9216;
+			remoteInfo = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry";
 		};
-		1AAB4D34C50342D31A18AB42559B9E12 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 29BE61DF66E816565808F12D3371F21C;
-			remoteInfo = Typhoon;
-		};
-		1F2BCB31EFDA8CEF949CF0FEBD96A60F /* PBXContainerItemProxy */ = {
+		DE5FB7B5CB75997D08325A52342856BD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 8C2C9475E2945DC086710E83C7A40AEE;
 			remoteInfo = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry";
 		};
-		EAD005A3A71D11CDCA07891D28F14799 /* PBXContainerItemProxy */ = {
+		F03DFF7281D43943C38F525B9CB942B1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 339B7EAAEDEE13E0975AB7BF76CB9216;
-			remoteInfo = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry";
+			remoteGlobalIDString = 29BE61DF66E816565808F12D3371F21C;
+			remoteInfo = Typhoon;
+		};
+		FA259861415CC5F575FA70ECBDEC2AAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 29BE61DF66E816565808F12D3371F21C;
+			remoteInfo = Typhoon;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -1227,8 +1227,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				EE8993AE5F9ED92EF5ED10AF9703A772 /* PBXTargetDependency */,
-				9B34416EAAA3EFC9010C7D52376659A3 /* PBXTargetDependency */,
+				BB36190D8677B8AE5E582ECE37285684 /* PBXTargetDependency */,
+				E5E38B7110D4EC186306B6196AFAD1B2 /* PBXTargetDependency */,
 			);
 			name = "Pods-RamblerMcFlurry_Example";
 			productName = "Pods-RamblerMcFlurry_Example";
@@ -1262,8 +1262,8 @@
 			buildRules = (
 			);
 			dependencies = (
-				61B4192C826AA5D0491AC78A0EF59DFF /* PBXTargetDependency */,
-				2D9D2F066F84843891AC530E4D49D3A4 /* PBXTargetDependency */,
+				3AA7078938E15AF4FBBC6D077F8906F2 /* PBXTargetDependency */,
+				01F3CCF6A434203E8950E5E8DB5B2233 /* PBXTargetDependency */,
 			);
 			name = "Pods-RamblerMcFlurry_Tests";
 			productName = "Pods-RamblerMcFlurry_Tests";
@@ -1434,29 +1434,29 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		2D9D2F066F84843891AC530E4D49D3A4 /* PBXTargetDependency */ = {
+		01F3CCF6A434203E8950E5E8DB5B2233 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Typhoon;
 			target = 29BE61DF66E816565808F12D3371F21C /* Typhoon */;
-			targetProxy = 1AAB4D34C50342D31A18AB42559B9E12 /* PBXContainerItemProxy */;
+			targetProxy = F03DFF7281D43943C38F525B9CB942B1 /* PBXContainerItemProxy */;
 		};
-		61B4192C826AA5D0491AC78A0EF59DFF /* PBXTargetDependency */ = {
+		3AA7078938E15AF4FBBC6D077F8906F2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-RamblerMcFlurry_Tests-RamblerMcFlurry";
 			target = 339B7EAAEDEE13E0975AB7BF76CB9216 /* Pods-RamblerMcFlurry_Tests-RamblerMcFlurry */;
-			targetProxy = EAD005A3A71D11CDCA07891D28F14799 /* PBXContainerItemProxy */;
+			targetProxy = 3B008729A6DC8B3419CD7D0BDBC7D7E7 /* PBXContainerItemProxy */;
 		};
-		9B34416EAAA3EFC9010C7D52376659A3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = Typhoon;
-			target = 29BE61DF66E816565808F12D3371F21C /* Typhoon */;
-			targetProxy = 037127A874871F5999F6DE03FEB4D85B /* PBXContainerItemProxy */;
-		};
-		EE8993AE5F9ED92EF5ED10AF9703A772 /* PBXTargetDependency */ = {
+		BB36190D8677B8AE5E582ECE37285684 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "Pods-RamblerMcFlurry_Example-RamblerMcFlurry";
 			target = 8C2C9475E2945DC086710E83C7A40AEE /* Pods-RamblerMcFlurry_Example-RamblerMcFlurry */;
-			targetProxy = 1F2BCB31EFDA8CEF949CF0FEBD96A60F /* PBXContainerItemProxy */;
+			targetProxy = DE5FB7B5CB75997D08325A52342856BD /* PBXContainerItemProxy */;
+		};
+		E5E38B7110D4EC186306B6196AFAD1B2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Typhoon;
+			target = 29BE61DF66E816565808F12D3371F21C /* Typhoon */;
+			targetProxy = FA259861415CC5F575FA70ECBDEC2AAF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 

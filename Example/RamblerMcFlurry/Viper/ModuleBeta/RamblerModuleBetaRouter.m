@@ -22,4 +22,8 @@
 
 #pragma mark - RamblerModuleBetaRouterInput
 
+- (void)removeModule {
+    [self.transitionHandler removeFromParentModule];
+}
+
 @end

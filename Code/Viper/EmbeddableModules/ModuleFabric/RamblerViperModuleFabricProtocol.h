@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "RamblerViperModuleFabricInstantiationPromiseProtocol.h"
 
-@protocol RamblerViperModuleTransitionHandler;
+@protocol RamblerViperModuleTransitionHandlerProtocol;
 
 /**
  Протокол фабрики модулей VIPER, инициализирует модуль, в методе инициализации возвращает промис, который позволяет добавить модуль через 
@@ -24,6 +24,6 @@
  
  @return промис
  */
-- (id<RamblerViperModuleFabricInstantiationPromiseProtocol>)instantiateModuleFromTransitionHandler:(id<RamblerViperModuleTransitionHandler>)transitionHandler;
+- (id<RamblerViperModuleFabricInstantiationPromiseProtocol>)instantiateModuleFromTransitionHandler:(id<RamblerViperModuleTransitionHandlerProtocol>)transitionHandler;
 
 @end

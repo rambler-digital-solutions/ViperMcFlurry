@@ -15,19 +15,16 @@
 
 @implementation UIViewController (RamblerViperModuleTransitionHandling)
 
-- (id<RamblerViperModuleConfigurationPromiseProtocol>)rds_performPromiseSegue:(NSString*)segueIdentifier withSender:(id)sender {
+- (id<RamblerViperModuleConfigurationPromiseProtocol>)rambler_performPromiseSegue:(NSString*)segueIdentifier withSender:(id)sender {
     RamblerViperModuleConfigurationPromise *promise = [[RamblerViperModuleConfigurationPromise alloc] init];
 
     RamblerViperModuleTransitionSegueData* segueData = [RamblerViperModuleTransitionSegueData segueDataWithSender:sender
                                                                                                        andPromise:promise];
-    __weak typeof(self) wself = self;
-    
-    /// Здесь не возникает RetainCycle с promise->segueData->promise, т.к. moduleActivationBlock присваивается nil после вызова.
-    promise.moduleActivationBlock = ^{
-        typeof(self) sself = wself;
-        [sself performSegueWithIdentifier:segueIdentifier
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self performSegueWithIdentifier:segueIdentifier
                                    sender:segueData];
-    };
+    });
+    
     return promise;
 }
 
@@ -39,14 +36,10 @@
             [[RamblerViperEmbedModuleTransitionSegueData alloc] initWithSender:sender
                                                                     andPromise:promise
                                                               andContainerView:containerView];
-    __weak typeof(self) wself = self;
-    
-    /// Здесь не возникает RetainCycle с promise->segueData->promise, т.к. moduleActivationBlock присваивается nil после вызова.
-    promise.moduleActivationBlock = ^{
-        typeof(self) sself = wself;
-        [sself performSegueWithIdentifier:segueIdentifier
-                                   sender:segueData];
-    };
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self performSegueWithIdentifier:segueIdentifier
+                                  sender:segueData];
+    });
 
     return promise;
 }
@@ -62,11 +55,15 @@
 }
 
 - (void)rambler_removeFromParentModule {
-    [self.view removeFromSuperview];
-    [self removeFromParentViewController];
+    if ([self.parentViewController isKindOfClass:[UINavigationController class]]) {
+        [self.navigationController popViewControllerAnimated:YES];
+    } else {
+        [self.view removeFromSuperview];
+        [self removeFromParentViewController];
+    }
 }
 
-- (void)rds_prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+- (void)rambler_prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([sender isKindOfClass:[RamblerViperModuleTransitionSegueData class]]) {
         if ([sender isKindOfClass:[RamblerViperEmbedModuleTransitionSegueData class]] && [segue isKindOfClass:[RamblerViperEmbedModuleSegue class]]) {
             RamblerViperEmbedModuleTransitionSegueData *embedModuleSegueInfo = (RamblerViperEmbedModuleTransitionSegueData*)sender;

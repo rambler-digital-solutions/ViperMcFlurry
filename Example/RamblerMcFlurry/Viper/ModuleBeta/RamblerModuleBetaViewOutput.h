@@ -14,6 +14,7 @@
 @protocol RamblerModuleBetaViewOutput <NSObject>
 
 - (void)setupView;
+- (void)didClickRemoveModuleButton;
 
 @end
 

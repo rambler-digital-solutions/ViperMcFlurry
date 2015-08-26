@@ -10,16 +10,43 @@
 //
 
 #import "RamblerModuleBetaModuleAssembly.h"
+
+#import <RamblerMcFlurry/Viper.h>
+
 #import "RamblerModuleBetaViewController.h"
 #import "RamblerModuleBetaInteractor.h"
 #import "RamblerModuleBetaPresenter.h"
 #import "RamblerModuleBetaRouter.h"
+
 
 @interface  RamblerModuleBetaModuleAssembly()
 
 @end
 
 @implementation  RamblerModuleBetaModuleAssembly
+
+- (id<RamblerViperModuleFabricProtocol>)fabricBetaModule {
+    return [TyphoonDefinition withClass:[RamblerViperModuleFabric class]
+                          configuration:^(TyphoonDefinition *definition) {
+                              [definition useInitializer:@selector(initWithStoryboard:andRestorationId:)
+                                              parameters:^(TyphoonMethod *initializer) {
+                                                  [initializer injectParameterWith:[self storyboardBetaModule]];
+                                                  [initializer injectParameterWith:@"RamblerModuleBetaViewController"];
+                                              }];
+                          }];
+}
+
+- (UIStoryboard*)storyboardBetaModule {
+    return [TyphoonDefinition withClass:[TyphoonStoryboard class]
+                          configuration:^(TyphoonDefinition *definition) {
+                              [definition useInitializer:@selector(storyboardWithName:factory:bundle:)
+                                              parameters:^(TyphoonMethod *initializer) {
+                                                  [initializer injectParameterWith:@"Main"];
+                                                  [initializer injectParameterWith:self];
+                                                  [initializer injectParameterWith:nil];
+                                              }];
+                          }];
+}
 
 - (RamblerModuleBetaViewController *)viewRamblerModuleBeta {
 
@@ -58,7 +85,10 @@
 }
 
 - (RamblerModuleBetaRouter *)routerRamblerModuleBeta {
-    return [TyphoonDefinition withClass:[RamblerModuleBetaRouter class]];
+    return [TyphoonDefinition withClass:[RamblerModuleBetaRouter class] configuration:^(TyphoonDefinition *definition) {
+        [definition injectProperty:@selector(transitionHandler)
+                              with:[self viewRamblerModuleBeta]];
+    }];
 }
 
 @end

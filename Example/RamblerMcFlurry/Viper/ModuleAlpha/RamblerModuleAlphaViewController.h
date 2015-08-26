@@ -26,6 +26,11 @@
 
 @property (nonatomic, weak) IBOutlet UITextField *textField;
 - (IBAction)didClickSendDataButton:(id)sender;
+- (IBAction)didClickEmbedBetaButton:(id)sender;
+- (IBAction)didClickInstantiateBetaButton:(id)sender;
+- (IBAction)didClickInstantiateAndEmbedBetaButton:(id)sender;
+
+@property (nonatomic, weak) IBOutlet UIView *moduleContainerView;
 
 @end
 

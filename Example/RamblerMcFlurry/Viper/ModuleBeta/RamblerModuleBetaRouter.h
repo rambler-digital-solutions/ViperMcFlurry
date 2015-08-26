@@ -10,11 +10,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <RamblerMcFlurry/Viper.h>
 #import "RamblerModuleBetaRouterInput.h"
 
 /**
  
  */
 @interface RamblerModuleBetaRouter : NSObject <RamblerModuleBetaRouterInput>
+
+@property (nonatomic,weak) id<RamblerViperModuleTransitionHandlerProtocol> transitionHandler;
 
 @end
