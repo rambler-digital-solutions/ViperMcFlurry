@@ -7,7 +7,7 @@
 //
 
 #import "RamblerViperModuleFabricInstantiationPromise.h"
-#import "RamblerEmbedModuleSegue.h"
+#import "RamblerViperEmbedModuleSegue.h"
 #import "RamblerViperModuleConfigurationPromise.h"
 #import "RamblerViperModuleConfiguratorHolder.h"
 
@@ -46,7 +46,7 @@
     __weak typeof(self) wself = self;
     return [self andActivateUsingBlock:^{
         typeof(self) sself = wself;
-        RamblerEmbedModuleSegue *segue = [[RamblerEmbedModuleSegue alloc] initWithIdentifier:nil
+        RamblerViperEmbedModuleSegue *segue = [[RamblerViperEmbedModuleSegue alloc] initWithIdentifier:nil
                                                                                       source:sself.sourceViewController
                                                                                  destination:sself.destinationViewController];
         segue.containerView = containerView;

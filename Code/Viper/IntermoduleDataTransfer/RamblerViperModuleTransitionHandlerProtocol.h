@@ -25,7 +25,7 @@
 /// В базовой реализации, в методе необходимо извлечь Promise из словаря и задать ему свойство moduleConfigurator для вызова Promise.
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 
-/// Метод внедрения модуля через RamblerEmbedModuleSegue с заданием View-контейнера. Создает Promise, упаковывает его,
+/// Метод внедрения модуля через RamblerViperEmbedModuleSegue с заданием View-контейнера. Создает Promise, упаковывает его,
 ///  sender и containerView в cпециальный объект RamblerViperEmbedModuleTransitionSegueData
 - (id<RamblerViperModuleConfigurationPromiseProtocol>)embedModuleWithSegue:(NSString*)segueIdentifier
                                                          intoContainerView:(UIView*)containerView

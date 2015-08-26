@@ -49,7 +49,7 @@ pod "RamblerMcFlurry/Testing"
 
 ### Передача данных между модулями через Segue с помощью Promise.
 
-Ниже описана стандартная реализация передачи данных между модулями. Она доступна в категории UIViewController+DefaultViperModuleTransitionHandling. 
+Ниже описана стандартная реализация передачи данных между модулями. Она доступна в категории UIViewController+RamblerViperModuleTransitionHandling.
 
 1. Router при инициализации получает ссылку на ViewController, закрытый протоколом RamblerViperModuleTransitionHandlerProtocol
 2. При необходимости перехода в другой модуль с передачей данных Presenter вызывает соответствующий метод у Router с данными для передачи

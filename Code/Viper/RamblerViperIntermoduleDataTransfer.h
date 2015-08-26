@@ -13,14 +13,14 @@
 #import "RamblerViperModuleConfigurationPromiseProtocol.h"
 #import "RamblerViperModuleConfigurationPromise.h"
 #import "RamblerViperModuleConfiguratorHolder.h"
-#import "RamblerViperModuleTransitionHandler.h"
+#import "RamblerViperModuleTransitionHandlerProtocol.h"
 #import "UIViewController+DefaultViperModuleTransitionHandling.h"
 
 #import "RamblerViperModuleFabric.h"
 #import "RamblerViperModuleFabricProtocol.h"
-#import "RabmlerViperModuleFabricInstantiationPromise.h"
+#import "RamblerViperModuleFabricInstantiationPromise.h"
 #import "RamblerViperModuleFabricInstantiationPromiseProtocol.h"
-#import "RamblerViperEmbedModuleSegue.h"
+#import "RamblerEmbedModuleSegue.h"
 #import "RamblerViperEmbedModuleTransitionSegueData.h"
 
 #endif

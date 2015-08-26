@@ -1,19 +1,19 @@
 //
-//  UIViewController+DefaultViperModuleTransitionHandling.m
+//  UIViewController+RamblerViperModuleTransitionHandling.m
 //  Rambler McFlurry
 //
 //  Created by Andrey Zarembo-Godzyatsky on 03/08/15.
 //  Copyright (c) 2015 Rambler DS. All rights reserved.
 //
 
-#import "UIViewController+DefaultViperModuleTransitionHandling.h"
+#import "UIViewController+RamblerViperModuleTransitionHandling.h"
 #import "RamblerViperModuleConfigurationPromise.h"
 #import "RamblerViperModuleConfiguratorHolder.h"
 #import "RamblerViperModuleTransitionSegueData.h"
 #import "RamblerViperEmbedModuleTransitionSegueData.h"
-#import "RamblerEmbedModuleSegue.h"
+#import "RamblerViperEmbedModuleSegue.h"
 
-@implementation UIViewController (DefaultViperModuleTransitionHandling)
+@implementation UIViewController (RamblerViperModuleTransitionHandling)
 
 - (id<RamblerViperModuleConfigurationPromiseProtocol>)rds_performPromiseSegue:(NSString*)segueIdentifier withSender:(id)sender {
     RamblerViperModuleConfigurationPromise *promise = [[RamblerViperModuleConfigurationPromise alloc] init];
@@ -63,9 +63,9 @@
 
 - (void)rds_prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     if ([sender isKindOfClass:[RamblerViperModuleTransitionSegueData class]]) {
-        if ([sender isKindOfClass:[RamblerViperEmbedModuleTransitionSegueData class]] && [segue isKindOfClass:[RamblerEmbedModuleSegue class]]) {
+        if ([sender isKindOfClass:[RamblerViperEmbedModuleTransitionSegueData class]] && [segue isKindOfClass:[RamblerViperEmbedModuleSegue class]]) {
             RamblerViperEmbedModuleTransitionSegueData *embedModuleSegueInfo = (RamblerViperEmbedModuleTransitionSegueData*)sender;
-            RamblerEmbedModuleSegue* embedModuleSegue = (RamblerEmbedModuleSegue*)segue;
+            RamblerViperEmbedModuleSegue * embedModuleSegue = (RamblerViperEmbedModuleSegue *)segue;
             embedModuleSegue.containerView = embedModuleSegueInfo.containerView;
         }
 

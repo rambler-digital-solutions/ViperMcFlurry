@@ -1,5 +1,5 @@
 //
-//  RamblerEmbedModuleSegue.h
+//  RamblerViperEmbedModuleSegue.h
 //  Rambler McFlurry
 //
 //  Created by Andrey Zarembo-Godzyatsky on 21/08/15.
@@ -11,7 +11,7 @@
 /**
  * Специальный Segue для внедрения одних модулей в другие в контейнерный View
  */
-@interface RamblerEmbedModuleSegue : UIStoryboardSegue
+@interface RamblerViperEmbedModuleSegue : UIStoryboardSegue
 
 /**
  View-контейнер, в который будет добавлен view встраиваемого модуля. К нему будут автоматически примерены

@@ -1,5 +1,5 @@
 //
-//  UIViewController+DefaultViperModuleTransitionHandling.h
+//  UIViewController+RamblerViperModuleTransitionHandling.h
 //  Rambler McFlurry
 //
 //  Created by Andrey Zarembo-Godzyatsky on 03/08/15.
@@ -12,7 +12,7 @@
 /**
  * Категория с базовыми реализациями методов ViewController для создания Promise и его вызова
  */
-@interface UIViewController (DefaultViperModuleTransitionHandling)<RamblerViperModuleTransitionHandlerProtocol>
+@interface UIViewController (RamblerViperModuleTransitionHandling)<RamblerViperModuleTransitionHandlerProtocol>
 
 - (id<RamblerViperModuleConfigurationPromiseProtocol>)rds_performPromiseSegue:(NSString*)segueIdentifier withSender:(id)sender;
 - (id<RamblerViperModuleConfigurationPromiseProtocol>)rambler_embedModuleWithSegue:(NSString*)segueIdentifier
