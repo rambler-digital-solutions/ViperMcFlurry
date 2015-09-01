@@ -1,12 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'RamblerMcFlurry_Example', :exclusive => true do
-  pod "RamblerMcFlurry/Interface", :path => "../"
-  pod "RamblerMcFlurry/Viper", :path => "../"
+target 'ViperMcFlurry_Example', :exclusive => true do
+  pod "ViperMcFlurry", :path => "../"
   pod "Typhoon", '~> 3.2.x'  
 end
 
-target 'RamblerMcFlurry_Tests', :exclusive => true do
-  pod "RamblerMcFlurry/Testing", :path => "../"
+target 'ViperMcFlurry_Tests', :exclusive => true do
   pod "Typhoon", '~> 3.2.x'
 end

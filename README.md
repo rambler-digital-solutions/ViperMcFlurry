@@ -1,61 +1,33 @@
-# RamblerMcFlurry
+# VIPER McFlurry
 
-## Описание
+## Description
 
-**RamblerMcFlurry** - это коллекция часто используемых в проектах Rambler&Co компонентов. Исторически сложилось, что файлы такого рода переносились из проекта в проект путем *Cmd+C => Cmd+V*. Этот под - отчаянная попытка исправить положение дел.
+**VIPER McFlurry** is a modern framework for implementing VIPER architecture in iOS application. It offers several tools and components that helps either start new projects with VIPER or move from MVC.
 
-Для удобства использования под разбит на отдельные спеки - *Testing*, *Interface*, *Core* и прочие в том же духе.
+Also it icludes **Templates** folder with XCode templates for VIPER modules.
 
-В настоящий момент в **RamblerMcFlurry** есть следующие хелперы:
+## Install
 
-- *Interface*
-    - *RamblerTableViewAnimator* - Базовый аниматор для *UITableView*
-- *Testing*
-    - *RamblerTyphoonAssemblyTests* - Базовый класс тестов для *TyphoonAssembly*
-- *VIPER*
-	- *IntermoduleDataTransfer* - Все необходимые компоненты для передачи данных между VIPER модулями через Segue на основе Promise.
+**ViperMcFlurryPod**
 
-## Установка
-
-**RamblerMcFlurry** находится в наших [CocoaPods](https://gitlab.rambler.ru/groups/cocoapods).
-
-Для того, чтобы установить себе все волшебные хелперы, добавьте в Podfile:
+Add to podfile
 
 ```ruby
-pod "RamblerMcFlurry"
+pod "ViperMcFlurryPod"
 ```
 
-Если же требуется только определенная группа хелперов, к примеру, для тестирования, то:
+**Templates**
 
-```ruby
-pod "RamblerMcFlurry/Testing"
-```
-
-## Развитие компонента
-
-Хотите добавить для общего пользования хелпер из своего проекта? Чудесно! Не забывайте только следовать нескольким простым правилам:
-
-1. Используйте префикс *Rambler* для всех файлов, классов, enum'ов и прочего добра.
-2. Полностью комментируйте интерфейсный файл, не забывая описать, зачем вообще нужен это хелпер.
-3. Добавляйте примеры использования хелпера в *Example Project*. А еще лучше - покрывайте тестами.
-4. Для каждого добавленного хелпера создаватье ревью в Fisheye.
-
-## Авторы
-
-Доблестная команда Rambler&Co.
+Copy contents of *Templates/File Templates* folder into `~/Library/Developer/Xcode/Templates/File Templates`
 
 
-## VIPER / IntermoduleDataTransfer
+## Authors
 
-### Передача данных между модулями через Segue с помощью Promise.
+**Rambler&Co** team:
 
-Ниже описана стандартная реализация передачи данных между модулями. Она доступна в категории UIViewController+DefaultViperModuleTransitionHandling. 
+- Andrey Zarembo-Godzyatsky / a.zarembo-godyzatsky@rambler-co.ru
+- Valery Popov / v.popov@rambler-co.ru
 
-1. Router при инициализации получает ссылку на ViewController, закрытый протоколом RamblerViperModuleTransitionHandler
-2. При необходимости перехода в другой модуль с передачей данных Presenter вызывает соответствующий метод у Router с данными для передачи
-3. Router вызывает метод **performPromiseSegue:withSender:** в котором создается объект RamblerViperModuleConfigurationPromise
-4. Этот promise возвращается в результате метода для вызова thenConfigureWithModuleWithBlock:, который сохраняет блок в Promise.
-5. Promise срабатывает после того, как у него будет присвоен блок и конфигуратор модуля в свойстве moduleConfigurator.
-6. В п.3 помимо promise создается также объект RamblerViperModuleTransitionSegueData, в который сохраняется sender и promise, а он сам передается в качестве sender в вызове performSegueWithIdentifier:sender:
-7. Во время вызоыва prepareForSegue проверяется тип senger, если он RamblerViperModuleTransitionSegueData, то извлекается promise, у целевого viewcontroller у Segue запрашивается конфигуратор модуля и присваивается в promise.
-8. Выполняется вызов блока с заданным конфигуратором.
+## Project History
+
+- v0.1 - Forked VIPER components from internal projects
