@@ -11,7 +11,7 @@
 
 #import "RamblerModuleBetaModuleAssembly.h"
 
-#import <ViperMcFlurry/Viper.h>
+#import <ViperMcFlurry/ViperMcFlurry.h>
 
 #import "RamblerModuleBetaViewController.h"
 #import "RamblerModuleBetaInteractor.h"

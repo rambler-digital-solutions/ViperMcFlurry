@@ -1,13 +1,13 @@
 //
-//  ModuleFabric.h
+//  ModuleFactory.h
 //  ViperMcFlurry
 //
 //  Created by Andrey Zarembo-Godzyatsky on 29/07/15.
 //
 //
 
-#ifndef _ViperMcFlurry_ModuleFabric_h_
-#define _ViperMcFlurry_ModuleFabric_h_
+#ifndef _ViperMcFlurry_ModuleFactory_h_
+#define _ViperMcFlurry_ModuleFactory_h_
 
 #import "RamblerViperModuleFabric.h"
 #import "RamblerViperModuleFabricInstantiationPromise.h"

@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.header_mappings_dir = 'Code'
 
   s.subspec 'Core' do |cs|
-    cs.source_files = "Code/Core"
+    cs.source_files = "Code/ViperMcFlurry.h", "Code/Core"
   end
 
   s.subspec 'IntermoduleDataTransfer' do |idt|
@@ -21,12 +21,12 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'ModuleFactory' do |mf|
-    mf.source_files = "Code/Viper.h", "Code/Viper/**/*.{h,m}"
+    mf.source_files = "Code/ModuleFactory.h", "Code/ModuleFactory/**/*.{h,m}"
     mf.dependency 'ViperMcFlurry/Core'
   end
 
   s.subspec 'EmbeddableModules' do |em|
-    em.source_files = "Code/Testing.h", "Code/Testing/**/*.{h,m}"
+    em.source_files = "Code/EmbeddableModules.h", "Code/EmbeddableModules/**/*.{h,m}"
     em.dependency 'ViperMcFlurry/Core'
   end
 

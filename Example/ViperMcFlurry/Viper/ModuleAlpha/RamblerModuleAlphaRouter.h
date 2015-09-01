@@ -11,7 +11,7 @@
 
 #import <Foundation/Foundation.h>
 #import "RamblerModuleAlphaRouterInput.h"
-#import <ViperMcFlurry/Viper.h>
+#import <ViperMcFlurry/ViperMcFlurry.h>
 
 /**
  

@@ -11,6 +11,6 @@
 
 #import "EmbeddableModules.h"
 #import "IntermoduleDataTransfer.h"
-#import "ModuleFabric.h"
+#import "ModuleFactory.h"
 
 #endif

@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ViperMcFlurry/Viper.h>
+#import <ViperMcFlurry/ViperMcFlurry.h>
 
 // Intermodule Data Transfer Example. Конфигурация. Шаг 1. В модуле, которые будет принимать данные необходимо объявить протокол конфигуратора
 @protocol RamblerModuleBetaConfigurator <RamblerViperModuleConfiguratorProtocol>

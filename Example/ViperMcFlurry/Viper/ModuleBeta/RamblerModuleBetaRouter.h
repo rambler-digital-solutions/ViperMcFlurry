@@ -10,7 +10,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <ViperMcFlurry/Viper.h>
+#import <ViperMcFlurry/ViperMcFlurry.h>
 #import "RamblerModuleBetaRouterInput.h"
 
 /**
