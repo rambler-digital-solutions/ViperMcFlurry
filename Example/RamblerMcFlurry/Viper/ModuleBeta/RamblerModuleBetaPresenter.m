@@ -35,6 +35,10 @@
     [self.view setExampleString:self.exampleString];
 }
 
+- (void)didClickRemoveModuleButton {
+    [self.router removeModule];
+}
+
 #pragma mark - RamblerModuleBetaInteractorOutput
 
 @end

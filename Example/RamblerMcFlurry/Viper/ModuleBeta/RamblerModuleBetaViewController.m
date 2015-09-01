@@ -11,6 +11,7 @@
 
 #import "RamblerModuleBetaViewController.h"
 #import "RamblerModuleBetaViewOutput.h"
+#import <RamblerMcFlurry/Viper.h>
 
 @interface RamblerModuleBetaViewController()
 
@@ -27,6 +28,13 @@
     self.exampleStringLabel.text = exampleString;
 }
 
+- (IBAction)didClickRemoveModuleButton:(id)sender {
+    [self.output didClickRemoveModuleButton];
+}
 #pragma mark - RamblerModuleBetaViewInput
+
+- (void)removeFromParentModule {
+    [self rambler_removeFromParentModule];
+}
 
 @end

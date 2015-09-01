@@ -11,7 +11,7 @@
 @protocol RamblerViperModuleConfiguratorProtocol;
 
 /// Блок конфигурации модуля. Вызывается в PrepareForSegue.
-typedef void (^RCCModuleConfigurationBlock)(id<RamblerViperModuleConfiguratorProtocol> viperModuleConfigurator);
+typedef void (^RablerViperModuleConfigurationBlock)(id<RamblerViperModuleConfiguratorProtocol> viperModuleConfigurator);
 
 /**
  * Базовый протокол для Promise конфигурации модуля
@@ -19,6 +19,6 @@ typedef void (^RCCModuleConfigurationBlock)(id<RamblerViperModuleConfiguratorPro
 @protocol RamblerViperModuleConfigurationPromiseProtocol <NSObject>
 
 /// Метод в который передается блок конфугурации модуля. Блок вызывается с конфигуратором модуля внутри PrepareForSegue.
-- (void)thenConfigureModuleWithBlock:(RCCModuleConfigurationBlock)configuraionBlock;
+- (void)thenConfigureModuleWithBlock:(RablerViperModuleConfigurationBlock)configuraionBlock;
 
 @end

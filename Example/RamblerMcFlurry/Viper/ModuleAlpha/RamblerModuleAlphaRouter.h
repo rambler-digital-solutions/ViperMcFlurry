@@ -18,6 +18,7 @@
  */
 @interface RamblerModuleAlphaRouter : NSObject <RamblerModuleAlphaRouterInput>
 
-@property (nonatomic,strong) id<RamblerViperModuleTransitionHandler> transitionHandler;
+@property (nonatomic,weak) id<RamblerViperModuleTransitionHandlerProtocol> transitionHandler;
+@property (nonatomic,strong) id<RamblerViperModuleFabricProtocol> betaModuleFabric;
 
 @end

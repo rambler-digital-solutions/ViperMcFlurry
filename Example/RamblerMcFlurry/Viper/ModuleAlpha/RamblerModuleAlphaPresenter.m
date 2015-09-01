@@ -36,6 +36,29 @@
     }];
 }
 
+- (void)embedModuleButtonClicked {
+    __weak typeof(self) wself = self;
+    [self.view getDataWithResultBlock:^(NSString *data) {
+        typeof (self) sself = wself;
+        [sself.router embedBetaModuleWithExampleString:data];
+    }];
+}
+
+- (void)instantiateBetaButtonClicked {
+    __weak typeof(self) wself = self;
+    [self.view getDataWithResultBlock:^(NSString *data) {
+        typeof (self) sself = wself;
+        [sself.router instantiateBetaModuleWithExampleString:data];
+    }];
+}
+- (void)instantiateAndEmbedBetaButtonClicked {
+    __weak typeof(self) wself = self;
+    [self.view getDataWithResultBlock:^(NSString *data) {
+        typeof (self) sself = wself;
+        [sself.router instantiateAndEmbedBetaModuleWithExampleString:data];
+    }];
+}
+
 #pragma mark - RamblerModuleAlphaInteractorOutput
 
 @end

@@ -27,5 +27,7 @@
 
 @property (nonatomic, strong) IBOutlet UILabel *exampleStringLabel;
 
+- (IBAction)didClickRemoveModuleButton:(id)sender;
+
 @end
 

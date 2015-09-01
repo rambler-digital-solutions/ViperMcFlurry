@@ -9,6 +9,13 @@
 #import <UIKit/UIKit.h>
 #import "RamblerViperModuleConfigurationPromiseProtocol.h"
 
+/**
+ Блок конфигурации модуля. Необходим для сохранения оцередности вызовов конфигурации и методов модуля. Позволяет
+ избежать ситуации, в которой обращение ко view у viewcontroller модуля выполняется раньше, чем конфугурация модуля.
+ Это приводит к некорректному поведению.
+ */
+typedef void (^RamblerViperModuleActivationBlock)();
+
 @protocol RamblerViperModuleConfiguratorProtocol;
 
 /**
@@ -20,7 +27,10 @@
  */
 @interface RamblerViperModuleConfigurationPromise : NSObject<RamblerViperModuleConfigurationPromiseProtocol>
 
+/// Блок активации модуля, вызывается после конфигурации модуля
+@property (nonatomic, strong) RamblerViperModuleActivationBlock moduleActivationBlock;
+
 /// Конфигуратор модуля
-@property(nonatomic,weak) id<RamblerViperModuleConfiguratorProtocol> moduleConfigurator;
+@property(nonatomic, weak) id<RamblerViperModuleConfiguratorProtocol> moduleConfigurator;
 
 @end

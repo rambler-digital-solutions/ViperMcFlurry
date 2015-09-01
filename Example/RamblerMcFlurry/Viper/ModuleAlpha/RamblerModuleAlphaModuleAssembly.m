@@ -10,12 +10,17 @@
 //
 
 #import "RamblerModuleAlphaModuleAssembly.h"
+
+#import "RamblerModuleBetaModuleAssembly.h"
+
 #import "RamblerModuleAlphaViewController.h"
 #import "RamblerModuleAlphaInteractor.h"
 #import "RamblerModuleAlphaPresenter.h"
 #import "RamblerModuleAlphaRouter.h"
 
 @interface  RamblerModuleAlphaModuleAssembly()
+
+@property (nonatomic,strong,readonly) RamblerModuleBetaModuleAssembly *betaModuleAssembly;
 
 @end
 
@@ -59,6 +64,9 @@
                               // Intermodule Data Transfer Example. Шаг 1. У роутеру задается TransitionHandler.
                               [definition injectProperty:@selector(transitionHandler)
                                                     with:[self viewRamblerModuleAlpha]];
+                              
+                              [definition injectProperty:@selector(betaModuleFabric)
+                                                    with:[self.betaModuleAssembly fabricBetaModule]];
                           }];
 }
 

@@ -15,6 +15,9 @@
 
 - (void)setupView;
 - (void)sendDataButtonClicked;
+- (void)embedModuleButtonClicked;
+- (void)instantiateBetaButtonClicked;
+- (void)instantiateAndEmbedBetaButtonClicked;
 
 @end
 

@@ -9,6 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "RamblerViperModuleConfigurationPromiseProtocol.h"
 
+/**
+ Объект для хранения данных при переходе между модулями через Segue. Сохраняет в себе оригинальный sender и promise
+ для конфигурации модуля.
+ */
 @interface RamblerViperModuleTransitionSegueData : NSObject
 
 @property (nonatomic,strong,readonly) id sender;

@@ -17,6 +17,9 @@
  */
 @protocol RamblerViperModuleConfiguratorHolder <NSObject>
 
+/**
+ Конфигуратор модуля с которым будет вызываеться блок конфигурации при добавлении модуля
+ */
 - (id<RamblerViperModuleConfiguratorProtocol>)moduleConfigurator;
 
 @end

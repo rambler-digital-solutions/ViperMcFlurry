@@ -10,5 +10,7 @@
 
 @protocol RamblerModuleBetaRouterInput <NSObject>
 
+- (void)removeModule;
+
 @end
 

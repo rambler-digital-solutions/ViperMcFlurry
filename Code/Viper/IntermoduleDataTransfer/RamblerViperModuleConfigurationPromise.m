@@ -10,13 +10,13 @@
 
 @interface RamblerViperModuleConfigurationPromise ()
 
-@property (nonatomic,strong) RCCModuleConfigurationBlock configurationBlock;
+@property (nonatomic,strong) RablerViperModuleConfigurationBlock configurationBlock;
 
 @end
 
 @implementation RamblerViperModuleConfigurationPromise
 
-- (void)thenConfigureModuleWithBlock:(RCCModuleConfigurationBlock)configuraionBlock {
+- (void)thenConfigureModuleWithBlock:(RablerViperModuleConfigurationBlock)configuraionBlock {
     self.configurationBlock = configuraionBlock;
     [self tryToExecute];
 }
@@ -29,6 +29,10 @@
 -(void)tryToExecute {
     if (self.moduleConfigurator != nil && self.configurationBlock != nil) {
         self.configurationBlock(self.moduleConfigurator);
+        if (self.moduleActivationBlock) {
+            self.moduleActivationBlock();
+        }
+        self.moduleActivationBlock = nil;
     }
 }
 
