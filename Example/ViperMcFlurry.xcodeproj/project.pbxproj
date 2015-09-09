@@ -690,12 +690,7 @@
 				INFOPLIST_FILE = "ViperMcFlurry/ViperMcFlurry-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MODULE_NAME = ExampleApp;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-l\"ViperMcFlurry\"",
-					"-l\"Typhoon\"",
-					"$(inherited)",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -713,12 +708,7 @@
 				INFOPLIST_FILE = "ViperMcFlurry/ViperMcFlurry-Info.plist";
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MODULE_NAME = ExampleApp;
-				OTHER_LDFLAGS = (
-					"-ObjC",
-					"-l\"ViperMcFlurry\"",
-					"-l\"Typhoon\"",
-					"$(inherited)",
-				);
+				OTHER_LDFLAGS = "$(inherited)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

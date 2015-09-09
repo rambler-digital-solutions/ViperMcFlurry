@@ -5,7 +5,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://gitlab.rambler.ru/cocoapods/ViperMcFlurry"
   s.license          = 'MIT'
   s.authors           = { "Andrey Zarembo-Godzyatsky" => "a.zarembo-godzyatsky@rambler-co.ru", "Valery Popov" => "v.popov@rambler-co.ru" }
-  s.source           = { :git => "https://gitlab.rambler.ru/cocoapods/ViperMcFlurry.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://gitlab.rambler.ru/mobile-dev/VIPERMcFlurry.git", :tag => s.version.to_s }
   #s.social_media_url = ''
   s.platform     = :ios, '7.0'
   s.requires_arc = true
