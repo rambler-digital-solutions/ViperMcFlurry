@@ -23,4 +23,6 @@
 
 - (void)rambler_prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
 
+- (void)rambler_dismissModule;
+
 @end

@@ -23,6 +23,14 @@
  @return промис конфигурации добавляемого модуля
  */
 - (id<RamblerViperModuleConfigurationPromiseProtocol>)andShow;
+
+/**
+ Добавление модуля как модального ViewController в navigation controller вызывающего модуля
+ 
+ @return промис конфигурации добавляемого модуля
+ */
+- (id<RamblerViperModuleConfigurationPromiseProtocol>)andShowModallyWithNavigationController:(UINavigationController*)navigationController;
+
 /**
  Добавление модуля во View-контейнер вызываюшего модуля
  

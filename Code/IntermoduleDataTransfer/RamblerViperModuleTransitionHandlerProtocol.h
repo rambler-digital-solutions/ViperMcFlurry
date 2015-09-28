@@ -37,4 +37,7 @@
 /// Метод удаления внедренного модуля из родительского модуля. Используется для закрытия информмационных окон и т.п.
 - (void)removeFromParentModule;
 
+/// Метод для закрытия ViewController из родительского модуля. Модальный или в NavigationController
+- (void)dismissModule;
+
 @end

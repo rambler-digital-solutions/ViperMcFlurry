@@ -9,7 +9,8 @@
 #import "RamblerViperModuleConfigurationPromise.h"
 
 @interface RamblerViperModuleConfigurationPromise ()
-
+@property (nonatomic,assign) BOOL configurationBlockWasSet;
+@property (nonatomic,assign) BOOL moduleConfiguratorWasSet;
 @property (nonatomic,strong) RablerViperModuleConfigurationBlock configurationBlock;
 
 @end
@@ -21,14 +22,23 @@
     [self tryToExecute];
 }
 
+- (void)setConfigurationBlock:(RablerViperModuleConfigurationBlock)configurationBlock {
+    _configurationBlock = configurationBlock;
+    self.configurationBlockWasSet = YES;
+}
+
 - (void)setModuleConfigurator:(id<RamblerViperModuleConfiguratorProtocol>)moduleConfigurator {
     _moduleConfigurator = moduleConfigurator;
+    self.moduleConfiguratorWasSet = YES;
     [self tryToExecute];
 }
 
 -(void)tryToExecute {
-    if (self.moduleConfigurator != nil && self.configurationBlock != nil) {
-        self.configurationBlock(self.moduleConfigurator);
+    if (self.moduleConfiguratorWasSet && self.configurationBlockWasSet) {
+        
+        if (self.configurationBlock != nil) {
+            self.configurationBlock(self.moduleConfigurator);
+        }
         if (self.moduleActivationBlock) {
             self.moduleActivationBlock();
         }
