@@ -1,6 +1,6 @@
 //
 //  UIViewController+RamblerViperModuleTransitionHandling.m
-//  VIPER McFlurry
+//  Rambler McFlurry
 //
 //  Created by Andrey Zarembo-Godzyatsky on 03/08/15.
 //  Copyright (c) 2015 Rambler DS. All rights reserved.
@@ -74,10 +74,25 @@
         RamblerViperModuleTransitionSegueData *segueInfo = (RamblerViperModuleTransitionSegueData*)sender;
         RamblerViperModuleConfigurationPromise * promise = segueInfo.promise;
         id<RamblerViperModuleConfiguratorProtocol> configurator = nil;
-        if ([segue.destinationViewController conformsToProtocol:@protocol(RamblerViperModuleConfiguratorHolder)]) {
-            configurator = [(id<RamblerViperModuleConfiguratorHolder>)segue.destinationViewController moduleConfigurator];
+        
+        UIViewController* targetViewController = segue.destinationViewController;
+        if ([segue.destinationViewController isKindOfClass:[UINavigationController class]]) {
+            targetViewController = [(UINavigationController*)segue.destinationViewController topViewController];
+        }
+        
+        if ([targetViewController conformsToProtocol:@protocol(RamblerViperModuleConfiguratorHolder)]) {
+            configurator = [(id<RamblerViperModuleConfiguratorHolder>)targetViewController moduleConfigurator];
         }
         [promise setModuleConfigurator:configurator];
+    }
+}
+
+- (void)rambler_dismissModule {
+    if (self.presentingViewController) {
+        [self dismissViewControllerAnimated:YES completion:^{}];
+    }
+    else {
+        [self.navigationController popViewControllerAnimated:YES];
     }
 }
 

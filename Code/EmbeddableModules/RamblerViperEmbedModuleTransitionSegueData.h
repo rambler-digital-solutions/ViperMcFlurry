@@ -10,8 +10,8 @@
 #import "RamblerViperModuleTransitionSegueData.h"
 
 /**
- This object is used to store segue data during transition. In addition to super class it stores view container
- for embedded module view.
+ Объект для хранения данных при переходе между модулями через Segue. Дополнительно к родительскогому объекту
+ хранит контейнер для встаиваемого модуля
  */
 @interface RamblerViperEmbedModuleTransitionSegueData : RamblerViperModuleTransitionSegueData
 

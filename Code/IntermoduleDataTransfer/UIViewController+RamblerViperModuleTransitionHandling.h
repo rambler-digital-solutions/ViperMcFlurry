@@ -1,6 +1,6 @@
 //
 //  UIViewController+RamblerViperModuleTransitionHandling.h
-//  VIPER McFlurry
+//  Rambler McFlurry
 //
 //  Created by Andrey Zarembo-Godzyatsky on 03/08/15.
 //  Copyright (c) 2015 Rambler DS. All rights reserved.
@@ -22,5 +22,7 @@
 - (void)rambler_removeFromParentModule;
 
 - (void)rambler_prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender;
+
+- (void)rambler_dismissModule;
 
 @end

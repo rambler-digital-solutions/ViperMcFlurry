@@ -1,6 +1,6 @@
 //
 //  RamblerViperModuleTransitionHandlerProtocol.h
-//  VIPER McFlurry
+//  Rambler McFlurry
 //
 //  Created by Andrey Zarembo-Godzyatsky on 27/07/15.
 //  Copyright (c) 2015 Rambler DS. All rights reserved.
@@ -36,5 +36,8 @@
 
 /// Метод удаления внедренного модуля из родительского модуля. Используется для закрытия информмационных окон и т.п.
 - (void)removeFromParentModule;
+
+/// Метод для закрытия ViewController из родительского модуля. Модальный или в NavigationController
+- (void)dismissModule;
 
 @end

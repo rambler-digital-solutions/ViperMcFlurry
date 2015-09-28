@@ -41,6 +41,27 @@
                                               animated:YES];
     }];
 }
+
+/**
+ Добавление модуля как модального ViewController в navigation controller вызывающего модуля
+ 
+ @return промис конфигурации добавляемого модуля
+ */
+- (id<RamblerViperModuleConfigurationPromiseProtocol>)andShowModallyWithNavigationController:(UINavigationController*)navigationController {
+    
+    __weak typeof(self) wself = self;
+    return [self andActivateUsingBlock:^{
+        
+        typeof (self) sself = wself;
+
+        [navigationController setViewControllers:@[self.destinationViewController] animated:NO];
+        
+        [sself.sourceViewController presentViewController:navigationController
+                                                 animated:YES
+                                               completion:^{}];
+    }];
+}
+
 - (id<RamblerViperModuleConfigurationPromiseProtocol>)andEmbedIntoContainerView:(UIView*)containerView {
 
     __weak typeof(self) wself = self;
@@ -58,7 +79,14 @@
 
     RamblerViperModuleConfigurationPromise *promise = [[RamblerViperModuleConfigurationPromise alloc] init];
     id<RamblerViperModuleConfiguratorProtocol> configurator = nil;
-    if ([self.destinationViewController conformsToProtocol:@protocol(RamblerViperModuleConfiguratorHolder)]) {
+    
+    if ([self.destinationViewController isKindOfClass:[UINavigationController class]]) {
+        
+        UIViewController *topViewController = [self.destinationViewController topViewController];
+        if ([topViewController conformsToProtocol:@protocol(RamblerViperModuleConfiguratorHolder)]) {
+            configurator = [(id<RamblerViperModuleConfiguratorHolder>)topViewController moduleConfigurator];
+        }
+    } else if ([self.destinationViewController conformsToProtocol:@protocol(RamblerViperModuleConfiguratorHolder)]) {
         configurator = [(id<RamblerViperModuleConfiguratorHolder>)self.destinationViewController moduleConfigurator];
     }
     [promise setModuleConfigurator:configurator];
