@@ -17,9 +17,6 @@
 @protocol RamblerModuleAlphaInteractorInput;
 @protocol RamblerModuleAlphaRouterInput;
 
-/**
- 
- */
 @interface RamblerModuleAlphaPresenter : NSObject <RamblerModuleAlphaViewOutput, RamblerModuleAlphaInteractorOutput>
 
 @property (nonatomic, weak) id<RamblerModuleAlphaViewInput> view;

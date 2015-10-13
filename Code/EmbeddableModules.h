@@ -10,6 +10,6 @@
 #define _ViperMcFlurry_EmbeddableModules_h_
 
 #import "RamblerViperEmbedModuleSegue.h"
-#import "RamblerViperEmbedModuleTransitionSegueData.h"
+#import "RamblerViperEmbedModuleContainer.h"
 
 #endif

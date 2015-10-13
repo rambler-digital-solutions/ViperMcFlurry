@@ -22,10 +22,9 @@
 
 @implementation RamblerModuleBetaPresenter
 
-#pragma mark - RamblerModuleBetaConfigurator
+#pragma mark - RamblerModuleBetaInput
 
 - (void)configureWithExampleString:(NSString*)exampleString {
-    // Intermodule Data Transfer Example. Вызов. Шаг 7. Презентер в роли конфигуратора получает данные.
     self.exampleString = exampleString;
 }
 

@@ -31,7 +31,6 @@
     __weak typeof(self) wself = self;
     [self.view getDataWithResultBlock:^(NSString *data) {
         typeof (self) sself = wself;    
-        // Intermodule Data Transfer Example. Вызов. Шаг 2. Презентер вызывает роутер для передачи данных в другой модуль.
         [sself.router openBetaModuleWithExampleString:data];
     }];
 }

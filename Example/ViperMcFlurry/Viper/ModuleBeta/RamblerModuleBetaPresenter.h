@@ -12,18 +12,13 @@
 #import <Foundation/Foundation.h>
 #import "RamblerModuleBetaViewOutput.h"
 #import "RamblerModuleBetaInteractorOutput.h"
-#import "RamblerModuleBetaConfigurator.h"
+#import "RamblerModuleBetaInput.h"
 
 @protocol RamblerModuleBetaViewInput;
 @protocol RamblerModuleBetaInteractorInput;
 @protocol RamblerModuleBetaRouterInput;
 
-/**
- 
- */
-// Intermodule Data Transfer Example. Конфигурация. Шаг 2. Презентер(или специальный класс для сложных модулей) должен реализовать протокол
-// конфигуратора модуля
-@interface RamblerModuleBetaPresenter : NSObject <RamblerModuleBetaViewOutput, RamblerModuleBetaInteractorOutput, RamblerModuleBetaConfigurator>
+@interface RamblerModuleBetaPresenter : NSObject <RamblerModuleBetaViewOutput, RamblerModuleBetaInteractorOutput, RamblerModuleBetaInput>
 
 @property (nonatomic, weak) id<RamblerModuleBetaViewInput> view;
 @property (nonatomic, strong) id<RamblerModuleBetaInteractorInput> interactor;

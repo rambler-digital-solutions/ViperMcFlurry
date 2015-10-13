@@ -11,9 +11,6 @@
 
 #import <Typhoon/Typhoon.h>
 
-/**
- 
- */
 @interface RamblerModuleAlphaModuleAssembly : TyphoonAssembly
 
 @end

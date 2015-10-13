@@ -54,11 +54,6 @@
                           configuration:^(TyphoonDefinition *definition) {
                             [definition injectProperty:@selector(output) 
                                                   with:[self presenterRamblerModuleBeta]];
-                              
-                              // Intermodule Data Transfer Example. Конфигурация. Шаг 4. Assembly должна внедрить в контроллер презентер в свойство
-                              // конфигуратора модуля
-                              [definition injectProperty:@selector(moduleConfigurator)
-                                                    with:[self presenterRamblerModuleBeta]];
              }];
 }
 

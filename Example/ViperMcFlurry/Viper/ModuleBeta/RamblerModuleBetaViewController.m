@@ -31,10 +31,5 @@
 - (IBAction)didClickRemoveModuleButton:(id)sender {
     [self.output didClickRemoveModuleButton];
 }
-#pragma mark - RamblerModuleBetaViewInput
-
-- (void)removeFromParentModule {
-    [self rambler_removeFromParentModule];
-}
 
 @end

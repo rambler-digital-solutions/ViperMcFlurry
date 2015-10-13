@@ -28,6 +28,7 @@
 	<array>
 		<string>RamblerModuleAlphaModuleAssembly</string>
 		<string>RamblerModuleBetaModuleAssembly</string>
+		<string>RamblerViperPlaceholderViewControllerAssembly</string>
 	</array>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>

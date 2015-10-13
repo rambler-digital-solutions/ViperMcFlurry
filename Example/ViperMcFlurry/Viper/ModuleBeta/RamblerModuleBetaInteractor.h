@@ -14,9 +14,6 @@
 
 @protocol RamblerModuleBetaInteractorOutput;
 
-/**
- 
- */
 @interface RamblerModuleBetaInteractor : NSObject <RamblerModuleBetaInteractorInput>
 
 @property (nonatomic, weak) id<RamblerModuleBetaInteractorOutput> output;

@@ -16,11 +16,7 @@
 @protocol RamblerViperModuleConfiguratorProtocol;
 @protocol RamblerModuleBetaViewOutput;
 
-/**
- 
- */
-// Intermodule Data Transfer Example. Конфигурация. Шаг 3. Контроллер модуля должен реализовать протокол возврата конфигуратора.
-@interface RamblerModuleBetaViewController : UIViewController <RamblerModuleBetaViewInput,RamblerViperModuleConfiguratorHolder>
+@interface RamblerModuleBetaViewController : UIViewController <RamblerModuleBetaViewInput,RamblerViperModuleTransitionHandlerProtocol>
 
 @property (nonatomic, strong) id<RamblerModuleBetaViewOutput> output;
 @property (nonatomic, weak)   id<RamblerViperModuleConfiguratorProtocol> moduleConfigurator;

@@ -11,19 +11,12 @@
 
 #import "RamblerModuleBetaRouter.h"
 
-@interface RamblerModuleBetaRouter()
-
-@end
-
-/**
- 
- */
 @implementation RamblerModuleBetaRouter
 
 #pragma mark - RamblerModuleBetaRouterInput
 
 - (void)removeModule {
-    [self.transitionHandler removeFromParentModule];
+    [self.transitionHandler closeCurrentModule];
 }
 
 @end

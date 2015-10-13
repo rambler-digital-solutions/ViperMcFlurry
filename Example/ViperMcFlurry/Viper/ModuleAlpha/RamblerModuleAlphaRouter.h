@@ -13,9 +13,6 @@
 #import "RamblerModuleAlphaRouterInput.h"
 #import <ViperMcFlurry/ViperMcFlurry.h>
 
-/**
- 
- */
 @interface RamblerModuleAlphaRouter : NSObject <RamblerModuleAlphaRouterInput>
 
 @property (nonatomic,weak) id<RamblerViperModuleTransitionHandlerProtocol> transitionHandler;

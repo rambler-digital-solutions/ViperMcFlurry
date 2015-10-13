@@ -11,9 +11,6 @@
 
 #import <Foundation/Foundation.h>
 
-/**
- 
- */
 @protocol RamblerModuleAlphaInteractorOutput <NSObject>
 
 @end
