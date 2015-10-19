@@ -2,8 +2,7 @@
 //  IntermoduleDataTransfer.h
 //  ViperMcFlurry
 //
-//  Created by Andrey Zarembo-Godzyatsky on 29/07/15.
-//
+//  Copyright (c) 2015 Rambler DS. All rights reserved.
 //
 
 #ifndef _ViperMcFlurry_IntermoduleDataTransfer_h_
@@ -14,10 +13,7 @@
 #import "RamblerViperModuleOutput.h"
 #import "RamblerViperModuleTransitionHandlerProtocol.h"
 #import "RamblerViperOpenModulePromise.h"
-#import "RamblerViperPlaceholderViewController.h"
 #import "UIViewController+RamblerViperModuleTransitionHandlerProtocol.h"
-#import "UIStoryboardSegue+OtherStoryboardTargetViewController.h"
 #import "RamblerViperModuleFabric.h"
-#import "RamblerViperPlaceholderViewControllerAssembly.h"
 
 #endif

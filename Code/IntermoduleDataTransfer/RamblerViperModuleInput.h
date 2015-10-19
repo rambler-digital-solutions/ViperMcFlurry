@@ -1,9 +1,8 @@
 //
 //  RamblerViperModuleInput.h
-//  Pods
+//  ViperMcFlurry
 //
-//  Created by Andrey Zarembo-Godzyatsky on 25/09/15.
-//
+//  Copyright (c) 2015 Rambler DS. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

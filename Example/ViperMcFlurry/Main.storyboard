@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xfk-px-I3u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xfk-px-I3u">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
@@ -19,14 +19,16 @@
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Some Example Text" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vvs-pw-cO1">
                                 <rect key="frame" x="24" y="88" width="552" height="30"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hBM-ki-otA"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9g-Gu-nDv">
-                                <rect key="frame" x="59" y="126" width="257" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9g-Gu-nDv">
+                                <rect key="frame" x="173" y="126" width="255" height="30"/>
+                                <animations/>
                                 <state key="normal" title="Send Data To Beta Module Via Segue">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -34,17 +36,27 @@
                                     <action selector="didClickSendDataButton:" destination="iSd-mR-aP9" eventType="touchUpInside" id="hZC-x9-OvQ"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S9j-fn-WUh">
-                                <rect key="frame" x="45" y="172" width="285" height="30"/>
-                                <state key="normal" title="Embed Module Beta With Data Via Segue">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didClickEmbedBetaButton:" destination="iSd-mR-aP9" eventType="touchUpInside" id="Lrf-uW-xM8"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raS-6e-eOm">
-                                <rect key="frame" x="93" y="218" width="190" height="30"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qth-Ou-73f">
+                                <rect key="frame" x="20" y="218" width="560" height="362"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Container is Empty" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26x-KN-ORF">
+                                        <rect key="frame" x="208" y="171" width="145" height="21"/>
+                                        <animations/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.4823529412" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="centerY" secondItem="26x-KN-ORF" secondAttribute="centerY" id="KPJ-c4-cZn"/>
+                                    <constraint firstAttribute="centerX" secondItem="26x-KN-ORF" secondAttribute="centerX" id="oGU-QZ-89o"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raS-6e-eOm">
+                                <rect key="frame" x="206" y="172" width="189" height="30"/>
+                                <animations/>
                                 <state key="normal" title="Instantiate Beta With Fabric">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -52,63 +64,27 @@
                                     <action selector="didClickInstantiateBetaButton:" destination="iSd-mR-aP9" eventType="touchUpInside" id="8XC-EK-RA0"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qth-Ou-73f">
-                                <rect key="frame" x="20" y="318" width="560" height="262"/>
-                                <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Container is Empty" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26x-KN-ORF">
-                                        <rect key="frame" x="94" y="121" width="146" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.4823529412" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="centerY" secondItem="26x-KN-ORF" secondAttribute="centerY" id="KPJ-c4-cZn"/>
-                                    <constraint firstAttribute="centerX" secondItem="26x-KN-ORF" secondAttribute="centerX" id="oGU-QZ-89o"/>
-                                </constraints>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L8c-Ub-1uH">
-                                <rect key="frame" x="51" y="264" width="273" height="30"/>
-                                <state key="normal" title="Instantiate Beta With Fabric and Embed">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didClickInstantiateAndEmbedBetaButton:" destination="iSd-mR-aP9" eventType="touchUpInside" id="TaG-83-iQn"/>
-                                </connections>
-                            </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="Vvs-pw-cO1" secondAttribute="trailing" constant="24" id="0ya-qW-Foe"/>
-                            <constraint firstAttribute="centerX" secondItem="L8c-Ub-1uH" secondAttribute="centerX" id="1P4-pY-br8"/>
-                            <constraint firstItem="Qth-Ou-73f" firstAttribute="top" secondItem="L8c-Ub-1uH" secondAttribute="bottom" constant="24" id="1uk-ko-GhB"/>
-                            <constraint firstItem="S9j-fn-WUh" firstAttribute="top" secondItem="G9g-Gu-nDv" secondAttribute="bottom" constant="16" id="1zU-cp-Ay5"/>
+                            <constraint firstItem="raS-6e-eOm" firstAttribute="top" secondItem="G9g-Gu-nDv" secondAttribute="bottom" constant="16" id="3e1-a0-Zar"/>
                             <constraint firstItem="G9g-Gu-nDv" firstAttribute="centerX" secondItem="Vvs-pw-cO1" secondAttribute="centerX" id="3tU-ex-mji"/>
                             <constraint firstAttribute="trailing" secondItem="Qth-Ou-73f" secondAttribute="trailing" constant="20" id="43V-V9-IRx"/>
                             <constraint firstItem="Vvs-pw-cO1" firstAttribute="top" secondItem="3eo-31-7cb" secondAttribute="bottom" constant="24" id="8D7-eS-y3a"/>
-                            <constraint firstAttribute="centerX" secondItem="S9j-fn-WUh" secondAttribute="centerX" id="LgF-Jh-sa6"/>
-                            <constraint firstItem="raS-6e-eOm" firstAttribute="top" secondItem="S9j-fn-WUh" secondAttribute="bottom" constant="16" id="QB9-Fz-J1Y"/>
-                            <constraint firstItem="Qth-Ou-73f" firstAttribute="top" secondItem="S9j-fn-WUh" secondAttribute="bottom" constant="20" id="Tvt-gw-YhI"/>
+                            <constraint firstItem="Qth-Ou-73f" firstAttribute="top" secondItem="raS-6e-eOm" secondAttribute="bottom" constant="16" id="R6p-Y7-pAP"/>
                             <constraint firstItem="G9g-Gu-nDv" firstAttribute="top" secondItem="Vvs-pw-cO1" secondAttribute="bottom" constant="8" id="WTM-cv-J4t"/>
-                            <constraint firstItem="L8c-Ub-1uH" firstAttribute="top" secondItem="raS-6e-eOm" secondAttribute="bottom" constant="16" id="cEq-3u-Fwb"/>
                             <constraint firstAttribute="centerX" secondItem="raS-6e-eOm" secondAttribute="centerX" id="ktC-R5-tQW"/>
                             <constraint firstItem="Vvs-pw-cO1" firstAttribute="leading" secondItem="AD9-fP-BNz" secondAttribute="leading" constant="24" id="kwb-Tb-wxe"/>
                             <constraint firstItem="Quc-n3-ghc" firstAttribute="top" secondItem="Qth-Ou-73f" secondAttribute="bottom" constant="20" id="tMH-ED-TNg"/>
                             <constraint firstItem="Qth-Ou-73f" firstAttribute="leading" secondItem="AD9-fP-BNz" secondAttribute="leading" constant="20" id="vhN-AQ-epW"/>
                         </constraints>
-                        <variation key="default">
-                            <mask key="constraints">
-                                <exclude reference="Tvt-gw-YhI"/>
-                            </mask>
-                        </variation>
                     </view>
                     <navigationItem key="navigationItem" id="nP3-sY-dMk"/>
                     <connections>
                         <outlet property="moduleContainerView" destination="Qth-Ou-73f" id="Py0-2d-75N"/>
                         <outlet property="textField" destination="Vvs-pw-cO1" id="49X-eQ-puN"/>
-                        <segue destination="Auj-CU-R4o" kind="show" identifier="RamblerAlphaToBetaSegueFromOtherStoryboard" id="RRX-7e-htk"/>
-                        <segue destination="Auj-CU-R4o" kind="custom" identifier="EmbedBetaModuleSegueFromOtherStoryboard" customClass="RamblerViperEmbedModuleSegue" id="Vzc-qi-6N3"/>
                         <segue destination="k9d-kH-ibe" kind="show" identifier="RamblerAlphaToBetaSegue" id="aaL-Gb-L4u"/>
                     </connections>
                 </viewController>
@@ -130,6 +106,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1J-do-Gh2">
                                 <rect key="frame" x="24" y="184" width="552" height="21"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="AAX-6r-kF3"/>
                                 </constraints>
@@ -138,6 +115,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="V1J-do-Gh2" firstAttribute="leading" secondItem="7qd-IH-pMz" secondAttribute="leading" constant="24" id="bOH-ew-mfU"/>
@@ -160,6 +138,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AMb-g8-K36">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <animations/>
                     </navigationBar>
                     <connections>
                         <segue destination="iSd-mR-aP9" kind="relationship" relationship="rootViewController" id="oSw-TU-VRf"/>
@@ -183,6 +162,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHS-mZ-yC7">
                                 <rect key="frame" x="24" y="290" width="552" height="21"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="o8T-8k-cBi"/>
                                 </constraints>
@@ -192,6 +172,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0M-hO-6tr">
                                 <rect key="frame" x="252" y="319" width="96" height="34"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="96" id="acN-Xz-BfP"/>
                                 </constraints>
@@ -204,6 +185,7 @@
                                 </connections>
                             </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.66845601797103882" green="0.77302712202072144" blue="0.94829195737838745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xHS-mZ-yC7" firstAttribute="leading" secondItem="eG2-9G-h0w" secondAttribute="leading" constant="24" id="534-La-ipF"/>
@@ -227,27 +209,10 @@
             </objects>
             <point key="canvasLocation" x="2799" y="979"/>
         </scene>
-        <!--Rambler Viper Placeholder View Controller-->
-        <scene sceneID="gH3-ew-9NJ">
-            <objects>
-                <viewController restorationIdentifier="RamblerModuleBetaViewController@TestStoryboard" id="Auj-CU-R4o" customClass="RamblerViperPlaceholderViewController" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="lWr-N5-bgs"/>
-                        <viewControllerLayoutGuide type="bottom" id="2AD-Xn-NZg"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="AhR-w0-BNl">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="B2Z-Xi-Nde" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1349" y="979"/>
-        </scene>
         <!--Rambler Module Beta View Controller-->
         <scene sceneID="KCC-4Y-LAS">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Th-vv-Ymd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="RamblerModuleBetaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lil-9P-Pbd" customClass="RamblerModuleBetaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bgE-Wf-Gc0"/>
@@ -259,6 +224,7 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ta-1P-9ac">
                                 <rect key="frame" x="24" y="290" width="552" height="21"/>
+                                <animations/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="bOa-Uv-2hG"/>
                                 </constraints>
@@ -266,25 +232,11 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m50-DK-kaw">
-                                <rect key="frame" x="252" y="319" width="96" height="34"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="jMj-vH-Ld4"/>
-                                </constraints>
-                                <state key="normal" title="Remove">
-                                    <color key="titleColor" red="0.57636600732803345" green="0.56721252202987671" blue="0.64175301790237427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="didClickRemoveModuleButton:" destination="Lil-9P-Pbd" eventType="touchUpInside" id="ybY-VD-wKV"/>
-                                </connections>
-                            </button>
                         </subviews>
+                        <animations/>
                         <color key="backgroundColor" red="0.6639818549156189" green="0.94611662626266479" blue="0.69968819618225098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9ta-1P-9ac" firstAttribute="top" secondItem="bgE-Wf-Gc0" secondAttribute="bottom" constant="120" id="9nR-cy-yCW"/>
-                            <constraint firstAttribute="centerX" secondItem="m50-DK-kaw" secondAttribute="centerX" id="JA4-4E-jX9"/>
-                            <constraint firstItem="m50-DK-kaw" firstAttribute="top" secondItem="9ta-1P-9ac" secondAttribute="bottom" constant="8" id="Jzf-Eb-3xr"/>
                             <constraint firstAttribute="trailing" secondItem="9ta-1P-9ac" secondAttribute="trailing" constant="24" id="Po4-sD-b02"/>
                             <constraint firstAttribute="centerY" secondItem="9ta-1P-9ac" secondAttribute="centerY" id="dci-6W-JEw"/>
                             <constraint firstItem="9ta-1P-9ac" firstAttribute="leading" secondItem="7K4-ZM-kMA" secondAttribute="leading" constant="24" id="khb-es-FdJ"/>
@@ -299,12 +251,8 @@
                         <outlet property="exampleStringLabel" destination="9ta-1P-9ac" id="kbF-DS-taR"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Th-vv-Ymd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2089" y="979"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="RRX-7e-htk"/>
-    </inferredMetricsTieBreakers>
 </document>

@@ -26,10 +26,11 @@
 	<true/>
 	<key>TyphoonInitialAssemblies</key>
 	<array>
-		<string>RamblerModuleAlphaModuleAssembly</string>
 		<string>RamblerModuleBetaModuleAssembly</string>
-		<string>RamblerViperPlaceholderViewControllerAssembly</string>
+		<string>RamblerModuleAlphaModuleAssembly</string>
 	</array>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
 	<key>UIRequiredDeviceCapabilities</key>

@@ -1,9 +1,8 @@
 //
 //  UIViewController+RamblerViperModuleTransitionHandlerProtocol.m
-//  Pods
+//  ViperMcFlurry
 //
-//  Created by Andrey Zarembo-Godzyatsky on 25/09/15.
-//
+//  Copyright (c) 2015 Rambler DS. All rights reserved.
 //
 
 #import "UIViewController+RamblerViperModuleTransitionHandlerProtocol.h"
@@ -82,14 +81,14 @@ static IMP originalPrepareForSegueMethodImp;
 + (void)swizzlePrepareForSegue {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        IMP reamplerPrepareForSegueImp = (IMP)RamblerPrepareForSegueSender;
+        IMP reamplerPrepareForSegueImp = (IMP)RamblerViperPrepareForSegueSender;
         
         Method prepareForSegueMethod = class_getInstanceMethod([self class], @selector(prepareForSegue:sender:));
         originalPrepareForSegueMethodImp = method_setImplementation(prepareForSegueMethod, reamplerPrepareForSegueImp);
     });
 }
 
-void RamblerPrepareForSegueSender(id self, SEL selector, UIStoryboardSegue * segue, id sender) {
+void RamblerViperPrepareForSegueSender(id self, SEL selector, UIStoryboardSegue * segue, id sender) {
     
     ((void(*)(id,SEL,UIStoryboardSegue*,id))originalPrepareForSegueMethodImp)(self,selector,segue,sender);
     

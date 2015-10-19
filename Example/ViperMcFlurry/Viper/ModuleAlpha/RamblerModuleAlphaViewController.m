@@ -1,12 +1,8 @@
 //
 //  RamblerModuleAlphaViewController.m
-//  Проект:   ViperMcFlurry
+//  ViperMcFlurry
 //
-//  Модуль:   RamblerModuleAlpha
-//  Описание: Первый модуль-пример для Viper IntermoduleDataTransfer
-//
-//  Создан Andrey Zarembo-Godzyatsky  10/08/15
-//  Egor Tolstoy 2015
+//  Copyright (c) 2015 Rambler DS. All rights reserved.
 //
 
 #import "RamblerModuleAlphaViewController.h"
@@ -28,20 +24,10 @@
     [self.output sendDataButtonClicked];
 }
 
-- (void)didClickEmbedBetaButton:(id)sender {
-    [self.textField resignFirstResponder];    
-    [self.output embedModuleButtonClicked];
-}
-
 - (IBAction)didClickInstantiateBetaButton:(id)sender {
     [self.textField resignFirstResponder];
     [self.output instantiateBetaButtonClicked];
 }
-- (IBAction)didClickInstantiateAndEmbedBetaButton:(id)sender {
-    [self.textField resignFirstResponder];
-    [self.output instantiateAndEmbedBetaButtonClicked];
-}
-
 
 #pragma mark - RamblerModuleAlphaViewInput
 

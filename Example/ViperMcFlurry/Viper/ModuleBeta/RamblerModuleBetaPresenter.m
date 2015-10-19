@@ -1,12 +1,8 @@
 //
 //  RamblerModuleBetaPresenter.m
-//  Проект:   ViperMcFlurry
+//  ViperMcFlurry
 //
-//  Модуль:   RamblerModuleBeta
-//  Описание: Второй модуль-пример для Viper IntermoduleDataTransfer
-//
-//  Создан Andrey Zarembo-Godzyatsky  10/08/15
-//  Egor Tolstoy 2015
+//  Copyright (c) 2015 Rambler DS. All rights reserved.
 //
 
 #import "RamblerModuleBetaPresenter.h"
@@ -32,10 +28,6 @@
 
 - (void)setupView {
     [self.view setExampleString:self.exampleString];
-}
-
-- (void)didClickRemoveModuleButton {
-    [self.router removeModule];
 }
 
 #pragma mark - RamblerModuleBetaInteractorOutput

@@ -6,5 +6,5 @@ target 'ViperMcFlurry_Example', :exclusive => true do
 end
 
 target 'ViperMcFlurry_Tests', :exclusive => true do
-  pod "Typhoon", '~> 3.2.x'
+    
 end

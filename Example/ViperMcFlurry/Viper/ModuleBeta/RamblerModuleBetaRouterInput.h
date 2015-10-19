@@ -2,8 +2,7 @@
 //  RamblerModuleBetaRouterInput.h
 //  ViperMcFlurry
 //
-//  Created by Andrey Zarembo-Godzyatsky on 10/08/15.
-//  Copyright 2015 Egor Tolstoy. All rights reserved.
+//  Copyright (c) 2015 Rambler DS. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>

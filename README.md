@@ -27,10 +27,23 @@ Copy contents of *Templates/File Templates* folder into `~/Library/Developer/Xco
 
 - Andrey Zarembo-Godzyatsky / a.zarembo-godyzatsky@rambler-co.ru
 - Valery Popov / v.popov@rambler-co.ru
+- Egor Tolstoy / e.tolstoy@rambler-co.ru
 
 ## Project History
 
-- v0.1 - Forked VIPER components from internal projects
+### v0.1
+
+- Forked VIPER components from internal projects
+
+### v0.2 
+- Added nil configurator/block support
+- Module instantiation improvements
+
+### v1.0 
+
+- Added support of module input/output
+- Module communication was simplified
+- Moved Embed and Cross storyboard segues to separate Pods
 
 
 ## How to add Intermodule transition ##
@@ -48,10 +61,10 @@ This works only for Module with ViewController as View.
 ```    
 
 - Make Presenter of target module conform to this protocol
-- Inject Presenter as moduleInput property of the view. You can skip this step in presenter as property with name "output"
+- Inject Presenter as moduleInput property of the view. You can skip this step if presenter is a view property with name "output"
 - Add Segue from source module ViewController to target module ViewController. 
 - Inject Source ViewController into Source Router as property "transition handler"
-- In Router method call transition handler to open target module with configuration with segue.
+- In Router method call transition handler to open target module with configuration during segue.
 
 ```
 [[self.transitionHandler openModuleUsingSegue:SegueIdentifier]
@@ -90,21 +103,3 @@ This works only for Module with ViewController as View.
 	}];
 
 ```
-
-## Working with cross storyboard segues
-
-- Add "RamblerViperPlaceholderViewControllerAssembly" to your initial Typhoon assemblies. Plist or AppDelegate method
-- Create ViewController in source ViewController's storyboard
-- Set it's class to "RamblerViperPlaceholderViewController"
-- Set it's Restoration Id to format "TargetViewControllerStoryboardId@TargetViewControllerStoryboardName" e.g. "RamblerModuleBetaViewController@TestStoryboard"
-- Create segue from source ViewController to this PlaceholderViewController
-
-## Embeddable modules
-
-- Make source ViewController to conform "RamblerViperEmbedModuleContainer" protocol and return container view in method
-
-```
-- (UIView*)viewForSegue:(NSString*)segueIdentifier;
-```
-- Create "RamblerViperEmbedModuleSegue" from sourceViewController to targetViewController. 
-- Use it as usual segue to send data between modules
