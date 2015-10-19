@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ViperMcFlurry"
-  s.version          = "0.2.0"
+  s.version          = "1.0.0"
   s.summary          = "Modern framework for implementing VIPER architecture in iOS application."
   s.homepage         = "https://gitlab.rambler.ru/cocoapods/ViperMcFlurry"
   s.license          = 'MIT'
@@ -23,11 +23,6 @@ Pod::Spec.new do |s|
   s.subspec 'ModuleFactory' do |mf|
     mf.source_files = "Code/ModuleFactory.h", "Code/ModuleFactory/**/*.{h,m}"
     mf.dependency 'ViperMcFlurry/Core'
-  end
-
-  s.subspec 'EmbeddableModules' do |em|
-    em.source_files = "Code/EmbeddableModules.h", "Code/EmbeddableModules/**/*.{h,m}"
-    em.dependency 'ViperMcFlurry/Core'
   end
 
 end

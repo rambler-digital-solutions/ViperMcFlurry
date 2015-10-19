@@ -1,12 +1,8 @@
 //
 //  RamblerModuleBetaViewController.h
-//  Проект:   ViperMcFlurry
+//  ViperMcFlurry
 //
-//  Модуль:   RamblerModuleBeta
-//  Описание: Второй модуль-пример для Viper IntermoduleDataTransfer
-//
-//  Создан Andrey Zarembo-Godzyatsky  10/08/15
-//  Egor Tolstoy 2015
+//  Copyright (c) 2015 Rambler DS. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -16,18 +12,12 @@
 @protocol RamblerViperModuleConfiguratorProtocol;
 @protocol RamblerModuleBetaViewOutput;
 
-/**
- 
- */
-// Intermodule Data Transfer Example. Конфигурация. Шаг 3. Контроллер модуля должен реализовать протокол возврата конфигуратора.
-@interface RamblerModuleBetaViewController : UIViewController <RamblerModuleBetaViewInput,RamblerViperModuleConfiguratorHolder>
+@interface RamblerModuleBetaViewController : UIViewController <RamblerModuleBetaViewInput,RamblerViperModuleTransitionHandlerProtocol>
 
 @property (nonatomic, strong) id<RamblerModuleBetaViewOutput> output;
 @property (nonatomic, weak)   id<RamblerViperModuleConfiguratorProtocol> moduleConfigurator;
 
 @property (nonatomic, strong) IBOutlet UILabel *exampleStringLabel;
-
-- (IBAction)didClickRemoveModuleButton:(id)sender;
 
 @end
 

@@ -1,12 +1,8 @@
 //
 //  RamblerModuleBetaModuleAssembly.m
-//  Проект:   ViperMcFlurry
+//  ViperMcFlurry
 //
-//  Модуль:   RamblerModuleBeta
-//  Описание: Второй модуль-пример для Viper IntermoduleDataTransfer
-//
-//  Создан Andrey Zarembo-Godzyatsky  10/08/15
-//  Egor Tolstoy 2015
+//  Copyright (c) 2015 Rambler DS. All rights reserved.
 //
 
 #import "RamblerModuleBetaModuleAssembly.h"
@@ -54,11 +50,6 @@
                           configuration:^(TyphoonDefinition *definition) {
                             [definition injectProperty:@selector(output) 
                                                   with:[self presenterRamblerModuleBeta]];
-                              
-                              // Intermodule Data Transfer Example. Конфигурация. Шаг 4. Assembly должна внедрить в контроллер презентер в свойство
-                              // конфигуратора модуля
-                              [definition injectProperty:@selector(moduleConfigurator)
-                                                    with:[self presenterRamblerModuleBeta]];
              }];
 }
 

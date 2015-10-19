@@ -2,8 +2,7 @@
 //  RamblerAppDelegate.h
 //  ViperMcFlurry
 //
-//  Created by Egor Tolstoy on 07/29/2015.
-//  Copyright (c) 2015 Egor Tolstoy. All rights reserved.
+//  Copyright (c) 2015 Rambler DS. All rights reserved.
 //
 
 @import UIKit;
