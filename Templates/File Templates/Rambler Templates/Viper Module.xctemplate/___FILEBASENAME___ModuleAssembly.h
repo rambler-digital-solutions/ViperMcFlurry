@@ -11,9 +11,6 @@
 
 #import <Typhoon/Typhoon.h>
 
-/**
- 
- */
 @interface ___VARIABLE_viperModuleName___ModuleAssembly : TyphoonAssembly
 
 @end

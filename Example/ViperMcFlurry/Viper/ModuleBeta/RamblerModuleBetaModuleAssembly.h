@@ -1,21 +1,14 @@
 //
 //  RamblerModuleBetaModuleAssembly.h
-//  Проект:   ViperMcFlurry
+//  ViperMcFlurry
 //
-//  Модуль:   RamblerModuleBeta
-//  Описание: Второй модуль-пример для Viper IntermoduleDataTransfer
-//
-//  Создан Andrey Zarembo-Godzyatsky  10/08/15
-//  Egor Tolstoy 2015
+//  Copyright (c) 2015 Rambler DS. All rights reserved.
 //
 
 #import <Typhoon/Typhoon.h>
 
 @protocol RamblerViperModuleFabricProtocol;
 
-/**
- 
- */
 @interface RamblerModuleBetaModuleAssembly : TyphoonAssembly
 
 - (id<RamblerViperModuleFabricProtocol>)fabricBetaModule;

@@ -1,9 +1,12 @@
 //
 //  ___FILENAME___
-//  ___PROJECTNAME___
+//  Project:   ___PROJECTNAME___
 //
-//  Created by ___FULLUSERNAME___ on ___DATE___.
-//  Copyright ___YEAR___ ___ORGANIZATIONNAME___. All rights reserved.
+//  Module:   ___VARIABLE_viperModuleName___
+//  Description: ___VARIABLE_viperModuleDescription___
+//
+//  By ___FULLUSERNAME___  ___DATE___
+//  ___ORGANIZATIONNAME___ ___YEAR___
 //
 
 #import <Foundation/Foundation.h>

@@ -1,11 +1,11 @@
 //
 //  ___FILENAME___
-//  Проект:   ___PROJECTNAME___
+//  Project:   ___PROJECTNAME___
 //
-//  Модуль:   ___VARIABLE_viperModuleName___
-//  Описание: ___VARIABLE_viperModuleDescription___
+//  Module:   ___VARIABLE_viperModuleName___
+//  Description: ___VARIABLE_viperModuleDescription___
 //
-//  Создан ___FULLUSERNAME___  ___DATE___
+//  By ___FULLUSERNAME___  ___DATE___
 //  ___ORGANIZATIONNAME___ ___YEAR___
 //
 
@@ -17,12 +17,9 @@
 @protocol ___VARIABLE_viperModuleName:identifier___InteractorInput;
 @protocol ___VARIABLE_viperModuleName:identifier___RouterInput;
 
-/**
- 
- */
 @interface ___VARIABLE_viperModuleName:identifier___Presenter : NSObject <___VARIABLE_viperModuleName:identifier___ViewOutput, ___VARIABLE_viperModuleName:identifier___InteractorOutput>
 
-@property (nonatomic, weak) id<___VARIABLE_viperModuleName:identifier___ViewInput> view;
+@property (nonatomic, weak)   id<___VARIABLE_viperModuleName:identifier___ViewInput> view;
 @property (nonatomic, strong) id<___VARIABLE_viperModuleName:identifier___InteractorInput> interactor;
 @property (nonatomic, strong) id<___VARIABLE_viperModuleName:identifier___RouterInput> router;
 

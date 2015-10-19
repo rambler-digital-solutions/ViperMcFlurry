@@ -1,12 +1,8 @@
 //
 //  RamblerModuleAlphaPresenter.h
-//  Проект:   ViperMcFlurry
+//  ViperMcFlurry
 //
-//  Модуль:   RamblerModuleAlpha
-//  Описание: Первый модуль-пример для Viper IntermoduleDataTransfer
-//
-//  Создан Andrey Zarembo-Godzyatsky  10/08/15
-//  Egor Tolstoy 2015
+//  Copyright (c) 2015 Rambler DS. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -17,9 +13,6 @@
 @protocol RamblerModuleAlphaInteractorInput;
 @protocol RamblerModuleAlphaRouterInput;
 
-/**
- 
- */
 @interface RamblerModuleAlphaPresenter : NSObject <RamblerModuleAlphaViewOutput, RamblerModuleAlphaInteractorOutput>
 
 @property (nonatomic, weak) id<RamblerModuleAlphaViewInput> view;
