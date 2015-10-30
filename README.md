@@ -8,12 +8,12 @@ Also it icludes **Templates** folder with XCode templates for VIPER modules.
 
 ## Install
 
-**ViperMcFlurryPod**
+**ViperMcFlurry**
 
 Add to podfile
 
 ```ruby
-pod "ViperMcFlurryPod"
+pod "ViperMcFlurry"
 ```
 
 **Templates**
