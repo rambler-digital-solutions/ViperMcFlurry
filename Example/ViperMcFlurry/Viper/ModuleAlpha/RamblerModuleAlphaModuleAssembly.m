@@ -57,7 +57,6 @@
     return [TyphoonDefinition withClass:[RamblerModuleAlphaRouter class]
                           configuration:^(TyphoonDefinition *definition) {
                               
-                              // Intermodule Data Transfer Example. Шаг 1. У роутеру задается TransitionHandler.
                               [definition injectProperty:@selector(transitionHandler)
                                                     with:[self viewRamblerModuleAlpha]];
                               
