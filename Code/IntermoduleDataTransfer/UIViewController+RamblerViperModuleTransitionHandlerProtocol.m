@@ -63,12 +63,15 @@ static IMP originalPrepareForSegueMethodImp;
 }
 // Method removes/closes module
 - (void)closeCurrentModule {
-    if (self.presentingViewController) {
-        [self dismissViewControllerAnimated:YES completion:nil];
-    }
-    else if ([self.parentViewController isKindOfClass:[UINavigationController class]]) {
+    BOOL isInNavigationStack = [self.parentViewController isKindOfClass:[UINavigationController class]];
+    BOOL hasManyControllersInStack = isInNavigationStack ? ((UINavigationController *)viewController.parentViewController).childViewControllers.count > 1 : NO;
+    
+    if (isInNavigationStack && hasManyControllersInStack) {
         UINavigationController *navigationController = (UINavigationController*)self.parentViewController;
         [navigationController popViewControllerAnimated:YES];
+    }
+    else if (viewController.presentingViewController) {
+        [viewController dismissViewControllerAnimated:YES completion:nil];
     }
     else if (self.view.superview != nil){
         [self removeFromParentViewController];
