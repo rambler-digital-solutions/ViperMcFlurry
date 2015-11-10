@@ -8,12 +8,12 @@
 #ifndef _ViperMcFlurry_IntermoduleDataTransfer_h_
 #define _ViperMcFlurry_IntermoduleDataTransfer_h_
 
-#import "IntermoduleDataTransfer/RamblerViperModuleFabricProtocol.h"
+#import "RamblerViperModuleFaсtoryProtocol.h"
 #import "IntermoduleDataTransfer/RamblerViperModuleInput.h"
 #import "IntermoduleDataTransfer/RamblerViperModuleOutput.h"
 #import "IntermoduleDataTransfer/RamblerViperModuleTransitionHandlerProtocol.h"
 #import "IntermoduleDataTransfer/RamblerViperOpenModulePromise.h"
 #import "IntermoduleDataTransfer/UIViewController+RamblerViperModuleTransitionHandlerProtocol.h"
-#import "IntermoduleDataTransfer/RamblerViperModuleFabric.h"
+#import "RamblerViperModuleFactory.h"
 
 #endif
