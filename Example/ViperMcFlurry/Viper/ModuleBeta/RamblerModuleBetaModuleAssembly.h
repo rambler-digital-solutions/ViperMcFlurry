@@ -7,11 +7,11 @@
 
 #import <Typhoon/Typhoon.h>
 
-@protocol RamblerViperModuleFabricProtocol;
+@protocol RamblerViperModuleFaсtoryProtocol;
 
 @interface RamblerModuleBetaModuleAssembly : TyphoonAssembly
 
-- (id<RamblerViperModuleFabricProtocol>)fabricBetaModule;
+- (id<RamblerViperModuleFaсtoryProtocol>)factoryBetaModule;
 
 @end
 
