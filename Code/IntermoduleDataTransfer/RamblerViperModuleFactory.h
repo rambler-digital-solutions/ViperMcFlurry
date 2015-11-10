@@ -1,17 +1,17 @@
 //
-//  RamblerViperModuleFabric.h
+//  RamblerViperModuleFactory.h
 //  ViperMcFlurry
 //
 //  Copyright (c) 2015 Rambler DS. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "RamblerViperModuleFabricProtocol.h"
+#import "RamblerViperModuleFaсtoryProtocol.h"
 
 /**
- Universal Viper module fabric.
+ Universal Viper module factory.
  */
-@interface RamblerViperModuleFabric : NSObject<RamblerViperModuleFabricProtocol>
+@interface RamblerViperModuleFactory : NSObject<RamblerViperModuleFaсtoryProtocol>
 
 - (instancetype)initWithStoryboard:(UIStoryboard*)storyboard andRestorationId:(NSString*)restorationId;
 @property (nonatomic,strong,readonly) UIStoryboard *storyboard;

@@ -57,7 +57,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raS-6e-eOm">
                                 <rect key="frame" x="206" y="172" width="189" height="30"/>
                                 <animations/>
-                                <state key="normal" title="Instantiate Beta With Fabric">
+                                <state key="normal" title="Instantiate Beta With Factory">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

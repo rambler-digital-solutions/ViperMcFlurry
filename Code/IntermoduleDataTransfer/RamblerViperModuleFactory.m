@@ -1,21 +1,21 @@
 
 //
-//  RamblerViperModuleFabric.m
+//  RamblerViperModuleFactory.m
 //  ViperMcFlurry
 //
 //  Copyright (c) 2015 Rambler DS. All rights reserved.
 //
 
-#import "RamblerViperModuleFabric.h"
+#import "RamblerViperModuleFactory.h"
 
-@interface RamblerViperModuleFabric ()
+@interface RamblerViperModuleFactory ()
 
 @property (nonatomic,strong) UIStoryboard *storyboard;
 @property (nonatomic,strong) NSString* restorationId;
 
 @end
 
-@implementation RamblerViperModuleFabric
+@implementation RamblerViperModuleFactory
 
 - (instancetype)initWithStoryboard:(UIStoryboard*)storyboard andRestorationId:(NSString*)restorationId {
     self = [super init];
@@ -26,7 +26,7 @@
     return self;
 }
 
-#pragma mark - RDSModuleFabricProtocol
+#pragma mark - RDSModuleFactoryProtocol
 
 - (__nullable id<RamblerViperModuleTransitionHandlerProtocol>)instantiateModuleTransitionHandler {
     id<RamblerViperModuleTransitionHandlerProtocol> destinationViewController = [self.storyboard instantiateViewControllerWithIdentifier:self.restorationId];

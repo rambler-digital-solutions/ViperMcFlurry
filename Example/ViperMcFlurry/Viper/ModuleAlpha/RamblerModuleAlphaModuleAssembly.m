@@ -60,8 +60,8 @@
                               [definition injectProperty:@selector(transitionHandler)
                                                     with:[self viewRamblerModuleAlpha]];
                               
-                              [definition injectProperty:@selector(betaModuleFabric)
-                                                    with:[self.betaModuleAssembly fabricBetaModule]];
+                              [definition injectProperty:@selector(betaModuleFactory)
+                                                    with:[self.betaModuleAssembly factoryBetaModule]];
                           }];
 }
 
