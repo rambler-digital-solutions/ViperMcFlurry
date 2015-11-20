@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "ViperMcFlurry"
-  s.version          = "1.1.3"
+  s.version          = "1.1.4"
   s.summary          = "Modern framework for implementing VIPER architecture in iOS application."
   s.homepage         = "https://github.com/rambler-ios/ViperMcFlurry"
   s.license          = 'MIT'
