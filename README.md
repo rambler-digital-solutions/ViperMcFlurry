@@ -1,5 +1,7 @@
 # VIPER McFlurry
 
+[![Pod version](https://badge.fury.io/co/ViperMcFlurry.svg)](https://badge.fury.io/co/ViperMcFlurry)
+
 ## Description
 
 **VIPER McFlurry** is a modern framework for implementing VIPER architecture in iOS application. It offers several tools and components that helps either start new projects with VIPER or move from MVC.
