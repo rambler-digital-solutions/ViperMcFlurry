@@ -21,7 +21,7 @@
 
 @implementation  RamblerModuleBetaModuleAssembly
 
-- (id<RamblerViperModuleFaсtoryProtocol>)factoryBetaModule {
+- (id<RamblerViperModuleFactoryProtocol>)factoryBetaModule {
     return [TyphoonDefinition withClass:[RamblerViperModuleFactory class]
                           configuration:^(TyphoonDefinition *definition) {
                               [definition useInitializer:@selector(initWithStoryboard:andRestorationId:)
