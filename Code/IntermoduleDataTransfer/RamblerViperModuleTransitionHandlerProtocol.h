@@ -25,6 +25,8 @@ typedef void (^ModuleTransitionBlock)(id<RamblerViperModuleTransitionHandlerProt
 // Module input object
 @property (nonatomic, strong) id<RamblerViperModuleInput> moduleInput;
 
+// Performs segue without any actions, useful for unwind segues
+- (void)performSegue:(NSString *)segueIdentifier;
 // Method opens module using segue
 - (RamblerViperOpenModulePromise*)openModuleUsingSegue:(NSString*)segueIdentifier;
 // Method opens module using module factory

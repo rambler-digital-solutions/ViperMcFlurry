@@ -37,6 +37,13 @@ static IMP originalPrepareForSegueMethodImp;
     objc_setAssociatedObject(self, @selector(moduleInput), moduleInput, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
+// Performs segue without any actions, useful for unwind segues
+- (void)performSegue:(NSString *)segueIdentifier {
+    dispatch_async(dispatch_get_main_queue(), ^{
+        [self performSegueWithIdentifier:segueIdentifier sender:openModulePromise];
+    });
+}
+
 // Method opens module using segue
 - (RamblerViperOpenModulePromise*)openModuleUsingSegue:(NSString*)segueIdentifier {
     RamblerViperOpenModulePromise *openModulePromise = [[RamblerViperOpenModulePromise alloc] init];
