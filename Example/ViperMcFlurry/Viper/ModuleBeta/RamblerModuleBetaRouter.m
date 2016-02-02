@@ -12,7 +12,7 @@
 #pragma mark - RamblerModuleBetaRouterInput
 
 - (void)removeModule {
-    [self.transitionHandler closeCurrentModule];
+    [self.transitionHandler closeCurrentModule:NO];
 }
 
 @end
