@@ -32,6 +32,6 @@ typedef void (^ModuleTransitionBlock)(id<RamblerViperModuleTransitionHandlerProt
 // Method opens module using module factory
 - (RamblerViperOpenModulePromise*)openModuleUsingFactory:(RamblerViperModuleFactory *)moduleFactory withTransitionBlock:(ModuleTransitionBlock)transitionBlock;
 // Method removes/closes module
-- (void)closeCurrentModule;
+- (void)closeCurrentModule:(BOOL)animated;
 
 @end
