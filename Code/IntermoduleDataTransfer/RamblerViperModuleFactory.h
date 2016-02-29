@@ -8,6 +8,7 @@
 #import <UIKit/UIKit.h>
 #import "RamblerViperModuleFactoryProtocol.h"
 
+@class TyphoonAssembly;
 /**
  Universal Viper module factory.
  */
