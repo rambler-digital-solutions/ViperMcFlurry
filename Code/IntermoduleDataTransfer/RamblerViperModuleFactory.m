@@ -7,6 +7,7 @@
 //
 
 #import "RamblerViperModuleFactory.h"
+#import <Typhoon/TyphoonAssembly.h>
 
 typedef NS_ENUM(NSUInteger, FactoryType)
 {
