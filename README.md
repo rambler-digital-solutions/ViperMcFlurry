@@ -49,7 +49,7 @@ Copy contents of *Templates/File Templates* folder into `~/Library/Developer/Xco
 
 ### v1.1
 
-- Moving to Github and Cocoapods
+- Moving to Github and CocoaPods
 
 
 ## How to add Intermodule transition ##
