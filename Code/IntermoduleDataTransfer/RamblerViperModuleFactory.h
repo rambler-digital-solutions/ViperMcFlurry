@@ -8,12 +8,15 @@
 #import <UIKit/UIKit.h>
 #import "RamblerViperModuleFactoryProtocol.h"
 
+@class TyphoonAssembly;
 /**
  Universal Viper module factory.
  */
 @interface RamblerViperModuleFactory : NSObject<RamblerViperModuleFactoryProtocol>
 
+- (instancetype)initWithAssembly:(TyphoonAssembly *)assembly selectorName:(NSString *)selectorName;
 - (instancetype)initWithStoryboard:(UIStoryboard*)storyboard andRestorationId:(NSString*)restorationId;
+
 @property (nonatomic,strong,readonly) UIStoryboard *storyboard;
 @property (nonatomic,strong,readonly) NSString* restorationId;
 
