@@ -14,6 +14,8 @@
 @interface RamblerViperModuleFactory : NSObject<RamblerViperModuleFactoryProtocol>
 
 - (instancetype)initWithStoryboard:(UIStoryboard*)storyboard andRestorationId:(NSString*)restorationId;
+- (instancetype)initWithViewHandler:(id<RamblerViperModuleTransitionHandlerProtocol>(^)(void))viewHandler;
+
 @property (nonatomic,strong,readonly) UIStoryboard *storyboard;
 @property (nonatomic,strong,readonly) NSString* restorationId;
 
