@@ -1,8 +1,7 @@
 # Change Log
 
-## [Unreleased](https://github.com/rambler-ios/ViperMcFlurry/tree/HEAD)
-
-[Full Changelog](https://github.com/rambler-ios/ViperMcFlurry/compare/1.2.0...HEAD)
+## [1.3.0](https://github.com/rambler-ios/ViperMcFlurry/tree/1.3.0) (2016-08-02)
+[Full Changelog](https://github.com/rambler-ios/ViperMcFlurry/compare/1.2.0...1.3.0)
 
 **Closed issues:**
 
@@ -10,6 +9,7 @@
 
 **Merged pull requests:**
 
+- Integrated Carthage [\#19](https://github.com/rambler-ios/ViperMcFlurry/pull/19) ([juyka](https://github.com/juyka))
 - Another implementation of view factory without storyboard [\#15](https://github.com/rambler-ios/ViperMcFlurry/pull/15) ([rock88](https://github.com/rock88))
 - Add possibility to create factories without subclassing. [\#14](https://github.com/rambler-ios/ViperMcFlurry/pull/14) ([alaija](https://github.com/alaija))
 - added tvos deployment target to podspec [\#12](https://github.com/rambler-ios/ViperMcFlurry/pull/12) ([valentinpopkov](https://github.com/valentinpopkov))
