@@ -15,6 +15,7 @@ Pod::Spec.new do |s|
   end
 
   s.subspec 'IntermoduleDataTransfer' do |idt|
+    idt.header_mappings_dir = "Code/IntermoduleDataTransfer"
     idt.source_files = "Code/IntermoduleDataTransfer.h", "Code/IntermoduleDataTransfer/**/*.{h,m}"
     idt.dependency 'ViperMcFlurry/Core'
   end
