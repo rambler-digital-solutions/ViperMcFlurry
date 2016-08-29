@@ -1,10 +1,10 @@
 source 'https://github.com/CocoaPods/Specs.git'
 
-target 'ViperMcFlurry_Example', :exclusive => true do
+target 'ViperMcFlurry_Example' do
   pod "ViperMcFlurry", :path => "../"
   pod "Typhoon", '~> 3.2.x'  
 end
 
-target 'ViperMcFlurry_Tests', :exclusive => true do
+target 'ViperMcFlurry_Tests' do
     
 end
