@@ -1,10 +1,21 @@
-source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/cocoapods/Specs.git'
 
-target 'ViperMcFlurry_Example', :exclusive => true do
-  pod "ViperMcFlurry", :path => "../"
-  pod "Typhoon", '~> 3.2.x'  
+inhibit_all_warnings!
+use_frameworks!
+
+platform :ios, '8.0'
+
+def appPods
+
+    pod "ViperMcFlurry", :path => "../ViperMcFlurry.podspec"
+    pod "Typhoon", '~> 3.2.0'
+
 end
 
-target 'ViperMcFlurry_Tests', :exclusive => true do
-    
+target 'ViperMcFlurry_Example' do
+    appPods
+end
+
+target 'ViperMcFlurry_Tests' do
+    appPods
 end

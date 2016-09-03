@@ -15,7 +15,7 @@
 		162C73421B78A45F00226B47 /* RamblerModuleBetaPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C73381B78A45F00226B47 /* RamblerModuleBetaPresenter.m */; };
 		162C73431B78A45F00226B47 /* RamblerModuleBetaRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C733A1B78A45F00226B47 /* RamblerModuleBetaRouter.m */; };
 		162C73441B78A45F00226B47 /* RamblerModuleBetaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C733D1B78A45F00226B47 /* RamblerModuleBetaViewController.m */; };
-		26FE5D87E34D8CD460B5C22E /* libPods-ViperMcFlurry_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B75A1A78426D01B0E564183E /* libPods-ViperMcFlurry_Example.a */; };
+		2F8EC9FE21353262E6D3028E /* Pods_ViperMcFlurry_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6F5979FBF96E09EF139449 /* Pods_ViperMcFlurry_Tests.framework */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -27,7 +27,7 @@
 		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
 		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		9E273F1976C734A3C33D8517 /* libPods-ViperMcFlurry_Tests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E158751BA67C78C5D23E1E12 /* libPods-ViperMcFlurry_Tests.a */; };
+		C2C905018238A19115ED6AC6 /* Pods_ViperMcFlurry_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8284984F2455D95519E1A3D9 /* Pods_ViperMcFlurry_Example.framework */; };
 		D24D49021BD1049400C77475 /* RamblerModuleBetaModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D49011BD1049400C77475 /* RamblerModuleBetaModuleAssembly.m */; };
 		D24D49051BD1049E00C77475 /* RamblerModuleAlphaModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D49041BD1049E00C77475 /* RamblerModuleAlphaModuleAssembly.m */; };
 		D24D49071BD4C9ED00C77475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24D49061BD4C9ED00C77475 /* LaunchScreen.storyboard */; };
@@ -77,6 +77,7 @@
 		29585292F60D04C0C6BFE358 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		29CC82345586C4F662E7C65C /* Pods-ViperMcFlurry_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperMcFlurry_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperMcFlurry_Example/Pods-ViperMcFlurry_Example.release.xcconfig"; sourceTree = "<group>"; };
 		3E218B7F42124CFBDB835247 /* Pods-ViperMcFlurry_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperMcFlurry_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperMcFlurry_Example/Pods-ViperMcFlurry_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		3F6F5979FBF96E09EF139449 /* Pods_ViperMcFlurry_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperMcFlurry_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* ViperMcFlurry_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperMcFlurry_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -90,10 +91,10 @@
 		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
 		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
+		8284984F2455D95519E1A3D9 /* Pods_ViperMcFlurry_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperMcFlurry_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		96F30E1F9FBD8F1AF02466B7 /* ViperMcFlurry.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ViperMcFlurry.podspec; path = ../ViperMcFlurry.podspec; sourceTree = "<group>"; };
 		9DB79ED922F73E404786FD30 /* Pods-ViperMcFlurry_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperMcFlurry_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperMcFlurry_Tests/Pods-ViperMcFlurry_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		B75A1A78426D01B0E564183E /* libPods-ViperMcFlurry_Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ViperMcFlurry_Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BCD36FC03A45A87A4597C0C7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFAB36AAE88EAE4784F1616E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		D24D49001BD1049400C77475 /* RamblerModuleBetaModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaModuleAssembly.h; path = Viper/ModuleBeta/RamblerModuleBetaModuleAssembly.h; sourceTree = "<group>"; };
@@ -101,7 +102,6 @@
 		D24D49031BD1049E00C77475 /* RamblerModuleAlphaModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaModuleAssembly.h; path = Viper/ModuleAlpha/RamblerModuleAlphaModuleAssembly.h; sourceTree = "<group>"; };
 		D24D49041BD1049E00C77475 /* RamblerModuleAlphaModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleAlphaModuleAssembly.m; path = Viper/ModuleAlpha/RamblerModuleAlphaModuleAssembly.m; sourceTree = "<group>"; };
 		D24D49061BD4C9ED00C77475 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		E158751BA67C78C5D23E1E12 /* libPods-ViperMcFlurry_Tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ViperMcFlurry_Tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7BF77682AD97D2B0DE14324 /* Pods-ViperMcFlurry_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperMcFlurry_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperMcFlurry_Tests/Pods-ViperMcFlurry_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,7 +113,7 @@
 				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
 				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				26FE5D87E34D8CD460B5C22E /* libPods-ViperMcFlurry_Example.a in Frameworks */,
+				C2C905018238A19115ED6AC6 /* Pods_ViperMcFlurry_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,7 +123,7 @@
 			files = (
 				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
 				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				9E273F1976C734A3C33D8517 /* libPods-ViperMcFlurry_Tests.a in Frameworks */,
+				2F8EC9FE21353262E6D3028E /* Pods_ViperMcFlurry_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,9 +287,9 @@
 				6003F58D195388D20070C39A /* Foundation.framework */,
 				6003F58F195388D20070C39A /* CoreGraphics.framework */,
 				6003F591195388D20070C39A /* UIKit.framework */,
-				B75A1A78426D01B0E564183E /* libPods-ViperMcFlurry_Example.a */,
-				E158751BA67C78C5D23E1E12 /* libPods-ViperMcFlurry_Tests.a */,
 				BCD36FC03A45A87A4597C0C7 /* libPods.a */,
+				8284984F2455D95519E1A3D9 /* Pods_ViperMcFlurry_Example.framework */,
+				3F6F5979FBF96E09EF139449 /* Pods_ViperMcFlurry_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -363,12 +363,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ViperMcFlurry_Example" */;
 			buildPhases = (
-				AEB035DEF2B1E52B5823E72B /* Check Pods Manifest.lock */,
+				AEB035DEF2B1E52B5823E72B /* [CP] Check Pods Manifest.lock */,
 				6003F586195388D20070C39A /* Sources */,
 				6003F587195388D20070C39A /* Frameworks */,
 				6003F588195388D20070C39A /* Resources */,
-				C6050BAFABC07C78254F390F /* Copy Pods Resources */,
-				01BC9CB6C6F4D26F423048A6 /* Embed Pods Frameworks */,
+				C6050BAFABC07C78254F390F /* [CP] Copy Pods Resources */,
+				01BC9CB6C6F4D26F423048A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -383,11 +383,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "ViperMcFlurry_Tests" */;
 			buildPhases = (
-				BFF50882DD753EC3B7C13E59 /* Check Pods Manifest.lock */,
+				BFF50882DD753EC3B7C13E59 /* [CP] Check Pods Manifest.lock */,
 				6003F5AA195388D20070C39A /* Sources */,
 				6003F5AB195388D20070C39A /* Frameworks */,
 				6003F5AC195388D20070C39A /* Resources */,
-				5FB186E48B14A2189DA1EA83 /* Copy Pods Resources */,
+				5FB186E48B14A2189DA1EA83 /* [CP] Copy Pods Resources */,
+				138D895A56E50306869154A6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -456,14 +457,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		01BC9CB6C6F4D26F423048A6 /* Embed Pods Frameworks */ = {
+		01BC9CB6C6F4D26F423048A6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Embed Pods Frameworks";
+			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,14 +472,29 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperMcFlurry_Example/Pods-ViperMcFlurry_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		5FB186E48B14A2189DA1EA83 /* Copy Pods Resources */ = {
+		138D895A56E50306869154A6 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperMcFlurry_Tests/Pods-ViperMcFlurry_Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5FB186E48B14A2189DA1EA83 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -486,14 +502,14 @@
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperMcFlurry_Tests/Pods-ViperMcFlurry_Tests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		AEB035DEF2B1E52B5823E72B /* Check Pods Manifest.lock */ = {
+		AEB035DEF2B1E52B5823E72B /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -501,14 +517,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		BFF50882DD753EC3B7C13E59 /* Check Pods Manifest.lock */ = {
+		BFF50882DD753EC3B7C13E59 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Check Pods Manifest.lock";
+			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -516,14 +532,14 @@
 			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
-		C6050BAFABC07C78254F390F /* Copy Pods Resources */ = {
+		C6050BAFABC07C78254F390F /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
-			name = "Copy Pods Resources";
+			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -672,6 +688,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViperMcFlurry/ViperMcFlurry-Prefix.pch";
 				INFOPLIST_FILE = "ViperMcFlurry/ViperMcFlurry-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = "$(inherited)";
@@ -690,6 +707,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViperMcFlurry/ViperMcFlurry-Prefix.pch";
 				INFOPLIST_FILE = "ViperMcFlurry/ViperMcFlurry-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				MODULE_NAME = ExampleApp;
 				OTHER_LDFLAGS = "$(inherited)";
