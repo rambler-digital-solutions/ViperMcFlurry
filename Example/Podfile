@@ -12,8 +12,8 @@ def appPods
 
 end
 
-target 'ViperMcFlurry_Example' do
-    appPods
+target 'ViperMcFlurry_Tests' do
+    
 end
 
 target 'ViperMcFlurry_Tests' do
