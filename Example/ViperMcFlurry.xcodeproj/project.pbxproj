@@ -1,794 +1,2123 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
-
-/* Begin PBXBuildFile section */
-		162C73251B789D6700226B47 /* RamblerModuleAlphaInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C73171B789D6700226B47 /* RamblerModuleAlphaInteractor.m */; };
-		162C73271B789D6700226B47 /* RamblerModuleAlphaPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C731D1B789D6700226B47 /* RamblerModuleAlphaPresenter.m */; };
-		162C73281B789D6700226B47 /* RamblerModuleAlphaRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C731F1B789D6700226B47 /* RamblerModuleAlphaRouter.m */; };
-		162C73291B789D6700226B47 /* RamblerModuleAlphaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C73221B789D6700226B47 /* RamblerModuleAlphaViewController.m */; };
-		162C73401B78A45F00226B47 /* RamblerModuleBetaInteractor.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C73321B78A45F00226B47 /* RamblerModuleBetaInteractor.m */; };
-		162C73421B78A45F00226B47 /* RamblerModuleBetaPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C73381B78A45F00226B47 /* RamblerModuleBetaPresenter.m */; };
-		162C73431B78A45F00226B47 /* RamblerModuleBetaRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C733A1B78A45F00226B47 /* RamblerModuleBetaRouter.m */; };
-		162C73441B78A45F00226B47 /* RamblerModuleBetaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 162C733D1B78A45F00226B47 /* RamblerModuleBetaViewController.m */; };
-		2F8EC9FE21353262E6D3028E /* Pods_ViperMcFlurry_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3F6F5979FBF96E09EF139449 /* Pods_ViperMcFlurry_Tests.framework */; };
-		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
-		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
-		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F598195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F596195388D20070C39A /* InfoPlist.strings */; };
-		6003F59A195388D20070C39A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F599195388D20070C39A /* main.m */; };
-		6003F59E195388D20070C39A /* RamblerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6003F59D195388D20070C39A /* RamblerAppDelegate.m */; };
-		6003F5A9195388D20070C39A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5A8195388D20070C39A /* Images.xcassets */; };
-		6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
-		6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
-		6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6003F5B8195388D20070C39A /* InfoPlist.strings */; };
-		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
-		C2C905018238A19115ED6AC6 /* Pods_ViperMcFlurry_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8284984F2455D95519E1A3D9 /* Pods_ViperMcFlurry_Example.framework */; };
-		D24D49021BD1049400C77475 /* RamblerModuleBetaModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D49011BD1049400C77475 /* RamblerModuleBetaModuleAssembly.m */; };
-		D24D49051BD1049E00C77475 /* RamblerModuleAlphaModuleAssembly.m in Sources */ = {isa = PBXBuildFile; fileRef = D24D49041BD1049E00C77475 /* RamblerModuleAlphaModuleAssembly.m */; };
-		D24D49071BD4C9ED00C77475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D24D49061BD4C9ED00C77475 /* LaunchScreen.storyboard */; };
-/* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		6003F5B3195388D20070C39A /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 6003F582195388D10070C39A /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 6003F589195388D20070C39A;
-			remoteInfo = ViperMcFlurry;
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXFileReference section */
-		162C73161B789D6700226B47 /* RamblerModuleAlphaInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaInteractor.h; path = Viper/ModuleAlpha/RamblerModuleAlphaInteractor.h; sourceTree = "<group>"; };
-		162C73171B789D6700226B47 /* RamblerModuleAlphaInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleAlphaInteractor.m; path = Viper/ModuleAlpha/RamblerModuleAlphaInteractor.m; sourceTree = "<group>"; };
-		162C73181B789D6700226B47 /* RamblerModuleAlphaInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaInteractorInput.h; path = Viper/ModuleAlpha/RamblerModuleAlphaInteractorInput.h; sourceTree = "<group>"; };
-		162C73191B789D6700226B47 /* RamblerModuleAlphaInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaInteractorOutput.h; path = Viper/ModuleAlpha/RamblerModuleAlphaInteractorOutput.h; sourceTree = "<group>"; };
-		162C731C1B789D6700226B47 /* RamblerModuleAlphaPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaPresenter.h; path = Viper/ModuleAlpha/RamblerModuleAlphaPresenter.h; sourceTree = "<group>"; };
-		162C731D1B789D6700226B47 /* RamblerModuleAlphaPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleAlphaPresenter.m; path = Viper/ModuleAlpha/RamblerModuleAlphaPresenter.m; sourceTree = "<group>"; };
-		162C731E1B789D6700226B47 /* RamblerModuleAlphaRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaRouter.h; path = Viper/ModuleAlpha/RamblerModuleAlphaRouter.h; sourceTree = "<group>"; };
-		162C731F1B789D6700226B47 /* RamblerModuleAlphaRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleAlphaRouter.m; path = Viper/ModuleAlpha/RamblerModuleAlphaRouter.m; sourceTree = "<group>"; };
-		162C73201B789D6700226B47 /* RamblerModuleAlphaRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaRouterInput.h; path = Viper/ModuleAlpha/RamblerModuleAlphaRouterInput.h; sourceTree = "<group>"; };
-		162C73211B789D6700226B47 /* RamblerModuleAlphaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaViewController.h; path = Viper/ModuleAlpha/RamblerModuleAlphaViewController.h; sourceTree = "<group>"; };
-		162C73221B789D6700226B47 /* RamblerModuleAlphaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleAlphaViewController.m; path = Viper/ModuleAlpha/RamblerModuleAlphaViewController.m; sourceTree = "<group>"; };
-		162C73231B789D6700226B47 /* RamblerModuleAlphaViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaViewInput.h; path = Viper/ModuleAlpha/RamblerModuleAlphaViewInput.h; sourceTree = "<group>"; };
-		162C73241B789D6700226B47 /* RamblerModuleAlphaViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaViewOutput.h; path = Viper/ModuleAlpha/RamblerModuleAlphaViewOutput.h; sourceTree = "<group>"; };
-		162C732F1B789EA100226B47 /* libPods-ViperMcFlurry_Example.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = "libPods-ViperMcFlurry_Example.a"; path = "Pods/../build/Debug-iphoneos/libPods-ViperMcFlurry_Example.a"; sourceTree = "<group>"; };
-		162C73311B78A45F00226B47 /* RamblerModuleBetaInteractor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaInteractor.h; path = Viper/ModuleBeta/RamblerModuleBetaInteractor.h; sourceTree = "<group>"; };
-		162C73321B78A45F00226B47 /* RamblerModuleBetaInteractor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleBetaInteractor.m; path = Viper/ModuleBeta/RamblerModuleBetaInteractor.m; sourceTree = "<group>"; };
-		162C73331B78A45F00226B47 /* RamblerModuleBetaInteractorInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaInteractorInput.h; path = Viper/ModuleBeta/RamblerModuleBetaInteractorInput.h; sourceTree = "<group>"; };
-		162C73341B78A45F00226B47 /* RamblerModuleBetaInteractorOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaInteractorOutput.h; path = Viper/ModuleBeta/RamblerModuleBetaInteractorOutput.h; sourceTree = "<group>"; };
-		162C73371B78A45F00226B47 /* RamblerModuleBetaPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaPresenter.h; path = Viper/ModuleBeta/RamblerModuleBetaPresenter.h; sourceTree = "<group>"; };
-		162C73381B78A45F00226B47 /* RamblerModuleBetaPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleBetaPresenter.m; path = Viper/ModuleBeta/RamblerModuleBetaPresenter.m; sourceTree = "<group>"; };
-		162C73391B78A45F00226B47 /* RamblerModuleBetaRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaRouter.h; path = Viper/ModuleBeta/RamblerModuleBetaRouter.h; sourceTree = "<group>"; };
-		162C733A1B78A45F00226B47 /* RamblerModuleBetaRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleBetaRouter.m; path = Viper/ModuleBeta/RamblerModuleBetaRouter.m; sourceTree = "<group>"; };
-		162C733B1B78A45F00226B47 /* RamblerModuleBetaRouterInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaRouterInput.h; path = Viper/ModuleBeta/RamblerModuleBetaRouterInput.h; sourceTree = "<group>"; };
-		162C733C1B78A45F00226B47 /* RamblerModuleBetaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaViewController.h; path = Viper/ModuleBeta/RamblerModuleBetaViewController.h; sourceTree = "<group>"; };
-		162C733D1B78A45F00226B47 /* RamblerModuleBetaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleBetaViewController.m; path = Viper/ModuleBeta/RamblerModuleBetaViewController.m; sourceTree = "<group>"; };
-		162C733E1B78A45F00226B47 /* RamblerModuleBetaViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaViewInput.h; path = Viper/ModuleBeta/RamblerModuleBetaViewInput.h; sourceTree = "<group>"; };
-		162C733F1B78A45F00226B47 /* RamblerModuleBetaViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaViewOutput.h; path = Viper/ModuleBeta/RamblerModuleBetaViewOutput.h; sourceTree = "<group>"; };
-		162C73491B78A4A500226B47 /* RamblerModuleBetaInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaInput.h; path = Viper/ModuleBeta/RamblerModuleBetaInput.h; sourceTree = "<group>"; };
-		169FC0D71B95C86E008547D7 /* ViperMcFlurry-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ViperMcFlurry-Info.plist"; sourceTree = "<group>"; };
-		169FC0D81B95C86E008547D7 /* ViperMcFlurry-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViperMcFlurry-Prefix.pch"; sourceTree = "<group>"; };
-		29585292F60D04C0C6BFE358 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		29CC82345586C4F662E7C65C /* Pods-ViperMcFlurry_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperMcFlurry_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperMcFlurry_Example/Pods-ViperMcFlurry_Example.release.xcconfig"; sourceTree = "<group>"; };
-		3E218B7F42124CFBDB835247 /* Pods-ViperMcFlurry_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperMcFlurry_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperMcFlurry_Example/Pods-ViperMcFlurry_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		3F6F5979FBF96E09EF139449 /* Pods_ViperMcFlurry_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperMcFlurry_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58A195388D20070C39A /* ViperMcFlurry_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperMcFlurry_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		6003F591195388D20070C39A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		6003F597195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		6003F599195388D20070C39A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		6003F59C195388D20070C39A /* RamblerAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RamblerAppDelegate.h; sourceTree = "<group>"; };
-		6003F59D195388D20070C39A /* RamblerAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RamblerAppDelegate.m; sourceTree = "<group>"; };
-		6003F5A8195388D20070C39A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		6003F5AE195388D20070C39A /* ViperMcFlurry_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViperMcFlurry_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		6003F5B7195388D20070C39A /* Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tests-Info.plist"; sourceTree = "<group>"; };
-		6003F5B9195388D20070C39A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
-		8284984F2455D95519E1A3D9 /* Pods_ViperMcFlurry_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ViperMcFlurry_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		96F30E1F9FBD8F1AF02466B7 /* ViperMcFlurry.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ViperMcFlurry.podspec; path = ../ViperMcFlurry.podspec; sourceTree = "<group>"; };
-		9DB79ED922F73E404786FD30 /* Pods-ViperMcFlurry_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperMcFlurry_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ViperMcFlurry_Tests/Pods-ViperMcFlurry_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BCD36FC03A45A87A4597C0C7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		BFAB36AAE88EAE4784F1616E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		D24D49001BD1049400C77475 /* RamblerModuleBetaModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleBetaModuleAssembly.h; path = Viper/ModuleBeta/RamblerModuleBetaModuleAssembly.h; sourceTree = "<group>"; };
-		D24D49011BD1049400C77475 /* RamblerModuleBetaModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleBetaModuleAssembly.m; path = Viper/ModuleBeta/RamblerModuleBetaModuleAssembly.m; sourceTree = "<group>"; };
-		D24D49031BD1049E00C77475 /* RamblerModuleAlphaModuleAssembly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerModuleAlphaModuleAssembly.h; path = Viper/ModuleAlpha/RamblerModuleAlphaModuleAssembly.h; sourceTree = "<group>"; };
-		D24D49041BD1049E00C77475 /* RamblerModuleAlphaModuleAssembly.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerModuleAlphaModuleAssembly.m; path = Viper/ModuleAlpha/RamblerModuleAlphaModuleAssembly.m; sourceTree = "<group>"; };
-		D24D49061BD4C9ED00C77475 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		F7BF77682AD97D2B0DE14324 /* Pods-ViperMcFlurry_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ViperMcFlurry_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ViperMcFlurry_Tests/Pods-ViperMcFlurry_Tests.release.xcconfig"; sourceTree = "<group>"; };
-/* End PBXFileReference section */
-
-/* Begin PBXFrameworksBuildPhase section */
-		6003F587195388D20070C39A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */,
-				6003F592195388D20070C39A /* UIKit.framework in Frameworks */,
-				6003F58E195388D20070C39A /* Foundation.framework in Frameworks */,
-				C2C905018238A19115ED6AC6 /* Pods_ViperMcFlurry_Example.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6003F5AB195388D20070C39A /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6003F5B2195388D20070C39A /* UIKit.framework in Frameworks */,
-				6003F5B1195388D20070C39A /* Foundation.framework in Frameworks */,
-				2F8EC9FE21353262E6D3028E /* Pods_ViperMcFlurry_Tests.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
-
-/* Begin PBXGroup section */
-		162C73141B789B6800226B47 /* Viper */ = {
-			isa = PBXGroup;
-			children = (
-				162C732A1B789D6F00226B47 /* ModuleBeta */,
-				162C73151B789D3200226B47 /* ModuleAlpha */,
-			);
-			name = Viper;
-			sourceTree = "<group>";
-		};
-		162C73151B789D3200226B47 /* ModuleAlpha */ = {
-			isa = PBXGroup;
-			children = (
-				D24D49031BD1049E00C77475 /* RamblerModuleAlphaModuleAssembly.h */,
-				D24D49041BD1049E00C77475 /* RamblerModuleAlphaModuleAssembly.m */,
-				162C732B1B789D7900226B47 /* View */,
-				162C732E1B789D8B00226B47 /* Interactor */,
-				162C732D1B789D8400226B47 /* Presenter */,
-				162C732C1B789D7E00226B47 /* Router */,
-			);
-			name = ModuleAlpha;
-			sourceTree = "<group>";
-		};
-		162C732A1B789D6F00226B47 /* ModuleBeta */ = {
-			isa = PBXGroup;
-			children = (
-				D24D49001BD1049400C77475 /* RamblerModuleBetaModuleAssembly.h */,
-				D24D49011BD1049400C77475 /* RamblerModuleBetaModuleAssembly.m */,
-				162C73451B78A46400226B47 /* View */,
-				162C73471B78A47E00226B47 /* Interactor */,
-				162C73461B78A47800226B47 /* Presenter */,
-				162C73481B78A48400226B47 /* Router */,
-			);
-			name = ModuleBeta;
-			sourceTree = "<group>";
-		};
-		162C732B1B789D7900226B47 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				162C73211B789D6700226B47 /* RamblerModuleAlphaViewController.h */,
-				162C73221B789D6700226B47 /* RamblerModuleAlphaViewController.m */,
-				162C73231B789D6700226B47 /* RamblerModuleAlphaViewInput.h */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		162C732C1B789D7E00226B47 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				162C731E1B789D6700226B47 /* RamblerModuleAlphaRouter.h */,
-				162C731F1B789D6700226B47 /* RamblerModuleAlphaRouter.m */,
-				162C73201B789D6700226B47 /* RamblerModuleAlphaRouterInput.h */,
-			);
-			name = Router;
-			sourceTree = "<group>";
-		};
-		162C732D1B789D8400226B47 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				162C73191B789D6700226B47 /* RamblerModuleAlphaInteractorOutput.h */,
-				162C73241B789D6700226B47 /* RamblerModuleAlphaViewOutput.h */,
-				162C731C1B789D6700226B47 /* RamblerModuleAlphaPresenter.h */,
-				162C731D1B789D6700226B47 /* RamblerModuleAlphaPresenter.m */,
-			);
-			name = Presenter;
-			sourceTree = "<group>";
-		};
-		162C732E1B789D8B00226B47 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				162C73161B789D6700226B47 /* RamblerModuleAlphaInteractor.h */,
-				162C73171B789D6700226B47 /* RamblerModuleAlphaInteractor.m */,
-				162C73181B789D6700226B47 /* RamblerModuleAlphaInteractorInput.h */,
-			);
-			name = Interactor;
-			sourceTree = "<group>";
-		};
-		162C73451B78A46400226B47 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				162C733E1B78A45F00226B47 /* RamblerModuleBetaViewInput.h */,
-				162C733C1B78A45F00226B47 /* RamblerModuleBetaViewController.h */,
-				162C733D1B78A45F00226B47 /* RamblerModuleBetaViewController.m */,
-			);
-			name = View;
-			sourceTree = "<group>";
-		};
-		162C73461B78A47800226B47 /* Presenter */ = {
-			isa = PBXGroup;
-			children = (
-				162C73341B78A45F00226B47 /* RamblerModuleBetaInteractorOutput.h */,
-				162C73371B78A45F00226B47 /* RamblerModuleBetaPresenter.h */,
-				162C73381B78A45F00226B47 /* RamblerModuleBetaPresenter.m */,
-				162C733F1B78A45F00226B47 /* RamblerModuleBetaViewOutput.h */,
-				162C73491B78A4A500226B47 /* RamblerModuleBetaInput.h */,
-			);
-			name = Presenter;
-			sourceTree = "<group>";
-		};
-		162C73471B78A47E00226B47 /* Interactor */ = {
-			isa = PBXGroup;
-			children = (
-				162C73311B78A45F00226B47 /* RamblerModuleBetaInteractor.h */,
-				162C73321B78A45F00226B47 /* RamblerModuleBetaInteractor.m */,
-				162C73331B78A45F00226B47 /* RamblerModuleBetaInteractorInput.h */,
-			);
-			name = Interactor;
-			sourceTree = "<group>";
-		};
-		162C73481B78A48400226B47 /* Router */ = {
-			isa = PBXGroup;
-			children = (
-				162C73391B78A45F00226B47 /* RamblerModuleBetaRouter.h */,
-				162C733A1B78A45F00226B47 /* RamblerModuleBetaRouter.m */,
-				162C733B1B78A45F00226B47 /* RamblerModuleBetaRouterInput.h */,
-			);
-			name = Router;
-			sourceTree = "<group>";
-		};
-		4D62E5BDBFF12E6425C93A40 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				3E218B7F42124CFBDB835247 /* Pods-ViperMcFlurry_Example.debug.xcconfig */,
-				29CC82345586C4F662E7C65C /* Pods-ViperMcFlurry_Example.release.xcconfig */,
-				9DB79ED922F73E404786FD30 /* Pods-ViperMcFlurry_Tests.debug.xcconfig */,
-				F7BF77682AD97D2B0DE14324 /* Pods-ViperMcFlurry_Tests.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
-		6003F581195388D10070C39A = {
-			isa = PBXGroup;
-			children = (
-				60FF7A9C1954A5C5007DD14C /* Podspec Metadata */,
-				6003F593195388D20070C39A /* Example for ViperMcFlurry */,
-				6003F5B5195388D20070C39A /* Tests */,
-				6003F58C195388D20070C39A /* Frameworks */,
-				6003F58B195388D20070C39A /* Products */,
-				4D62E5BDBFF12E6425C93A40 /* Pods */,
-			);
-			sourceTree = "<group>";
-		};
-		6003F58B195388D20070C39A /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				6003F58A195388D20070C39A /* ViperMcFlurry_Example.app */,
-				6003F5AE195388D20070C39A /* ViperMcFlurry_Tests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		6003F58C195388D20070C39A /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				162C732F1B789EA100226B47 /* libPods-ViperMcFlurry_Example.a */,
-				6003F58D195388D20070C39A /* Foundation.framework */,
-				6003F58F195388D20070C39A /* CoreGraphics.framework */,
-				6003F591195388D20070C39A /* UIKit.framework */,
-				BCD36FC03A45A87A4597C0C7 /* libPods.a */,
-				8284984F2455D95519E1A3D9 /* Pods_ViperMcFlurry_Example.framework */,
-				3F6F5979FBF96E09EF139449 /* Pods_ViperMcFlurry_Tests.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6003F593195388D20070C39A /* Example for ViperMcFlurry */ = {
-			isa = PBXGroup;
-			children = (
-				162C73141B789B6800226B47 /* Viper */,
-				9FFF3D531B68C4D100BDD3F2 /* Testing */,
-				6003F59C195388D20070C39A /* RamblerAppDelegate.h */,
-				6003F59D195388D20070C39A /* RamblerAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
-				6003F5A8195388D20070C39A /* Images.xcassets */,
-				6003F594195388D20070C39A /* Supporting Files */,
-				D24D49061BD4C9ED00C77475 /* LaunchScreen.storyboard */,
-			);
-			name = "Example for ViperMcFlurry";
-			path = ViperMcFlurry;
-			sourceTree = "<group>";
-		};
-		6003F594195388D20070C39A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				169FC0D71B95C86E008547D7 /* ViperMcFlurry-Info.plist */,
-				169FC0D81B95C86E008547D7 /* ViperMcFlurry-Prefix.pch */,
-				6003F596195388D20070C39A /* InfoPlist.strings */,
-				6003F599195388D20070C39A /* main.m */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		6003F5B5195388D20070C39A /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				6003F5B6195388D20070C39A /* Supporting Files */,
-			);
-			path = Tests;
-			sourceTree = "<group>";
-		};
-		6003F5B6195388D20070C39A /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				6003F5B7195388D20070C39A /* Tests-Info.plist */,
-				6003F5B8195388D20070C39A /* InfoPlist.strings */,
-				606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		60FF7A9C1954A5C5007DD14C /* Podspec Metadata */ = {
-			isa = PBXGroup;
-			children = (
-				96F30E1F9FBD8F1AF02466B7 /* ViperMcFlurry.podspec */,
-				BFAB36AAE88EAE4784F1616E /* README.md */,
-				29585292F60D04C0C6BFE358 /* LICENSE */,
-			);
-			name = "Podspec Metadata";
-			sourceTree = "<group>";
-		};
-		9FFF3D531B68C4D100BDD3F2 /* Testing */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Testing;
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
-
-/* Begin PBXNativeTarget section */
-		6003F589195388D20070C39A /* ViperMcFlurry_Example */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ViperMcFlurry_Example" */;
-			buildPhases = (
-				AEB035DEF2B1E52B5823E72B /* [CP] Check Pods Manifest.lock */,
-				6003F586195388D20070C39A /* Sources */,
-				6003F587195388D20070C39A /* Frameworks */,
-				6003F588195388D20070C39A /* Resources */,
-				C6050BAFABC07C78254F390F /* [CP] Copy Pods Resources */,
-				01BC9CB6C6F4D26F423048A6 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ViperMcFlurry_Example;
-			productName = ViperMcFlurry;
-			productReference = 6003F58A195388D20070C39A /* ViperMcFlurry_Example.app */;
-			productType = "com.apple.product-type.application";
-		};
-		6003F5AD195388D20070C39A /* ViperMcFlurry_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "ViperMcFlurry_Tests" */;
-			buildPhases = (
-				BFF50882DD753EC3B7C13E59 /* [CP] Check Pods Manifest.lock */,
-				6003F5AA195388D20070C39A /* Sources */,
-				6003F5AB195388D20070C39A /* Frameworks */,
-				6003F5AC195388D20070C39A /* Resources */,
-				5FB186E48B14A2189DA1EA83 /* [CP] Copy Pods Resources */,
-				138D895A56E50306869154A6 /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				6003F5B4195388D20070C39A /* PBXTargetDependency */,
-			);
-			name = ViperMcFlurry_Tests;
-			productName = ViperMcFlurryTests;
-			productReference = 6003F5AE195388D20070C39A /* ViperMcFlurry_Tests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
-
-/* Begin PBXProject section */
-		6003F582195388D10070C39A /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				CLASSPREFIX = Rambler;
-				LastUpgradeCheck = 0510;
-				ORGANIZATIONNAME = "Egor Tolstoy";
-				TargetAttributes = {
-					6003F5AD195388D20070C39A = {
-						TestTargetID = 6003F589195388D20070C39A;
-					};
-				};
-			};
-			buildConfigurationList = 6003F585195388D10070C39A /* Build configuration list for PBXProject "ViperMcFlurry" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-				Base,
-			);
-			mainGroup = 6003F581195388D10070C39A;
-			productRefGroup = 6003F58B195388D20070C39A /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				6003F589195388D20070C39A /* ViperMcFlurry_Example */,
-				6003F5AD195388D20070C39A /* ViperMcFlurry_Tests */,
-			);
-		};
-/* End PBXProject section */
-
-/* Begin PBXResourcesBuildPhase section */
-		6003F588195388D20070C39A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
-				D24D49071BD4C9ED00C77475 /* LaunchScreen.storyboard in Resources */,
-				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
-				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6003F5AC195388D20070C39A /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				6003F5BA195388D20070C39A /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		01BC9CB6C6F4D26F423048A6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperMcFlurry_Example/Pods-ViperMcFlurry_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		138D895A56E50306869154A6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperMcFlurry_Tests/Pods-ViperMcFlurry_Tests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		5FB186E48B14A2189DA1EA83 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperMcFlurry_Tests/Pods-ViperMcFlurry_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AEB035DEF2B1E52B5823E72B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		BFF50882DD753EC3B7C13E59 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		C6050BAFABC07C78254F390F /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ViperMcFlurry_Example/Pods-ViperMcFlurry_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
-
-/* Begin PBXSourcesBuildPhase section */
-		6003F586195388D20070C39A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				162C73421B78A45F00226B47 /* RamblerModuleBetaPresenter.m in Sources */,
-				162C73291B789D6700226B47 /* RamblerModuleAlphaViewController.m in Sources */,
-				162C73251B789D6700226B47 /* RamblerModuleAlphaInteractor.m in Sources */,
-				162C73271B789D6700226B47 /* RamblerModuleAlphaPresenter.m in Sources */,
-				D24D49051BD1049E00C77475 /* RamblerModuleAlphaModuleAssembly.m in Sources */,
-				162C73431B78A45F00226B47 /* RamblerModuleBetaRouter.m in Sources */,
-				162C73441B78A45F00226B47 /* RamblerModuleBetaViewController.m in Sources */,
-				6003F59E195388D20070C39A /* RamblerAppDelegate.m in Sources */,
-				162C73401B78A45F00226B47 /* RamblerModuleBetaInteractor.m in Sources */,
-				D24D49021BD1049400C77475 /* RamblerModuleBetaModuleAssembly.m in Sources */,
-				162C73281B789D6700226B47 /* RamblerModuleAlphaRouter.m in Sources */,
-				6003F59A195388D20070C39A /* main.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6003F5AA195388D20070C39A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		6003F5B4195388D20070C39A /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 6003F589195388D20070C39A /* ViperMcFlurry_Example */;
-			targetProxy = 6003F5B3195388D20070C39A /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		6003F596195388D20070C39A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F597195388D20070C39A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		6003F5B8195388D20070C39A /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				6003F5B9195388D20070C39A /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
-/* Begin XCBuildConfiguration section */
-		6003F5BD195388D20070C39A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		6003F5BE195388D20070C39A /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		6003F5C0195388D20070C39A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3E218B7F42124CFBDB835247 /* Pods-ViperMcFlurry_Example.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ViperMcFlurry/ViperMcFlurry-Prefix.pch";
-				INFOPLIST_FILE = "ViperMcFlurry/ViperMcFlurry-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MODULE_NAME = ExampleApp;
-				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Debug;
-		};
-		6003F5C1195388D20070C39A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 29CC82345586C4F662E7C65C /* Pods-ViperMcFlurry_Example.release.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "ViperMcFlurry/ViperMcFlurry-Prefix.pch";
-				INFOPLIST_FILE = "ViperMcFlurry/ViperMcFlurry-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LIBRARY_SEARCH_PATHS = "$(inherited)";
-				MODULE_NAME = ExampleApp;
-				OTHER_LDFLAGS = "$(inherited)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		6003F5C3195388D20070C39A /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9DB79ED922F73E404786FD30 /* Pods-ViperMcFlurry_Tests.debug.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperMcFlurry_Example.app/ViperMcFlurry_Example";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		6003F5C4195388D20070C39A /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F7BF77682AD97D2B0DE14324 /* Pods-ViperMcFlurry_Tests.release.xcconfig */;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Tests/Tests-Prefix.pch";
-				INFOPLIST_FILE = "Tests/Tests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ViperMcFlurry_Example.app/ViperMcFlurry_Example";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
-
-/* Begin XCConfigurationList section */
-		6003F585195388D10070C39A /* Build configuration list for PBXProject "ViperMcFlurry" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6003F5BD195388D20070C39A /* Debug */,
-				6003F5BE195388D20070C39A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6003F5BF195388D20070C39A /* Build configuration list for PBXNativeTarget "ViperMcFlurry_Example" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6003F5C0195388D20070C39A /* Debug */,
-				6003F5C1195388D20070C39A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6003F5C2195388D20070C39A /* Build configuration list for PBXNativeTarget "ViperMcFlurry_Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				6003F5C3195388D20070C39A /* Debug */,
-				6003F5C4195388D20070C39A /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 6003F582195388D10070C39A /* Project object */;
-}
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>01BC9CB6C6F4D26F423048A6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-ViperMcFlurry_Example/Pods-ViperMcFlurry_Example-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>138D895A56E50306869154A6</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-ViperMcFlurry_Tests/Pods-ViperMcFlurry_Tests-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>162C73141B789B6800226B47</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>162C732A1B789D6F00226B47</string>
+				<string>162C73151B789D3200226B47</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Viper</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73151B789D3200226B47</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D24D49031BD1049E00C77475</string>
+				<string>D24D49041BD1049E00C77475</string>
+				<string>162C732B1B789D7900226B47</string>
+				<string>162C732E1B789D8B00226B47</string>
+				<string>162C732D1B789D8400226B47</string>
+				<string>162C732C1B789D7E00226B47</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ModuleAlpha</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73161B789D6700226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleAlphaInteractor.h</string>
+			<key>path</key>
+			<string>Viper/ModuleAlpha/RamblerModuleAlphaInteractor.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73171B789D6700226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>RamblerModuleAlphaInteractor.m</string>
+			<key>path</key>
+			<string>Viper/ModuleAlpha/RamblerModuleAlphaInteractor.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73181B789D6700226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleAlphaInteractorInput.h</string>
+			<key>path</key>
+			<string>Viper/ModuleAlpha/RamblerModuleAlphaInteractorInput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73191B789D6700226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleAlphaInteractorOutput.h</string>
+			<key>path</key>
+			<string>Viper/ModuleAlpha/RamblerModuleAlphaInteractorOutput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C731C1B789D6700226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleAlphaPresenter.h</string>
+			<key>path</key>
+			<string>Viper/ModuleAlpha/RamblerModuleAlphaPresenter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C731D1B789D6700226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>RamblerModuleAlphaPresenter.m</string>
+			<key>path</key>
+			<string>Viper/ModuleAlpha/RamblerModuleAlphaPresenter.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C731E1B789D6700226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleAlphaRouter.h</string>
+			<key>path</key>
+			<string>Viper/ModuleAlpha/RamblerModuleAlphaRouter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C731F1B789D6700226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>RamblerModuleAlphaRouter.m</string>
+			<key>path</key>
+			<string>Viper/ModuleAlpha/RamblerModuleAlphaRouter.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73201B789D6700226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleAlphaRouterInput.h</string>
+			<key>path</key>
+			<string>Viper/ModuleAlpha/RamblerModuleAlphaRouterInput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73211B789D6700226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleAlphaViewController.h</string>
+			<key>path</key>
+			<string>Viper/ModuleAlpha/RamblerModuleAlphaViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73221B789D6700226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>RamblerModuleAlphaViewController.m</string>
+			<key>path</key>
+			<string>Viper/ModuleAlpha/RamblerModuleAlphaViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73231B789D6700226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleAlphaViewInput.h</string>
+			<key>path</key>
+			<string>Viper/ModuleAlpha/RamblerModuleAlphaViewInput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73241B789D6700226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleAlphaViewOutput.h</string>
+			<key>path</key>
+			<string>Viper/ModuleAlpha/RamblerModuleAlphaViewOutput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73251B789D6700226B47</key>
+		<dict>
+			<key>fileRef</key>
+			<string>162C73171B789D6700226B47</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>162C73271B789D6700226B47</key>
+		<dict>
+			<key>fileRef</key>
+			<string>162C731D1B789D6700226B47</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>162C73281B789D6700226B47</key>
+		<dict>
+			<key>fileRef</key>
+			<string>162C731F1B789D6700226B47</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>162C73291B789D6700226B47</key>
+		<dict>
+			<key>fileRef</key>
+			<string>162C73221B789D6700226B47</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>162C732A1B789D6F00226B47</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>D24D49001BD1049400C77475</string>
+				<string>D24D49011BD1049400C77475</string>
+				<string>162C73451B78A46400226B47</string>
+				<string>162C73471B78A47E00226B47</string>
+				<string>162C73461B78A47800226B47</string>
+				<string>162C73481B78A48400226B47</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>ModuleBeta</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C732B1B789D7900226B47</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>162C73211B789D6700226B47</string>
+				<string>162C73221B789D6700226B47</string>
+				<string>162C73231B789D6700226B47</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>View</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C732C1B789D7E00226B47</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>162C731E1B789D6700226B47</string>
+				<string>162C731F1B789D6700226B47</string>
+				<string>162C73201B789D6700226B47</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Router</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C732D1B789D8400226B47</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>162C73191B789D6700226B47</string>
+				<string>162C73241B789D6700226B47</string>
+				<string>162C731C1B789D6700226B47</string>
+				<string>162C731D1B789D6700226B47</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Presenter</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C732E1B789D8B00226B47</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>162C73161B789D6700226B47</string>
+				<string>162C73171B789D6700226B47</string>
+				<string>162C73181B789D6700226B47</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Interactor</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C732F1B789EA100226B47</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>archive.ar</string>
+			<key>name</key>
+			<string>libPods-ViperMcFlurry_Example.a</string>
+			<key>path</key>
+			<string>Pods/../build/Debug-iphoneos/libPods-ViperMcFlurry_Example.a</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73311B78A45F00226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleBetaInteractor.h</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaInteractor.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73321B78A45F00226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>RamblerModuleBetaInteractor.m</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaInteractor.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73331B78A45F00226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleBetaInteractorInput.h</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaInteractorInput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73341B78A45F00226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleBetaInteractorOutput.h</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaInteractorOutput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73371B78A45F00226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleBetaPresenter.h</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaPresenter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73381B78A45F00226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>RamblerModuleBetaPresenter.m</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaPresenter.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73391B78A45F00226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleBetaRouter.h</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaRouter.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C733A1B78A45F00226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>RamblerModuleBetaRouter.m</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaRouter.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C733B1B78A45F00226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleBetaRouterInput.h</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaRouterInput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C733C1B78A45F00226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleBetaViewController.h</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaViewController.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C733D1B78A45F00226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>RamblerModuleBetaViewController.m</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaViewController.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C733E1B78A45F00226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleBetaViewInput.h</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaViewInput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C733F1B78A45F00226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleBetaViewOutput.h</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaViewOutput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73401B78A45F00226B47</key>
+		<dict>
+			<key>fileRef</key>
+			<string>162C73321B78A45F00226B47</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>162C73421B78A45F00226B47</key>
+		<dict>
+			<key>fileRef</key>
+			<string>162C73381B78A45F00226B47</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>162C73431B78A45F00226B47</key>
+		<dict>
+			<key>fileRef</key>
+			<string>162C733A1B78A45F00226B47</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>162C73441B78A45F00226B47</key>
+		<dict>
+			<key>fileRef</key>
+			<string>162C733D1B78A45F00226B47</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>162C73451B78A46400226B47</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>162C733E1B78A45F00226B47</string>
+				<string>162C733C1B78A45F00226B47</string>
+				<string>162C733D1B78A45F00226B47</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>View</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73461B78A47800226B47</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>162C73341B78A45F00226B47</string>
+				<string>162C73371B78A45F00226B47</string>
+				<string>162C73381B78A45F00226B47</string>
+				<string>162C733F1B78A45F00226B47</string>
+				<string>162C73491B78A4A500226B47</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Presenter</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73471B78A47E00226B47</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>162C73311B78A45F00226B47</string>
+				<string>162C73321B78A45F00226B47</string>
+				<string>162C73331B78A45F00226B47</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Interactor</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73481B78A48400226B47</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>162C73391B78A45F00226B47</string>
+				<string>162C733A1B78A45F00226B47</string>
+				<string>162C733B1B78A45F00226B47</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Router</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>162C73491B78A4A500226B47</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleBetaInput.h</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaInput.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>169FC0D71B95C86E008547D7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>ViperMcFlurry-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>169FC0D81B95C86E008547D7</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>ViperMcFlurry-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>29585292F60D04C0C6BFE358</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>LICENSE</string>
+			<key>path</key>
+			<string>../LICENSE</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>29A94EBD936C47E4D47A9A6C</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-ViperMcFlurry_Tests/Pods-ViperMcFlurry_Tests-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>29CC82345586C4F662E7C65C</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-ViperMcFlurry_Example.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-ViperMcFlurry_Example/Pods-ViperMcFlurry_Example.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>2F8EC9FE21353262E6D3028E</key>
+		<dict>
+			<key>fileRef</key>
+			<string>3F6F5979FBF96E09EF139449</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>3E218B7F42124CFBDB835247</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-ViperMcFlurry_Example.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-ViperMcFlurry_Example/Pods-ViperMcFlurry_Example.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3F6F5979FBF96E09EF139449</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_ViperMcFlurry_Tests.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>4D62E5BDBFF12E6425C93A40</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>3E218B7F42124CFBDB835247</string>
+				<string>29CC82345586C4F662E7C65C</string>
+				<string>9DB79ED922F73E404786FD30</string>
+				<string>F7BF77682AD97D2B0DE14324</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>5FB186E48B14A2189DA1EA83</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-ViperMcFlurry_Tests/Pods-ViperMcFlurry_Tests-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>6003F581195388D10070C39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>60FF7A9C1954A5C5007DD14C</string>
+				<string>6003F593195388D20070C39A</string>
+				<string>6003F5B5195388D20070C39A</string>
+				<string>6003F58C195388D20070C39A</string>
+				<string>6003F58B195388D20070C39A</string>
+				<string>4D62E5BDBFF12E6425C93A40</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F582195388D10070C39A</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>CLASSPREFIX</key>
+				<string>Rambler</string>
+				<key>LastUpgradeCheck</key>
+				<string>0510</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Egor Tolstoy</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>6003F5AD195388D20070C39A</key>
+					<dict>
+						<key>TestTargetID</key>
+						<string>6003F589195388D20070C39A</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>6003F585195388D10070C39A</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+				<string>Base</string>
+			</array>
+			<key>mainGroup</key>
+			<string>6003F581195388D10070C39A</string>
+			<key>productRefGroup</key>
+			<string>6003F58B195388D20070C39A</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>6003F589195388D20070C39A</string>
+				<string>6003F5AD195388D20070C39A</string>
+			</array>
+		</dict>
+		<key>6003F585195388D10070C39A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>6003F5BD195388D20070C39A</string>
+				<string>6003F5BE195388D20070C39A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>6003F586195388D20070C39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>162C73421B78A45F00226B47</string>
+				<string>162C73291B789D6700226B47</string>
+				<string>162C73251B789D6700226B47</string>
+				<string>162C73271B789D6700226B47</string>
+				<string>D24D49051BD1049E00C77475</string>
+				<string>162C73431B78A45F00226B47</string>
+				<string>162C73441B78A45F00226B47</string>
+				<string>6003F59E195388D20070C39A</string>
+				<string>162C73401B78A45F00226B47</string>
+				<string>D24D49021BD1049400C77475</string>
+				<string>162C73281B789D6700226B47</string>
+				<string>6003F59A195388D20070C39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6003F587195388D20070C39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6003F590195388D20070C39A</string>
+				<string>6003F592195388D20070C39A</string>
+				<string>6003F58E195388D20070C39A</string>
+				<string>C2C905018238A19115ED6AC6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6003F588195388D20070C39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>873B8AEB1B1F5CCA007FD442</string>
+				<string>D24D49071BD4C9ED00C77475</string>
+				<string>6003F5A9195388D20070C39A</string>
+				<string>6003F598195388D20070C39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6003F589195388D20070C39A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>6003F5BF195388D20070C39A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>AEB035DEF2B1E52B5823E72B</string>
+				<string>6003F586195388D20070C39A</string>
+				<string>6003F587195388D20070C39A</string>
+				<string>6003F588195388D20070C39A</string>
+				<string>C6050BAFABC07C78254F390F</string>
+				<string>01BC9CB6C6F4D26F423048A6</string>
+				<string>9E0EE8EC6CC5F15FDF605C15</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ViperMcFlurry_Example</string>
+			<key>productName</key>
+			<string>ViperMcFlurry</string>
+			<key>productReference</key>
+			<string>6003F58A195388D20070C39A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.application</string>
+		</dict>
+		<key>6003F58A195388D20070C39A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.application</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>ViperMcFlurry_Example.app</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6003F58B195388D20070C39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6003F58A195388D20070C39A</string>
+				<string>6003F5AE195388D20070C39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F58C195388D20070C39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>162C732F1B789EA100226B47</string>
+				<string>6003F58D195388D20070C39A</string>
+				<string>6003F58F195388D20070C39A</string>
+				<string>6003F591195388D20070C39A</string>
+				<string>BCD36FC03A45A87A4597C0C7</string>
+				<string>8284984F2455D95519E1A3D9</string>
+				<string>3F6F5979FBF96E09EF139449</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F58D195388D20070C39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>6003F58E195388D20070C39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6003F58D195388D20070C39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6003F58F195388D20070C39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>CoreGraphics.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/CoreGraphics.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>6003F590195388D20070C39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6003F58F195388D20070C39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6003F591195388D20070C39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>UIKit.framework</string>
+			<key>path</key>
+			<string>System/Library/Frameworks/UIKit.framework</string>
+			<key>sourceTree</key>
+			<string>SDKROOT</string>
+		</dict>
+		<key>6003F592195388D20070C39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6003F591195388D20070C39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6003F593195388D20070C39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>162C73141B789B6800226B47</string>
+				<string>9FFF3D531B68C4D100BDD3F2</string>
+				<string>6003F59C195388D20070C39A</string>
+				<string>6003F59D195388D20070C39A</string>
+				<string>873B8AEA1B1F5CCA007FD442</string>
+				<string>6003F5A8195388D20070C39A</string>
+				<string>6003F594195388D20070C39A</string>
+				<string>D24D49061BD4C9ED00C77475</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Example for ViperMcFlurry</string>
+			<key>path</key>
+			<string>ViperMcFlurry</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F594195388D20070C39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>169FC0D71B95C86E008547D7</string>
+				<string>169FC0D81B95C86E008547D7</string>
+				<string>6003F596195388D20070C39A</string>
+				<string>6003F599195388D20070C39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F596195388D20070C39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6003F597195388D20070C39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F597195388D20070C39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F598195388D20070C39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6003F596195388D20070C39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6003F599195388D20070C39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>main.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F59A195388D20070C39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6003F599195388D20070C39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6003F59C195388D20070C39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>RamblerAppDelegate.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F59D195388D20070C39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>RamblerAppDelegate.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F59E195388D20070C39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6003F59D195388D20070C39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6003F5A8195388D20070C39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>folder.assetcatalog</string>
+			<key>path</key>
+			<string>Images.xcassets</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F5A9195388D20070C39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6003F5A8195388D20070C39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6003F5AA195388D20070C39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6003F5AB195388D20070C39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6003F5B2195388D20070C39A</string>
+				<string>6003F5B1195388D20070C39A</string>
+				<string>2F8EC9FE21353262E6D3028E</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6003F5AC195388D20070C39A</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>6003F5BA195388D20070C39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>6003F5AD195388D20070C39A</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>6003F5C2195388D20070C39A</string>
+			<key>buildPhases</key>
+			<array>
+				<string>BFF50882DD753EC3B7C13E59</string>
+				<string>6003F5AA195388D20070C39A</string>
+				<string>6003F5AB195388D20070C39A</string>
+				<string>6003F5AC195388D20070C39A</string>
+				<string>5FB186E48B14A2189DA1EA83</string>
+				<string>138D895A56E50306869154A6</string>
+				<string>29A94EBD936C47E4D47A9A6C</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array>
+				<string>6003F5B4195388D20070C39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>ViperMcFlurry_Tests</string>
+			<key>productName</key>
+			<string>ViperMcFlurryTests</string>
+			<key>productReference</key>
+			<string>6003F5AE195388D20070C39A</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>6003F5AE195388D20070C39A</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>ViperMcFlurry_Tests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>6003F5B1195388D20070C39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6003F58D195388D20070C39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6003F5B2195388D20070C39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6003F591195388D20070C39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6003F5B3195388D20070C39A</key>
+		<dict>
+			<key>containerPortal</key>
+			<string>6003F582195388D10070C39A</string>
+			<key>isa</key>
+			<string>PBXContainerItemProxy</string>
+			<key>proxyType</key>
+			<string>1</string>
+			<key>remoteGlobalIDString</key>
+			<string>6003F589195388D20070C39A</string>
+			<key>remoteInfo</key>
+			<string>ViperMcFlurry</string>
+		</dict>
+		<key>6003F5B4195388D20070C39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXTargetDependency</string>
+			<key>target</key>
+			<string>6003F589195388D20070C39A</string>
+			<key>targetProxy</key>
+			<string>6003F5B3195388D20070C39A</string>
+		</dict>
+		<key>6003F5B5195388D20070C39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6003F5B6195388D20070C39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Tests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F5B6195388D20070C39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6003F5B7195388D20070C39A</string>
+				<string>6003F5B8195388D20070C39A</string>
+				<string>606FC2411953D9B200FFA9A0</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F5B7195388D20070C39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Tests-Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F5B8195388D20070C39A</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>6003F5B9195388D20070C39A</string>
+			</array>
+			<key>isa</key>
+			<string>PBXVariantGroup</string>
+			<key>name</key>
+			<string>InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F5B9195388D20070C39A</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.strings</string>
+			<key>name</key>
+			<string>en</string>
+			<key>path</key>
+			<string>en.lproj/InfoPlist.strings</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>6003F5BA195388D20070C39A</key>
+		<dict>
+			<key>fileRef</key>
+			<string>6003F5B8195388D20070C39A</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>6003F5BD195388D20070C39A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>6003F5BE195388D20070C39A</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
+				<string>iPhone Developer</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>7.1</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>TARGETED_DEVICE_FAMILY</key>
+				<string>1,2</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>6003F5BF195388D20070C39A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>6003F5C0195388D20070C39A</string>
+				<string>6003F5C1195388D20070C39A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>6003F5C0195388D20070C39A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>3E218B7F42124CFBDB835247</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<string>$(inherited)</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>ViperMcFlurry/ViperMcFlurry-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>ViperMcFlurry/ViperMcFlurry-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<string>$(inherited)</string>
+				<key>MODULE_NAME</key>
+				<string>ExampleApp</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>$(inherited)</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>6003F5C1195388D20070C39A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>29CC82345586C4F662E7C65C</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
+				<string>AppIcon</string>
+				<key>ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME</key>
+				<string>LaunchImage</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<string>$(inherited)</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>ViperMcFlurry/ViperMcFlurry-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>ViperMcFlurry/ViperMcFlurry-Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LIBRARY_SEARCH_PATHS</key>
+				<string>$(inherited)</string>
+				<key>MODULE_NAME</key>
+				<string>ExampleApp</string>
+				<key>OTHER_LDFLAGS</key>
+				<string>$(inherited)</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>app</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>6003F5C2195388D20070C39A</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>6003F5C3195388D20070C39A</string>
+				<string>6003F5C4195388D20070C39A</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>6003F5C3195388D20070C39A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>9DB79ED922F73E404786FD30</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Tests/Tests-Prefix.pch</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>Tests/Tests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/ViperMcFlurry_Example.app/ViperMcFlurry_Example</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>6003F5C4195388D20070C39A</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>F7BF77682AD97D2B0DE14324</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>BUNDLE_LOADER</key>
+				<string>$(TEST_HOST)</string>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+					<string>$(DEVELOPER_FRAMEWORKS_DIR)</string>
+				</array>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Tests/Tests-Prefix.pch</string>
+				<key>INFOPLIST_FILE</key>
+				<string>Tests/Tests-Info.plist</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>TEST_HOST</key>
+				<string>$(BUILT_PRODUCTS_DIR)/ViperMcFlurry_Example.app/ViperMcFlurry_Example</string>
+				<key>WRAPPER_EXTENSION</key>
+				<string>xctest</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>606FC2411953D9B200FFA9A0</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Tests-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>60FF7A9C1954A5C5007DD14C</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>96F30E1F9FBD8F1AF02466B7</string>
+				<string>BFAB36AAE88EAE4784F1616E</string>
+				<string>29585292F60D04C0C6BFE358</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Podspec Metadata</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>8284984F2455D95519E1A3D9</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.framework</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>Pods_ViperMcFlurry_Example.framework</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>873B8AEA1B1F5CCA007FD442</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>Main.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>873B8AEB1B1F5CCA007FD442</key>
+		<dict>
+			<key>fileRef</key>
+			<string>873B8AEA1B1F5CCA007FD442</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>96F30E1F9FBD8F1AF02466B7</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text</string>
+			<key>name</key>
+			<string>ViperMcFlurry.podspec</string>
+			<key>path</key>
+			<string>../ViperMcFlurry.podspec</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9DB79ED922F73E404786FD30</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-ViperMcFlurry_Tests.debug.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-ViperMcFlurry_Tests/Pods-ViperMcFlurry_Tests.debug.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9E0EE8EC6CC5F15FDF605C15</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Embed Pods Frameworks</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-ViperMcFlurry_Example/Pods-ViperMcFlurry_Example-frameworks.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>9FFF3D531B68C4D100BDD3F2</key>
+		<dict>
+			<key>children</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Testing</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>AEB035DEF2B1E52B5823E72B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>BCD36FC03A45A87A4597C0C7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>BFAB36AAE88EAE4784F1616E</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>net.daringfireball.markdown</string>
+			<key>name</key>
+			<string>README.md</string>
+			<key>path</key>
+			<string>../README.md</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>BFF50882DD753EC3B7C13E59</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>C2C905018238A19115ED6AC6</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8284984F2455D95519E1A3D9</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>C6050BAFABC07C78254F390F</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>[CP] Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Target Support Files/Pods-ViperMcFlurry_Example/Pods-ViperMcFlurry_Example-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>D24D49001BD1049400C77475</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleBetaModuleAssembly.h</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaModuleAssembly.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D24D49011BD1049400C77475</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>RamblerModuleBetaModuleAssembly.m</string>
+			<key>path</key>
+			<string>Viper/ModuleBeta/RamblerModuleBetaModuleAssembly.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D24D49021BD1049400C77475</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D24D49011BD1049400C77475</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D24D49031BD1049E00C77475</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>name</key>
+			<string>RamblerModuleAlphaModuleAssembly.h</string>
+			<key>path</key>
+			<string>Viper/ModuleAlpha/RamblerModuleAlphaModuleAssembly.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D24D49041BD1049E00C77475</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>name</key>
+			<string>RamblerModuleAlphaModuleAssembly.m</string>
+			<key>path</key>
+			<string>Viper/ModuleAlpha/RamblerModuleAlphaModuleAssembly.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D24D49051BD1049E00C77475</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D24D49041BD1049E00C77475</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>D24D49061BD4C9ED00C77475</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>file.storyboard</string>
+			<key>path</key>
+			<string>LaunchScreen.storyboard</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>D24D49071BD4C9ED00C77475</key>
+		<dict>
+			<key>fileRef</key>
+			<string>D24D49061BD4C9ED00C77475</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>F7BF77682AD97D2B0DE14324</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods-ViperMcFlurry_Tests.release.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Target Support Files/Pods-ViperMcFlurry_Tests/Pods-ViperMcFlurry_Tests.release.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>6003F582195388D10070C39A</string>
+</dict>
+</plist>
