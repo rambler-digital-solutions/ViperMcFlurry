@@ -7,35 +7,33 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2B20652C1D3FD91100246C8D /* RamblerViperModuleFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B20651F1D3FD91100246C8D /* RamblerViperModuleFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B20652D1D3FD91100246C8D /* RamblerViperModuleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2065201D3FD91100246C8D /* RamblerViperModuleFactory.m */; };
-		2B20652E1D3FD91100246C8D /* RamblerViperModuleFactoryProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B2065211D3FD91100246C8D /* RamblerViperModuleFactoryProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B20652F1D3FD91100246C8D /* RamblerViperModuleInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B2065221D3FD91100246C8D /* RamblerViperModuleInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B2065301D3FD91100246C8D /* RamblerViperModuleOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B2065231D3FD91100246C8D /* RamblerViperModuleOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B2065311D3FD91100246C8D /* RamblerViperModuleTransitionHandlerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B2065241D3FD91100246C8D /* RamblerViperModuleTransitionHandlerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B2065321D3FD91100246C8D /* RamblerViperOpenModulePromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B2065251D3FD91100246C8D /* RamblerViperOpenModulePromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B2065331D3FD91100246C8D /* RamblerViperOpenModulePromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2065261D3FD91100246C8D /* RamblerViperOpenModulePromise.m */; };
-		2B2065341D3FD91100246C8D /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B2065271D3FD91100246C8D /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B2065351D3FD91100246C8D /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B2065281D3FD91100246C8D /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.m */; };
-		2B2065361D3FD91100246C8D /* IntermoduleDataTransfer.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B2065291D3FD91100246C8D /* IntermoduleDataTransfer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2B2065371D3FD91100246C8D /* ViperMcFlurry.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B20652A1D3FD91100246C8D /* ViperMcFlurry.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F4284341DC0BEDA0063228A /* RamblerViperModuleFactory.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F42842A1DC0BEDA0063228A /* RamblerViperModuleFactory.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F4284351DC0BEDA0063228A /* RamblerViperModuleFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F42842B1DC0BEDA0063228A /* RamblerViperModuleFactory.m */; };
+		0F4284361DC0BEDA0063228A /* RamblerViperModuleFactoryProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F42842C1DC0BEDA0063228A /* RamblerViperModuleFactoryProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F4284371DC0BEDA0063228A /* RamblerViperModuleInput.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F42842D1DC0BEDA0063228A /* RamblerViperModuleInput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F4284381DC0BEDA0063228A /* RamblerViperModuleOutput.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F42842E1DC0BEDA0063228A /* RamblerViperModuleOutput.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F4284391DC0BEDA0063228A /* RamblerViperModuleTransitionHandlerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F42842F1DC0BEDA0063228A /* RamblerViperModuleTransitionHandlerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F42843A1DC0BEDA0063228A /* RamblerViperOpenModulePromise.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F4284301DC0BEDA0063228A /* RamblerViperOpenModulePromise.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F42843B1DC0BEDA0063228A /* RamblerViperOpenModulePromise.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4284311DC0BEDA0063228A /* RamblerViperOpenModulePromise.m */; };
+		0F42843C1DC0BEDA0063228A /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F4284321DC0BEDA0063228A /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0F42843D1DC0BEDA0063228A /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F4284331DC0BEDA0063228A /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.m */; };
+		0F42843F1DC0BEE90063228A /* ViperMcFlurry.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F42843E1DC0BEE90063228A /* ViperMcFlurry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F42842A1DC0BEDA0063228A /* RamblerViperModuleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerViperModuleFactory.h; path = ../../Source/RamblerViperModuleFactory.h; sourceTree = "<group>"; };
+		0F42842B1DC0BEDA0063228A /* RamblerViperModuleFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerViperModuleFactory.m; path = ../../Source/RamblerViperModuleFactory.m; sourceTree = "<group>"; };
+		0F42842C1DC0BEDA0063228A /* RamblerViperModuleFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerViperModuleFactoryProtocol.h; path = ../../Source/RamblerViperModuleFactoryProtocol.h; sourceTree = "<group>"; };
+		0F42842D1DC0BEDA0063228A /* RamblerViperModuleInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerViperModuleInput.h; path = ../../Source/RamblerViperModuleInput.h; sourceTree = "<group>"; };
+		0F42842E1DC0BEDA0063228A /* RamblerViperModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerViperModuleOutput.h; path = ../../Source/RamblerViperModuleOutput.h; sourceTree = "<group>"; };
+		0F42842F1DC0BEDA0063228A /* RamblerViperModuleTransitionHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerViperModuleTransitionHandlerProtocol.h; path = ../../Source/RamblerViperModuleTransitionHandlerProtocol.h; sourceTree = "<group>"; };
+		0F4284301DC0BEDA0063228A /* RamblerViperOpenModulePromise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = RamblerViperOpenModulePromise.h; path = ../../Source/RamblerViperOpenModulePromise.h; sourceTree = "<group>"; };
+		0F4284311DC0BEDA0063228A /* RamblerViperOpenModulePromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = RamblerViperOpenModulePromise.m; path = ../../Source/RamblerViperOpenModulePromise.m; sourceTree = "<group>"; };
+		0F4284321DC0BEDA0063228A /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIViewController+RamblerViperModuleTransitionHandlerProtocol.h"; path = "../../Source/UIViewController+RamblerViperModuleTransitionHandlerProtocol.h"; sourceTree = "<group>"; };
+		0F4284331DC0BEDA0063228A /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+RamblerViperModuleTransitionHandlerProtocol.m"; path = "../../Source/UIViewController+RamblerViperModuleTransitionHandlerProtocol.m"; sourceTree = "<group>"; };
+		0F42843E1DC0BEE90063228A /* ViperMcFlurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViperMcFlurry.h; path = ../Source/ViperMcFlurry.h; sourceTree = "<group>"; };
 		2B2065111D3FD8FA00246C8D /* ViperMcFlurry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ViperMcFlurry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2B2065161D3FD8FA00246C8D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		2B20651F1D3FD91100246C8D /* RamblerViperModuleFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerViperModuleFactory.h; sourceTree = "<group>"; };
-		2B2065201D3FD91100246C8D /* RamblerViperModuleFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RamblerViperModuleFactory.m; sourceTree = "<group>"; };
-		2B2065211D3FD91100246C8D /* RamblerViperModuleFactoryProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerViperModuleFactoryProtocol.h; sourceTree = "<group>"; };
-		2B2065221D3FD91100246C8D /* RamblerViperModuleInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerViperModuleInput.h; sourceTree = "<group>"; };
-		2B2065231D3FD91100246C8D /* RamblerViperModuleOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerViperModuleOutput.h; sourceTree = "<group>"; };
-		2B2065241D3FD91100246C8D /* RamblerViperModuleTransitionHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerViperModuleTransitionHandlerProtocol.h; sourceTree = "<group>"; };
-		2B2065251D3FD91100246C8D /* RamblerViperOpenModulePromise.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerViperOpenModulePromise.h; sourceTree = "<group>"; };
-		2B2065261D3FD91100246C8D /* RamblerViperOpenModulePromise.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RamblerViperOpenModulePromise.m; sourceTree = "<group>"; };
-		2B2065271D3FD91100246C8D /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+RamblerViperModuleTransitionHandlerProtocol.h"; sourceTree = "<group>"; };
-		2B2065281D3FD91100246C8D /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+RamblerViperModuleTransitionHandlerProtocol.m"; sourceTree = "<group>"; };
-		2B2065291D3FD91100246C8D /* IntermoduleDataTransfer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntermoduleDataTransfer.h; sourceTree = "<group>"; };
-		2B20652A1D3FD91100246C8D /* ViperMcFlurry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViperMcFlurry.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				2B20651E1D3FD91100246C8D /* IntermoduleDataTransfer */,
-				2B2065291D3FD91100246C8D /* IntermoduleDataTransfer.h */,
-				2B20652A1D3FD91100246C8D /* ViperMcFlurry.h */,
+				0F42843E1DC0BEE90063228A /* ViperMcFlurry.h */,
 			);
 			name = Code;
 			path = ../../Code;
@@ -88,16 +85,16 @@
 		2B20651E1D3FD91100246C8D /* IntermoduleDataTransfer */ = {
 			isa = PBXGroup;
 			children = (
-				2B20651F1D3FD91100246C8D /* RamblerViperModuleFactory.h */,
-				2B2065201D3FD91100246C8D /* RamblerViperModuleFactory.m */,
-				2B2065211D3FD91100246C8D /* RamblerViperModuleFactoryProtocol.h */,
-				2B2065221D3FD91100246C8D /* RamblerViperModuleInput.h */,
-				2B2065231D3FD91100246C8D /* RamblerViperModuleOutput.h */,
-				2B2065241D3FD91100246C8D /* RamblerViperModuleTransitionHandlerProtocol.h */,
-				2B2065251D3FD91100246C8D /* RamblerViperOpenModulePromise.h */,
-				2B2065261D3FD91100246C8D /* RamblerViperOpenModulePromise.m */,
-				2B2065271D3FD91100246C8D /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.h */,
-				2B2065281D3FD91100246C8D /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.m */,
+				0F42842A1DC0BEDA0063228A /* RamblerViperModuleFactory.h */,
+				0F42842B1DC0BEDA0063228A /* RamblerViperModuleFactory.m */,
+				0F42842C1DC0BEDA0063228A /* RamblerViperModuleFactoryProtocol.h */,
+				0F42842D1DC0BEDA0063228A /* RamblerViperModuleInput.h */,
+				0F42842E1DC0BEDA0063228A /* RamblerViperModuleOutput.h */,
+				0F42842F1DC0BEDA0063228A /* RamblerViperModuleTransitionHandlerProtocol.h */,
+				0F4284301DC0BEDA0063228A /* RamblerViperOpenModulePromise.h */,
+				0F4284311DC0BEDA0063228A /* RamblerViperOpenModulePromise.m */,
+				0F4284321DC0BEDA0063228A /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.h */,
+				0F4284331DC0BEDA0063228A /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.m */,
 			);
 			path = IntermoduleDataTransfer;
 			sourceTree = "<group>";
@@ -109,15 +106,14 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B2065361D3FD91100246C8D /* IntermoduleDataTransfer.h in Headers */,
-				2B2065371D3FD91100246C8D /* ViperMcFlurry.h in Headers */,
-				2B2065341D3FD91100246C8D /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.h in Headers */,
-				2B2065321D3FD91100246C8D /* RamblerViperOpenModulePromise.h in Headers */,
-				2B20652F1D3FD91100246C8D /* RamblerViperModuleInput.h in Headers */,
-				2B20652C1D3FD91100246C8D /* RamblerViperModuleFactory.h in Headers */,
-				2B20652E1D3FD91100246C8D /* RamblerViperModuleFactoryProtocol.h in Headers */,
-				2B2065311D3FD91100246C8D /* RamblerViperModuleTransitionHandlerProtocol.h in Headers */,
-				2B2065301D3FD91100246C8D /* RamblerViperModuleOutput.h in Headers */,
+				0F4284361DC0BEDA0063228A /* RamblerViperModuleFactoryProtocol.h in Headers */,
+				0F4284341DC0BEDA0063228A /* RamblerViperModuleFactory.h in Headers */,
+				0F4284391DC0BEDA0063228A /* RamblerViperModuleTransitionHandlerProtocol.h in Headers */,
+				0F4284381DC0BEDA0063228A /* RamblerViperModuleOutput.h in Headers */,
+				0F4284371DC0BEDA0063228A /* RamblerViperModuleInput.h in Headers */,
+				0F42843C1DC0BEDA0063228A /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.h in Headers */,
+				0F42843A1DC0BEDA0063228A /* RamblerViperOpenModulePromise.h in Headers */,
+				0F42843F1DC0BEE90063228A /* ViperMcFlurry.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,9 +184,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B2065331D3FD91100246C8D /* RamblerViperOpenModulePromise.m in Sources */,
-				2B20652D1D3FD91100246C8D /* RamblerViperModuleFactory.m in Sources */,
-				2B2065351D3FD91100246C8D /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.m in Sources */,
+				0F42843B1DC0BEDA0063228A /* RamblerViperOpenModulePromise.m in Sources */,
+				0F4284351DC0BEDA0063228A /* RamblerViperModuleFactory.m in Sources */,
+				0F42843D1DC0BEDA0063228A /* UIViewController+RamblerViperModuleTransitionHandlerProtocol.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
