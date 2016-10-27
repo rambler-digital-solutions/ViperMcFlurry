@@ -6,14 +6,12 @@ use_frameworks!
 platform :ios, '8.0'
 
 def appPods
-
     pod "ViperMcFlurry", :path => "../ViperMcFlurry.podspec"
     pod "Typhoon", '~> 3.2.0'
-
 end
 
-target 'ViperMcFlurry_Tests' do
-    
+target 'ViperMcFlurry_Example' do
+    appPods
 end
 
 target 'ViperMcFlurry_Tests' do
