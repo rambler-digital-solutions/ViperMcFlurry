@@ -24,7 +24,7 @@
 - (id<RamblerViperModuleFactoryProtocol>)factoryBetaModule {
     return [TyphoonDefinition withClass:[RamblerViperModuleFactory class]
                           configuration:^(TyphoonDefinition *definition) {
-                              [definition useInitializer:@selector(initWithStoryboard:andRestorationId:)
+                              [definition useInitializer:@selector(initWithViewControllerLoader:andViewControllerIdentifier:)
                                               parameters:^(TyphoonMethod *initializer) {
                                                   [initializer injectParameterWith:[self storyboardBetaModule]];
                                                   [initializer injectParameterWith:@"RamblerModuleBetaViewController"];
