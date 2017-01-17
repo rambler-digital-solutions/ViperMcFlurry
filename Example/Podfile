@@ -7,7 +7,7 @@ platform :ios, '8.0'
 
 def appPods
     pod "ViperMcFlurry", :path => "../ViperMcFlurry.podspec"
-    pod "Typhoon", '~> 3.2.0'
+    pod "Typhoon", '~> 4.0.0'
 end
 
 target 'ViperMcFlurry_Example' do
