@@ -8,6 +8,7 @@
 #import "RamblerModuleAlphaModuleAssembly.h"
 
 #import "RamblerModuleBetaModuleAssembly.h"
+#import "RamblerModuleGammaModuleAssembly.h"
 
 #import "RamblerModuleAlphaViewController.h"
 #import "RamblerModuleAlphaInteractor.h"
@@ -17,6 +18,7 @@
 @interface  RamblerModuleAlphaModuleAssembly()
 
 @property (nonatomic,strong,readonly) RamblerModuleBetaModuleAssembly *betaModuleAssembly;
+@property (nonatomic,strong,readonly) RamblerModuleGammaModuleAssembly *gammaModuleAssembly;
 
 @end
 
@@ -62,6 +64,9 @@
                               
                               [definition injectProperty:@selector(betaModuleFactory)
                                                     with:[self.betaModuleAssembly factoryBetaModule]];
+                              
+                              [definition injectProperty:@selector(gammaModuleFactory)
+                                                    with:[self.gammaModuleAssembly factoryGammaModule]];
                           }];
 }
 

@@ -13,5 +13,6 @@
 
 @property (nonatomic,weak) id<RamblerViperModuleTransitionHandlerProtocol> transitionHandler;
 @property (nonatomic,strong) id<RamblerViperModuleFactoryProtocol> betaModuleFactory;
+@property (nonatomic,strong) id<RamblerViperModuleFactoryProtocol> gammaModuleFactory;
 
 @end

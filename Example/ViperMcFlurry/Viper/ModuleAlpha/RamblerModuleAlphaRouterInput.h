@@ -11,6 +11,7 @@
 
 - (void)openBetaModuleWithExampleString:(NSString*)exampleString;
 - (void)instantiateBetaModuleWithExampleString:(NSString*)exampleString;
+- (void)instantiateGammaModuleWithExampleString:(NSString*)exampleString;
 
 @end
 

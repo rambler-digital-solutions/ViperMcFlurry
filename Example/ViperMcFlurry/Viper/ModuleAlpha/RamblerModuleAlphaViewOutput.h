@@ -12,6 +12,7 @@
 - (void)setupView;
 - (void)sendDataButtonClicked;
 - (void)instantiateBetaButtonClicked;
+- (void)instantiateGammaButtonClicked;
 
 @end
 

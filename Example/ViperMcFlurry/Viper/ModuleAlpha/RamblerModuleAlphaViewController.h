@@ -18,6 +18,7 @@
 @property (nonatomic, weak) IBOutlet UITextField *textField;
 - (IBAction)didClickSendDataButton:(id)sender;
 - (IBAction)didClickInstantiateBetaButton:(id)sender;
+- (IBAction)didClickInstantiateGammaButton:(id)sender;
 
 @property (nonatomic, weak) IBOutlet UIView *moduleContainerView;
 

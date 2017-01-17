@@ -39,6 +39,14 @@
     }];
 }
 
+- (void)instantiateGammaButtonClicked {
+    __weak typeof(self) wself = self;
+    [self.view getDataWithResultBlock:^(NSString *data) {
+        typeof (self) sself = wself;
+        [sself.router instantiateGammaModuleWithExampleString:data];
+    }];
+}
+
 #pragma mark - RamblerModuleAlphaInteractorOutput
 
 @end
