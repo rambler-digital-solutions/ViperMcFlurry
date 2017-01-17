@@ -24,20 +24,19 @@
 - (id<RamblerViperModuleFactoryProtocol>)factoryGammaModule {
     return [TyphoonDefinition withClass:[RamblerViperModuleFactory class]
                           configuration:^(TyphoonDefinition *definition) {
-                              [definition useInitializer:@selector(initWithStoryboard:andRestorationId:)
+                              [definition useInitializer:@selector(initWithViewControllerLoader:andViewControllerIdentifier:)
                                               parameters:^(TyphoonMethod *initializer) {
-                                                  [initializer injectParameterWith:[self storyboardGammaModule]];
+                                                  [initializer injectParameterWith:[self nibLoaderGammaModule]];
                                                   [initializer injectParameterWith:@"RamblerModuleGammaViewController"];
                                               }];
                           }];
 }
 
-- (UIStoryboard*)storyboardGammaModule {
-    return [TyphoonDefinition withClass:[TyphoonStoryboard class]
+- (id)nibLoaderGammaModule {
+    return [TyphoonDefinition withClass:[TyphoonNibLoader class]
                           configuration:^(TyphoonDefinition *definition) {
-                              [definition useInitializer:@selector(storyboardWithName:factory:bundle:)
+                              [definition useInitializer:@selector(nibLoaderWithFactory:bundle:)
                                               parameters:^(TyphoonMethod *initializer) {
-                                                  [initializer injectParameterWith:@"Main"];
                                                   [initializer injectParameterWith:self];
                                                   [initializer injectParameterWith:nil];
                                               }];

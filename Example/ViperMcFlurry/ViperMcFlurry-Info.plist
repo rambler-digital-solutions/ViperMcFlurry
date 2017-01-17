@@ -26,6 +26,7 @@
 	<true/>
 	<key>TyphoonInitialAssemblies</key>
 	<array>
+		<string>RamblerModuleGammaModuleAssembly</string>
 		<string>RamblerModuleBetaModuleAssembly</string>
 		<string>RamblerModuleAlphaModuleAssembly</string>
 	</array>

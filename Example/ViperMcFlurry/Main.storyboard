@@ -39,10 +39,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qth-Ou-73f">
-                                <rect key="frame" x="20" y="218" width="335" height="429"/>
+                                <rect key="frame" x="20" y="264" width="335" height="383"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Container is Empty" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26x-KN-ORF">
-                                        <rect key="frame" x="95.5" y="204.5" width="145" height="21"/>
+                                        <rect key="frame" x="95.5" y="181.5" width="145" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
@@ -55,24 +55,35 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raS-6e-eOm">
-                                <rect key="frame" x="88.5" y="172" width="198" height="30"/>
-                                <state key="normal" title="Instantiate Beta With Factory">
+                                <rect key="frame" x="32.5" y="172" width="310" height="30"/>
+                                <state key="normal" title="Instantiate Beta With Factory And Storyboard">
                                     <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="didClickInstantiateBetaButton:" destination="iSd-mR-aP9" eventType="touchUpInside" id="8XC-EK-RA0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXQ-8k-UI5">
+                                <rect key="frame" x="46" y="218" width="284" height="30"/>
+                                <state key="normal" title="Instantiate Gamman With Factory and Xib">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickInstantiateGammaButton:" destination="iSd-mR-aP9" eventType="touchUpInside" id="jLY-Ro-8db"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Qth-Ou-73f" firstAttribute="top" secondItem="ZXQ-8k-UI5" secondAttribute="bottom" constant="16" id="0Zl-EC-iIQ"/>
                             <constraint firstAttribute="trailing" secondItem="Vvs-pw-cO1" secondAttribute="trailing" constant="24" id="0ya-qW-Foe"/>
                             <constraint firstItem="raS-6e-eOm" firstAttribute="top" secondItem="G9g-Gu-nDv" secondAttribute="bottom" constant="16" id="3e1-a0-Zar"/>
                             <constraint firstItem="G9g-Gu-nDv" firstAttribute="centerX" secondItem="Vvs-pw-cO1" secondAttribute="centerX" id="3tU-ex-mji"/>
                             <constraint firstAttribute="trailing" secondItem="Qth-Ou-73f" secondAttribute="trailing" constant="20" id="43V-V9-IRx"/>
                             <constraint firstItem="Vvs-pw-cO1" firstAttribute="top" secondItem="3eo-31-7cb" secondAttribute="bottom" constant="24" id="8D7-eS-y3a"/>
-                            <constraint firstItem="Qth-Ou-73f" firstAttribute="top" secondItem="raS-6e-eOm" secondAttribute="bottom" constant="16" id="R6p-Y7-pAP"/>
                             <constraint firstItem="G9g-Gu-nDv" firstAttribute="top" secondItem="Vvs-pw-cO1" secondAttribute="bottom" constant="8" id="WTM-cv-J4t"/>
+                            <constraint firstItem="ZXQ-8k-UI5" firstAttribute="centerX" secondItem="AD9-fP-BNz" secondAttribute="centerX" id="WlM-o9-2E9"/>
+                            <constraint firstItem="ZXQ-8k-UI5" firstAttribute="top" secondItem="raS-6e-eOm" secondAttribute="bottom" constant="16" id="YQ4-Dc-fik"/>
                             <constraint firstAttribute="centerX" secondItem="raS-6e-eOm" secondAttribute="centerX" id="ktC-R5-tQW"/>
                             <constraint firstItem="Vvs-pw-cO1" firstAttribute="leading" secondItem="AD9-fP-BNz" secondAttribute="leading" constant="24" id="kwb-Tb-wxe"/>
                             <constraint firstItem="Quc-n3-ghc" firstAttribute="top" secondItem="Qth-Ou-73f" secondAttribute="bottom" constant="20" id="tMH-ED-TNg"/>

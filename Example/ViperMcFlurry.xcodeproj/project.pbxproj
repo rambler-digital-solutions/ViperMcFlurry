@@ -21,6 +21,7 @@
 		429835341E2E835700DB54EC /* RamblerModuleGammaPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4298352A1E2E835700DB54EC /* RamblerModuleGammaPresenter.m */; };
 		429835351E2E835700DB54EC /* RamblerModuleGammaRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4298352C1E2E835700DB54EC /* RamblerModuleGammaRouter.m */; };
 		429835361E2E835700DB54EC /* RamblerModuleGammaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4298352F1E2E835700DB54EC /* RamblerModuleGammaViewController.m */; };
+		4298353C1E2E8FFE00DB54EC /* RamblerModuleGammaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4298353B1E2E8FFE00DB54EC /* RamblerModuleGammaViewController.xib */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -99,6 +100,7 @@
 		4298352F1E2E835700DB54EC /* RamblerModuleGammaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RamblerModuleGammaViewController.m; sourceTree = "<group>"; };
 		429835301E2E835700DB54EC /* RamblerModuleGammaViewInput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerModuleGammaViewInput.h; sourceTree = "<group>"; };
 		429835311E2E835700DB54EC /* RamblerModuleGammaViewOutput.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RamblerModuleGammaViewOutput.h; sourceTree = "<group>"; };
+		4298353B1E2E8FFE00DB54EC /* RamblerModuleGammaViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = RamblerModuleGammaViewController.xib; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* ViperMcFlurry_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ViperMcFlurry_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -290,6 +292,7 @@
 				4298352E1E2E835700DB54EC /* RamblerModuleGammaViewController.h */,
 				4298352F1E2E835700DB54EC /* RamblerModuleGammaViewController.m */,
 				429835301E2E835700DB54EC /* RamblerModuleGammaViewInput.h */,
+				4298353B1E2E8FFE00DB54EC /* RamblerModuleGammaViewController.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -490,9 +493,6 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Egor Tolstoy";
 				TargetAttributes = {
-					6003F589195388D20070C39A = {
-						DevelopmentTeam = RU64C364MT;
-					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -523,6 +523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				4298353C1E2E8FFE00DB54EC /* RamblerModuleGammaViewController.xib in Resources */,
 				D24D49071BD4C9ED00C77475 /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
@@ -802,7 +803,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = RU64C364MT;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViperMcFlurry/ViperMcFlurry-Prefix.pch";
@@ -822,7 +823,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				DEVELOPMENT_TEAM = RU64C364MT;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViperMcFlurry/ViperMcFlurry-Prefix.pch";
