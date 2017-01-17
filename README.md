@@ -75,9 +75,9 @@
 Module factory can be replaced with segues for most cases. Except you need to create complex module or nontrivial module instantiation logic.
 
 - Use ```RamblerViperModuleFactory``` object as module fabric with Typhoon.
-- Set definition Initializer to ```initWithStoryboard:andRestorationId:```
-    - First parameter is UIStoryboard instance,
-    - Second parameter is RestorationID of ViewController.
+- Set definition Initializer to ```initWithViewControllerLoader:andViewControllerIdentifier:```
+    - First parameter is the object which loads the view controller, e.g. UIStoryboard or TyphoonNibLoader instance,
+    - Second parameter is view controller's identifier, e.g. RestorationID or NibName of ViewController.
 - Typhoon will initialize module from ViewController.
 - Inject this Factory into router.
 - Call Transition Handler's method ``- openModuleUsingFactory:withTransitionBlock:``.
