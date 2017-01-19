@@ -29,6 +29,11 @@
     [self.output instantiateBetaButtonClicked];
 }
 
+- (IBAction)didClickInstantiateGammaButton:(id)sender {
+    [self.textField resignFirstResponder];
+    [self.output instantiateGammaButtonClicked];
+}
+
 #pragma mark - RamblerModuleAlphaViewInput
 
 - (void)getDataWithResultBlock:(AlphaModuleViewDataResulBlock)resultBlock {

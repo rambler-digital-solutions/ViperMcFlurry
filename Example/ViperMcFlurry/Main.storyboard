@@ -1,8 +1,12 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="15A282b" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xfk-px-I3u">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Xfk-px-I3u">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--ModuleAlpha-->
@@ -14,12 +18,11 @@
                         <viewControllerLayoutGuide type="bottom" id="Quc-n3-ghc"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="AD9-fP-BNz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Some Example Text" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Vvs-pw-cO1">
-                                <rect key="frame" x="24" y="88" width="552" height="30"/>
-                                <animations/>
+                                <rect key="frame" x="24" y="88" width="327" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="hBM-ki-otA"/>
                                 </constraints>
@@ -27,54 +30,60 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G9g-Gu-nDv">
-                                <rect key="frame" x="173" y="126" width="255" height="30"/>
-                                <animations/>
+                                <rect key="frame" x="60.5" y="126" width="255" height="30"/>
                                 <state key="normal" title="Send Data To Beta Module Via Segue">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="didClickSendDataButton:" destination="iSd-mR-aP9" eventType="touchUpInside" id="hZC-x9-OvQ"/>
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qth-Ou-73f">
-                                <rect key="frame" x="20" y="218" width="560" height="362"/>
+                                <rect key="frame" x="20" y="264" width="335" height="383"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Container is Empty" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="26x-KN-ORF">
-                                        <rect key="frame" x="208" y="171" width="145" height="21"/>
-                                        <animations/>
+                                        <rect key="frame" x="95.5" y="181.5" width="145" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <animations/>
-                                <color key="backgroundColor" red="1" green="0.4823529412" blue="0.1176470588" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.4823529412" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="centerY" secondItem="26x-KN-ORF" secondAttribute="centerY" id="KPJ-c4-cZn"/>
                                     <constraint firstAttribute="centerX" secondItem="26x-KN-ORF" secondAttribute="centerX" id="oGU-QZ-89o"/>
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="raS-6e-eOm">
-                                <rect key="frame" x="206" y="172" width="189" height="30"/>
-                                <animations/>
-                                <state key="normal" title="Instantiate Beta With Factory">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="32.5" y="172" width="310" height="30"/>
+                                <state key="normal" title="Instantiate Beta With Factory And Storyboard">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="didClickInstantiateBetaButton:" destination="iSd-mR-aP9" eventType="touchUpInside" id="8XC-EK-RA0"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZXQ-8k-UI5">
+                                <rect key="frame" x="46" y="218" width="284" height="30"/>
+                                <state key="normal" title="Instantiate Gamman With Factory and Xib">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didClickInstantiateGammaButton:" destination="iSd-mR-aP9" eventType="touchUpInside" id="jLY-Ro-8db"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Qth-Ou-73f" firstAttribute="top" secondItem="ZXQ-8k-UI5" secondAttribute="bottom" constant="16" id="0Zl-EC-iIQ"/>
                             <constraint firstAttribute="trailing" secondItem="Vvs-pw-cO1" secondAttribute="trailing" constant="24" id="0ya-qW-Foe"/>
                             <constraint firstItem="raS-6e-eOm" firstAttribute="top" secondItem="G9g-Gu-nDv" secondAttribute="bottom" constant="16" id="3e1-a0-Zar"/>
                             <constraint firstItem="G9g-Gu-nDv" firstAttribute="centerX" secondItem="Vvs-pw-cO1" secondAttribute="centerX" id="3tU-ex-mji"/>
                             <constraint firstAttribute="trailing" secondItem="Qth-Ou-73f" secondAttribute="trailing" constant="20" id="43V-V9-IRx"/>
                             <constraint firstItem="Vvs-pw-cO1" firstAttribute="top" secondItem="3eo-31-7cb" secondAttribute="bottom" constant="24" id="8D7-eS-y3a"/>
-                            <constraint firstItem="Qth-Ou-73f" firstAttribute="top" secondItem="raS-6e-eOm" secondAttribute="bottom" constant="16" id="R6p-Y7-pAP"/>
                             <constraint firstItem="G9g-Gu-nDv" firstAttribute="top" secondItem="Vvs-pw-cO1" secondAttribute="bottom" constant="8" id="WTM-cv-J4t"/>
+                            <constraint firstItem="ZXQ-8k-UI5" firstAttribute="centerX" secondItem="AD9-fP-BNz" secondAttribute="centerX" id="WlM-o9-2E9"/>
+                            <constraint firstItem="ZXQ-8k-UI5" firstAttribute="top" secondItem="raS-6e-eOm" secondAttribute="bottom" constant="16" id="YQ4-Dc-fik"/>
                             <constraint firstAttribute="centerX" secondItem="raS-6e-eOm" secondAttribute="centerX" id="ktC-R5-tQW"/>
                             <constraint firstItem="Vvs-pw-cO1" firstAttribute="leading" secondItem="AD9-fP-BNz" secondAttribute="leading" constant="24" id="kwb-Tb-wxe"/>
                             <constraint firstItem="Quc-n3-ghc" firstAttribute="top" secondItem="Qth-Ou-73f" secondAttribute="bottom" constant="20" id="tMH-ED-TNg"/>
@@ -101,22 +110,20 @@
                         <viewControllerLayoutGuide type="bottom" id="BTK-ON-ndF"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7qd-IH-pMz">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V1J-do-Gh2">
-                                <rect key="frame" x="24" y="184" width="552" height="21"/>
-                                <animations/>
+                                <rect key="frame" x="24" y="184" width="327" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="AAX-6r-kF3"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="V1J-do-Gh2" firstAttribute="leading" secondItem="7qd-IH-pMz" secondAttribute="leading" constant="24" id="bOH-ew-mfU"/>
                             <constraint firstAttribute="trailing" secondItem="V1J-do-Gh2" secondAttribute="trailing" constant="24" id="nEA-WS-XyQ"/>
@@ -138,7 +145,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="AMb-g8-K36">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <connections>
                         <segue destination="iSd-mR-aP9" kind="relationship" relationship="rootViewController" id="oSw-TU-VRf"/>
@@ -157,36 +163,33 @@
                         <viewControllerLayoutGuide type="bottom" id="SBX-XO-86f"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="eG2-9G-h0w">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xHS-mZ-yC7">
-                                <rect key="frame" x="24" y="290" width="552" height="21"/>
-                                <animations/>
+                                <rect key="frame" x="24" y="323" width="327" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="o8T-8k-cBi"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B0M-hO-6tr">
-                                <rect key="frame" x="252" y="319" width="96" height="34"/>
-                                <animations/>
+                                <rect key="frame" x="139.5" y="352" width="96" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="96" id="acN-Xz-BfP"/>
                                 </constraints>
                                 <state key="normal" title="Remove">
-                                    <color key="titleColor" red="0.57636600732803345" green="0.56721252202987671" blue="0.64175301790237427" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="0.50389623641967773" green="0.49144250154495239" blue="0.57489657402038574" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="didClickRemoveModuleButton:" destination="ckW-Gb-QwD" eventType="touchUpInside" id="Rfg-sW-IIr"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" red="0.66845601797103882" green="0.77302712202072144" blue="0.94829195737838745" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.60735607147216797" green="0.71810704469680786" blue="0.93440687656402588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="xHS-mZ-yC7" firstAttribute="leading" secondItem="eG2-9G-h0w" secondAttribute="leading" constant="24" id="534-La-ipF"/>
                             <constraint firstAttribute="trailing" secondItem="xHS-mZ-yC7" secondAttribute="trailing" constant="24" id="9dO-Fb-EPd"/>
@@ -212,29 +215,26 @@
         <!--Rambler Module Beta View Controller-->
         <scene sceneID="KCC-4Y-LAS">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="0Th-vv-Ymd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController storyboardIdentifier="RamblerModuleBetaViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Lil-9P-Pbd" customClass="RamblerModuleBetaViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bgE-Wf-Gc0"/>
                         <viewControllerLayoutGuide type="bottom" id="Pog-W6-ean"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="7K4-ZM-kMA">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ta-1P-9ac">
-                                <rect key="frame" x="24" y="290" width="552" height="21"/>
-                                <animations/>
+                                <rect key="frame" x="24" y="323" width="327" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="bOa-Uv-2hG"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <animations/>
-                        <color key="backgroundColor" red="0.6639818549156189" green="0.94611662626266479" blue="0.69968819618225098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.61060279607772827" green="0.94679057598114014" blue="0.64023005962371826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="9ta-1P-9ac" firstAttribute="top" secondItem="bgE-Wf-Gc0" secondAttribute="bottom" constant="120" id="9nR-cy-yCW"/>
                             <constraint firstAttribute="trailing" secondItem="9ta-1P-9ac" secondAttribute="trailing" constant="24" id="Po4-sD-b02"/>
@@ -251,6 +251,7 @@
                         <outlet property="exampleStringLabel" destination="9ta-1P-9ac" id="kbF-DS-taR"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0Th-vv-Ymd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2089" y="979"/>
         </scene>

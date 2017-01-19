@@ -7,6 +7,7 @@
 
 #import "RamblerModuleAlphaRouter.h"
 #import "RamblerModuleBetaInput.h"
+#import "RamblerModuleGammaInput.h"
 
 static NSString* const RamblerAlphaToBetaSegue = @"RamblerAlphaToBetaSegue";
 
@@ -42,6 +43,23 @@ static NSString* const RamblerAlphaToBetaSegue = @"RamblerAlphaToBetaSegue";
                                    [moduleInput configureWithExampleString:exampleString];
                                    return nil;
                                }];
+}
+
+- (void)instantiateGammaModuleWithExampleString:(NSString*)exampleString {
+    [[self.transitionHandler openModuleUsingFactory:self.gammaModuleFactory
+                                withTransitionBlock:^(id <RamblerViperModuleTransitionHandlerProtocol> sourceModuleTransitionHandler,
+                                                      id <RamblerViperModuleTransitionHandlerProtocol> destinationModuleTransitionHandler) {
+                                    
+                                    UIViewController *sourceViewController = (id) sourceModuleTransitionHandler;
+                                    UIViewController *destinationViewController = (id) destinationModuleTransitionHandler;
+                                    
+                                    [sourceViewController.navigationController pushViewController:destinationViewController
+                                                                                         animated:YES];
+                                    
+                                }] thenChainUsingBlock:^id<RamblerViperModuleOutput>(id<RamblerModuleGammaInput> moduleInput) {
+                                    [moduleInput configureWithExampleString:exampleString];
+                                    return nil;
+                                }];
 }
 
 @end

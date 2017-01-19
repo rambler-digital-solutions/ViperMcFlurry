@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RamblerModuleGammaViewController">
+            <connections>
+                <outlet property="exampleStringLabel" destination="9Ha-YV-tNB" id="ixi-Ww-Mbv"/>
+                <outlet property="view" destination="IC6-6q-aIP" id="AlT-SK-MQE"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="IC6-6q-aIP">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ha-YV-tNB">
+                    <rect key="frame" x="24" y="323" width="327" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="WEx-9Q-7ld"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="0.94368707135833341" green="0.158203125" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="9Ha-YV-tNB" secondAttribute="trailing" constant="24" id="O2z-6e-Vch"/>
+                <constraint firstAttribute="centerY" secondItem="9Ha-YV-tNB" secondAttribute="centerY" id="rxO-hE-ft0"/>
+                <constraint firstItem="9Ha-YV-tNB" firstAttribute="leading" secondItem="IC6-6q-aIP" secondAttribute="leading" constant="24" id="uqC-GO-QUZ"/>
+            </constraints>
+        </view>
+    </objects>
+</document>
