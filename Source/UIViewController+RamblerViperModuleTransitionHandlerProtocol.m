@@ -9,6 +9,7 @@
 #import <objc/runtime.h>
 #import "RamblerViperOpenModulePromise.h"
 #import "RamblerViperModuleFactory.h"
+#import "RamblerViperModuleInput.h"
 
 static IMP originalPrepareForSegueMethodImp;
 
@@ -100,29 +101,41 @@ static IMP originalPrepareForSegueMethodImp;
     });
 }
 
+static UIViewController *sourceViewControllerFromSegue(UIStoryboardSegue * segue) {
+    return segue.sourceViewController;
+}
+
+static UIViewController *destinationViewControllerFromSegue(UIStoryboardSegue * segue) {
+    UIViewController *destinationViewController = segue.destinationViewController;
+    if ([destinationViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *navigationController = destinationViewController;
+        destinationViewController = navigationController.topViewController;
+    }
+    return destinationViewController;
+}
+
 void RamblerViperPrepareForSegueSender(id self, SEL selector, UIStoryboardSegue * segue, id sender) {
 
     ((void(*)(id,SEL,UIStoryboardSegue*,id))originalPrepareForSegueMethodImp)(self,selector,segue,sender);
 
-    if (![sender isKindOfClass:[RamblerViperOpenModulePromise class]]) {
+    id<RamblerViperModuleInput> moduleInput = nil;
+
+    id<RamblerViperModuleTransitionHandlerProtocol> targetModuleTransitionHandler = destinationViewControllerFromSegue(segue);
+    if ([targetModuleTransitionHandler respondsToSelector:@selector(moduleInput)]) {
+        moduleInput = [targetModuleTransitionHandler moduleInput];
+    } else {
         return;
     }
 
-    id<RamblerViperModuleInput> moduleInput = nil;
-
-    UIViewController *destinationViewController = segue.destinationViewController;
-    if ([destinationViewController isKindOfClass:[UINavigationController class]]) {
-      UINavigationController *navigationController = segue.destinationViewController;
-      destinationViewController = navigationController.topViewController;
+    if ([sender isKindOfClass:[RamblerViperOpenModulePromise class]]) {
+        RamblerViperOpenModulePromise *openModulePromise = sender;
+        openModulePromise.moduleInput = moduleInput;
     }
 
-    id<RamblerViperModuleTransitionHandlerProtocol> targetModuleTransitionHandler = destinationViewController;
-    if ([targetModuleTransitionHandler respondsToSelector:@selector(moduleInput)]) {
-        moduleInput = [targetModuleTransitionHandler moduleInput];
+    if ([moduleInput respondsToSelector:@selector(setModuleOutput:)]) {
+        id sourceOutput = [sourceViewControllerFromSegue(segue) moduleInput];
+        [moduleInput setModuleOutput:sourceOutput];
     }
-
-    RamblerViperOpenModulePromise *openModulePromise = sender;
-    openModulePromise.moduleInput = moduleInput;
 }
 
 @end
