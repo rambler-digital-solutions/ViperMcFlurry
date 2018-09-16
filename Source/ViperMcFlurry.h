@@ -8,12 +8,13 @@
 #ifndef _ViperMcFlurry_h_
 #define _ViperMcFlurry_h_
 
-#import "RamblerViperModuleFactoryProtocol.h"
-#import "RamblerViperModuleInput.h"
-#import "RamblerViperModuleOutput.h"
-#import "RamblerViperModuleTransitionHandlerProtocol.h"
-#import "RamblerViperOpenModulePromise.h"
-#import "UIViewController+RamblerViperModuleTransitionHandlerProtocol.h"
-#import "RamblerViperModuleFactory.h"
+#import <ViperMcFlurry/RamblerViperModuleFactoryProtocol.h>
+#import <ViperMcFlurry/RamblerViperModuleInput.h>
+#import <ViperMcFlurry/RamblerViperModuleOutput.h>
+#import <ViperMcFlurry/RamblerViperModuleTransitionHandlerProtocol.h>
+#import <ViperMcFlurry/RamblerViperOpenModulePromise.h>
+#import <ViperMcFlurry/UIViewController+RamblerViperModuleTransitionHandlerProtocol.h>
+#import <ViperMcFlurry/RamblerViperModuleFactory.h>
 
 #endif
+
