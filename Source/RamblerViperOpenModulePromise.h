@@ -16,7 +16,7 @@ typedef void(^PostLinkActionBlock)(void);
  This module is used to link modules one to another. ModuleInput is typically presenter of module.
  Block can be used to return module output.
  */
-typedef id<RamblerViperModuleOutput>(^RamblerViperModuleLinkBlock)(id<RamblerViperModuleInput> moduleInput);
+typedef id<RamblerViperModuleOutput>(^RamblerViperModuleLinkBlock)(__kindof id<RamblerViperModuleInput> moduleInput);
 
 /**
  Promise used to configure module input.
