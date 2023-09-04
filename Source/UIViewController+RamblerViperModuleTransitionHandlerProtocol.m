@@ -21,7 +21,7 @@ static IMP originalPrepareForSegueMethodImp;
 
 #pragma mark - RamblerViperModuleTransitionHandlerProtocol
 
-+ (void)initialize {
++ (void)load {
     [self swizzlePrepareForSegue];
 }
 
